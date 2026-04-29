@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+
+# Claude Code local state
+.claude/
+
+# Vercel CLI local
+.vercel
+
+# Stray local files (move out of repo if you need them)
+image.png
+KO_Strategic_Hypotheses_6Month.pdf
