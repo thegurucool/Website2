@@ -1235,5 +1235,39 @@ async function submitWaitlist(e) {
 }
 
 </script>
+<style>
+@media (max-width: 900px) {
+  section.hero .hero-inner {
+    display: block !important;
+  }
+  section.hero .hero-inner > .hero-left,
+  section.hero .hero-inner > .hero-screen-wrap {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto 2rem !important;
+    text-align: center !important;
+  }
+  section.hero .hero-inner > .hero-screen-wrap {
+    max-width: 560px !important;
+    margin-bottom: 0 !important;
+  }
+  section.hero .hero-eyebrow,
+  section.hero .hero-btns { justify-content: center !important; }
+  section.hero .hero-sub { margin-left: auto !important; margin-right: auto !important; }
+  .feat-panels .feat-panel {
+    display: block !important;
+    text-align: center !important;
+  }
+  .feat-panels .feat-panel > * {
+    display: block !important;
+    width: 100% !important;
+    max-width: 560px !important;
+    margin: 0 auto !important;
+  }
+  .feat-panels .feat-panel > * + * { margin-top: 2rem !important; }
+  .feat-panels .feat-panel .fp-chips { justify-content: center !important; }
+}
+</style>
 </body>
 </html>
