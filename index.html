@@ -93,17 +93,16 @@ footer p{font-size:.78rem;color:rgba(240,237,232,.25);}
    ============================================================ */
 .hero{min-height:100vh;background:var(--board);position:relative;overflow:hidden;display:flex;align-items:center;padding:7rem 2.5rem 5rem;}
 .hero-glow{position:absolute;top:-100px;right:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(244,123,90,.08) 0%,transparent 65%);pointer-events:none;}
-.hero-inner{max-width:1160px;margin:0 auto;width:100%;display:flex;flex-direction:column;gap:3rem;align-items:center;position:relative;z-index:1;text-align:center;}
-.hero-left{max-width:780px;}
-.hero-screen-wrap{max-width:900px;width:100%;}
+.hero-inner{max-width:1160px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;align-items:center;position:relative;z-index:1;}
+.hero-inner>*{min-width:0;}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:'Instrument Serif',serif;font-size:1.1rem;color:var(--orange);margin-bottom:1.5rem;}
 .hero-eyebrow::before{content:'';display:block;width:22px;height:2px;background:var(--orange);}
 h1{font-family:'Instrument Serif',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);line-height:1.06;color:var(--chalk);font-weight:700;margin-bottom:1.8rem;}
 h1 em{font-style:italic;color:var(--orange);font-family:'Instrument Serif',serif;}
 h1 .hl{position:relative;display:inline-block;}
 h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;height:12px;background:var(--orange);opacity:.22;z-index:-1;transform:rotate(-.5deg);}
-.hero-sub{font-size:1rem;line-height:1.8;color:var(--chalk-dim);max-width:520px;font-weight:300;margin:0 auto 2.5rem;}
-.hero-btns{display:flex;gap:1rem;align-items:center;justify-content:center;}
+.hero-sub{font-size:1rem;line-height:1.8;color:var(--chalk-dim);max-width:420px;font-weight:300;margin-bottom:2.5rem;}
+.hero-btns{display:flex;gap:1rem;align-items:center;}
 .btn-ghost{text-decoration:none;color:var(--chalk-dim);font-size:.9rem;border-bottom:1px solid rgba(240,237,232,.2);padding-bottom:1px;transition:color .15s,border-color .15s;cursor:pointer;background:none;border-bottom:1px solid rgba(240,237,232,.2);}
 .btn-ghost:hover{color:var(--chalk);}
 .hero-stats{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(240,237,232,.1);}
@@ -173,9 +172,10 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .feat-screens-inner{max-width:1160px;margin:0 auto;}
 .fs-header{margin-bottom:4rem;}
 .feat-panels{display:flex;flex-direction:column;gap:6rem;}
-.feat-panel{display:flex;flex-direction:column;gap:3rem;align-items:center;text-align:center;}
-.feat-panel>*{min-width:0;width:100%;max-width:780px;}
-.feat-panel .fp-chips{justify-content:center;}
+.feat-panel{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.feat-panel>*{min-width:0;}
+.feat-panel.reverse{direction:rtl;}
+.feat-panel.reverse>*{direction:ltr;}
 .fp-num{font-family:'Instrument Serif',serif;font-size:4rem;font-style:italic;color:rgba(0,0,0,.07);line-height:1;margin-bottom:.5rem;}
 .fp-title{font-family:'Instrument Serif',serif;font-size:1.6rem;color:var(--black);margin-bottom:.8rem;letter-spacing:-.3px;}
 .fp-desc{font-size:.92rem;color:#555;line-height:1.7;font-weight:300;margin-bottom:1.2rem;}
@@ -520,7 +520,14 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   .wl-perks-inner{grid-template-columns:1fr 1fr;}
   .wl-form-area{padding:3rem 1.5rem 4rem;}
   .coach-float,.phone-float{display:none;}
-  .feat-panel{gap:2rem;}
+  .hero-inner{display:flex;flex-direction:column;gap:2.5rem;align-items:center;text-align:center;}
+  .hero-screen-wrap{max-width:560px;width:100%;}
+  .hero-sub{margin:0 auto 2.5rem;}
+  .hero-btns{justify-content:center;}
+  .feat-panel{display:flex;flex-direction:column;gap:2rem;align-items:center;text-align:center;}
+  .feat-panel.reverse{direction:ltr;}
+  .feat-panel>*{width:100%;max-width:560px;}
+  .feat-panel .fp-chips{justify-content:center;}
   .san-grid-2{grid-template-columns:1fr;}
   .san-stat-row-3{grid-template-columns:repeat(3,1fr);}
   .how-steps{grid-template-columns:1fr 1fr;gap:2rem;}
