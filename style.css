@@ -160,6 +160,8 @@ footer p{font-size:.78rem;color:rgba(240,237,232,.3);font-weight:300;}
   .nav-link:not(.nav-cta){display:none;}
   .feat-panel{grid-template-columns:1fr;gap:2rem;}
   .feat-panel.reverse{direction:ltr;}
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem;}
+  .hero-screen-wrap{max-width:520px;margin:0 auto;width:100%;}
 }
 
 /* PLATFORM TOGGLE */
