@@ -1074,38 +1074,24 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 
       <div id="wl-form-card" style="background:#FFFFFF;border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:2.5rem;box-shadow:0 8px 40px rgba(0,0,0,.06);">
         <div id="wl-form-body">
+          <form id="wl-form" onsubmit="submitWaitlist(event); return false;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem;">
             <div>
               <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">First name</label>
-              <input type="text" placeholder="Priya" style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
+              <input type="text" name="FIRSTNAME" placeholder="Priya" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
             </div>
             <div>
               <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">Last name</label>
-              <input type="text" placeholder="Nair" style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
+              <input type="text" name="LASTNAME" placeholder="Nair" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
             </div>
           </div>
           <div style="margin-bottom:1.2rem;">
             <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">Work email</label>
-            <input type="email" placeholder="priya@school.edu" style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
+            <input type="email" name="EMAIL" placeholder="priya@school.edu" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem;">
-            <div>
-              <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">Country</label>
-              <select style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;-webkit-appearance:none;cursor:pointer;">
-                <option value="">Select country</option>
-                <option>Singapore</option>
-                <option>Philippines</option>
-                <option>Indonesia</option>
-                <option>Malaysia</option>
-                <option>Vietnam</option>
-                <option>Thailand</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div>
-              <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">School name</label>
-              <input type="text" placeholder="Your school" style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
-            </div>
+          <div style="margin-bottom:1.2rem;">
+            <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">School name</label>
+            <input type="text" name="SCHOOL" placeholder="Your school" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
           </div>
           <div style="margin-bottom:1.8rem;">
             <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.6rem;letter-spacing:.2px;">I am a...</label>
@@ -1116,10 +1102,15 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
               <div onclick="toggleChip2(this)" style="padding:.45rem 1rem;border-radius:50px;font-size:.82rem;font-family:'Montserrat',sans-serif;color:#666;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);cursor:pointer;transition:all .15s;">EdTech Coordinator</div>
               <div onclick="toggleChip2(this)" style="padding:.45rem 1rem;border-radius:50px;font-size:.82rem;font-family:'Montserrat',sans-serif;color:#666;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);cursor:pointer;transition:all .15s;">Teacher Educator</div>
             </div>
+            <input type="hidden" name="ROLE" id="wl-role" value=""/>
           </div>
+          <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off"/>
+          <input type="hidden" name="locale" value="en"/>
           <div style="height:1px;background:rgba(0,0,0,.06);margin-bottom:1.5rem;"></div>
-          <button onclick="submitWaitlist()" class="wl-submit-btn">Reserve my spot on the waitlist</button>
+          <button type="submit" class="wl-submit-btn" style="width:100%;padding:1rem;background:#111111;color:#FFFFFF;border:none;border-radius:8px;font-family:'Instrument Serif',serif;font-size:1.25rem;font-weight:700;cursor:pointer;box-shadow:3px 3px 0 #F47B5A;display:block;">Reserve my spot on the waitlist</button>
+          <p id="wl-error" style="display:none;font-size:.78rem;color:#c0392b;text-align:center;margin-top:.9rem;line-height:1.6;"></p>
           <p style="font-size:.72rem;color:#9A9A9A;text-align:center;margin-top:.9rem;line-height:1.6;">By joining, you agree to receive product updates from theGurucool.ai. Unsubscribe any time.</p>
+          </form>
         </div>
 
         <div id="wl-success" style="display:none;text-align:center;padding:2.5rem 1rem;">
@@ -1185,20 +1176,50 @@ function switchToggle(view) {
 document.getElementById('nav-home').classList.add('active');
 
 function toggleChip2(el) {
-  const active = el.getAttribute('data-chosen') === '1';
-  if (active) {
-    el.removeAttribute('data-chosen');
-    el.style.background='#FAFAFA'; el.style.borderColor='rgba(0,0,0,.12)';
-    el.style.color='#666'; el.style.fontWeight='normal';
-  } else {
+  const siblings = el.parentElement.querySelectorAll('div');
+  const wasActive = el.getAttribute('data-chosen') === '1';
+  siblings.forEach(d => {
+    d.removeAttribute('data-chosen');
+    d.style.background='#FAFAFA'; d.style.borderColor='rgba(0,0,0,.12)';
+    d.style.color='#666'; d.style.fontWeight='normal';
+  });
+  if (!wasActive) {
     el.setAttribute('data-chosen','1');
     el.style.background='rgba(244,123,90,0.08)'; el.style.borderColor='#F47B5A';
     el.style.color='#F47B5A'; el.style.fontWeight='500';
+    document.getElementById('wl-role').value = el.textContent.trim();
+  } else {
+    document.getElementById('wl-role').value = '';
   }
 }
-function submitWaitlist() {
-  document.getElementById('wl-form-body').style.display='none';
-  document.getElementById('wl-success').style.display='block';
+async function submitWaitlist(e) {
+  if (e) e.preventDefault();
+  const form = document.getElementById('wl-form');
+  const errorEl = document.getElementById('wl-error');
+  errorEl.style.display = 'none';
+  if (!document.getElementById('wl-role').value) {
+    errorEl.textContent = 'Please select your role.';
+    errorEl.style.display = 'block';
+    return;
+  }
+  const submitBtn = form.querySelector('button[type=submit]');
+  const originalLabel = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitting...';
+  try {
+    await fetch('https://9f12eeef.sibforms.com/serve/MUIFANVrOQmQpQTGcc-xuuOu6ylHLZBDyXuyrUjWbI0SYOM3aHU-2Vv8NBYNfU6nQ06nuHbbaZ3EN_Tf8sl0dPa5T3MqoofQ6VNToYcqJAaiaf9a1n84D_TF1b4MeEEYGWH15_CcORLq7OPDamIx-1sQk_0hnMNfsxBFdsCjoH1O5tVrr2JptrW5KdEtv5voYq3gIxy5kXnXmiaGCA==', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: new URLSearchParams(new FormData(form))
+    });
+    document.getElementById('wl-form-body').style.display='none';
+    document.getElementById('wl-success').style.display='block';
+  } catch (err) {
+    errorEl.textContent = 'Something went wrong. Please try again.';
+    errorEl.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalLabel;
+  }
 }
 
 </script>
