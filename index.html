@@ -173,6 +173,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .fs-header{margin-bottom:4rem;}
 .feat-panels{display:flex;flex-direction:column;gap:6rem;}
 .feat-panel{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.feat-panel>*{min-width:0;}
 .feat-panel.reverse{direction:rtl;}
 .feat-panel.reverse>*{direction:ltr;}
 .fp-num{font-family:'Instrument Serif',serif;font-size:4rem;font-style:italic;color:rgba(0,0,0,.07);line-height:1;margin-bottom:.5rem;}
@@ -224,6 +225,8 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .san-dots{display:flex;gap:4px;}
 .san-title{font-size:.72rem;color:var(--scr-muted);margin:0 auto;font-family:'Montserrat',sans-serif;}
 .san-body{padding:1.2rem;}
+.san-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1rem;min-width:0;}
+.san-stat-row-3{grid-template-columns:repeat(3,1fr);}
 .san-heading{font-size:.88rem;font-weight:600;color:var(--scr-text);margin-bottom:.3rem;font-family:'Montserrat',sans-serif;}
 .san-subhead{font-size:.68rem;color:var(--scr-muted);margin-bottom:1rem;font-family:'Montserrat',sans-serif;}
 .san-stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1.2rem;}
@@ -519,6 +522,8 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   .coach-float,.phone-float{display:none;}
   .feat-panel{grid-template-columns:1fr;gap:2rem;}
   .feat-panel.reverse{direction:ltr;}
+  .san-grid-2{grid-template-columns:1fr;}
+  .san-stat-row-3{grid-template-columns:repeat(3,1fr);}
   .how-steps{grid-template-columns:1fr 1fr;gap:2rem;}
   .how-steps::before{display:none;}
   .fw-top{flex-direction:column;}
@@ -792,11 +797,11 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
           <div class="screen-analytics">
             <div class="san-topbar"><div class="san-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><div class="san-title">My Dashboard · Ms. Lim W.Y.</div></div>
             <div class="san-body">
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1rem;">
+              <div class="san-grid-2">
                 <div>
                   <div class="san-heading">My TEACH-AI Score</div>
                   <div class="san-subhead">Across 7 competency domains</div>
-                  <div class="san-stat-row" style="grid-template-columns:repeat(3,1fr)">
+                  <div class="san-stat-row san-stat-row-3">
                     <div class="san-stat"><div class="san-stat-n">74%</div><div class="san-stat-l">Overall</div></div>
                     <div class="san-stat"><div class="san-stat-n">12</div><div class="san-stat-l">Lessons</div></div>
                     <div class="san-stat"><div class="san-stat-n">3</div><div class="san-stat-l">Badges</div></div>
