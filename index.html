@@ -1267,6 +1267,14 @@ async function submitWaitlist(e) {
   }
   .feat-panels .feat-panel > * + * { margin-top: 2rem !important; }
   .feat-panels .feat-panel .fp-chips { justify-content: center !important; }
+  section.how .how-steps {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  section.how .how-steps::before { display: none !important; }
+  section.how .how-steps > div[style*="position:absolute"] { display: none !important; }
+  section.how .how-step { padding: 0 1rem !important; }
 }
 </style>
 </body>
