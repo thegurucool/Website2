@@ -957,6 +957,9 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
         </div>
       </div>
 
+      <!-- Explicit spacer between intro and split (bulletproof against margin-collapse) -->
+      <div aria-hidden="true" style="width:100%;height:14rem;display:block;flex-shrink:0;"></div>
+
       <!-- Split layout -->
       <div class="fw-split" style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:start;opacity:1;visibility:visible;">
 
