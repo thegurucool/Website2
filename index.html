@@ -1152,6 +1152,18 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   </footer>
 <script>
 
+if (location.hash) {
+  history.replaceState(null, '', location.pathname + location.search);
+  window.scrollTo(0, 0);
+}
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a[href="#waitlist"]');
+  if (!link) return;
+  e.preventDefault();
+  const target = document.getElementById('waitlist');
+  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
 const obs = new IntersectionObserver(entries => {
   entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(()=>e.target.classList.add('in'),i*70); });
 },{threshold:0.08});
