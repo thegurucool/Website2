@@ -1152,7 +1152,11 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   </footer>
 <script>
 
-if (location.hash) {
+if (location.hash === '#waitlist') {
+  const wl = document.getElementById('waitlist');
+  if (wl) wl.scrollIntoView({ block: 'start' });
+  history.replaceState(null, '', location.pathname + location.search);
+} else if (location.hash) {
   history.replaceState(null, '', location.pathname + location.search);
   window.scrollTo(0, 0);
 }
