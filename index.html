@@ -1298,7 +1298,9 @@ async function submitWaitlist(e) {
     white-space: normal !important;
     word-spacing: normal !important;
   }
-  .feat-panels .screen-analytics {
+  .feat-panels .screen-analytics,
+  .feat-panels .screen-assessment,
+  .feat-panels .screen-coach {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
@@ -1315,6 +1317,20 @@ async function submitWaitlist(e) {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: .5rem !important;
+  }
+  .feat-panels .san-stat-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: .5rem !important;
+  }
+  .feat-panels .san-table-head,
+  .feat-panels .san-table-row {
+    grid-template-columns: 1fr 50px 50px 50px !important;
+    gap: .35rem !important;
+    font-size: .58rem !important;
+  }
+  .feat-panels .screen-coach > div > div[style*="grid-template-columns:repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 </style>
