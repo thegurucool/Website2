@@ -1304,14 +1304,14 @@ async function submitWaitlist(e) {
   section.how .how-steps::before { display: none !important; }
   section.how .how-steps > div[style*="position:absolute"] { display: none !important; }
   section.how .how-step { padding: 0 1rem !important; }
-  .framework-section .fw-split {
+  section.framework .fw-split {
     grid-template-columns: 1fr !important;
     gap: 2.5rem !important;
   }
-  .framework-section .fw-split > div[style*="writing-mode"],
-  .framework-section .fw-split > div:nth-child(2) { display: none !important; }
-  .framework-section .fw-found-label,
-  .framework-section .fw-domains > div:first-child {
+  section.framework .fw-split > div[style*="writing-mode"],
+  section.framework .fw-split > div:nth-child(2) { display: none !important; }
+  section.framework .fw-found-label,
+  section.framework .fw-domains > div:first-child {
     letter-spacing: 1px !important;
     font-size: .75rem !important;
     white-space: normal !important;
