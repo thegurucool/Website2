@@ -41,8 +41,7 @@ thegurucool.ai is an AI-powered teacher professional development platform for K-
 ```
 
 ### Typography
-- **Body / UI:** Montserrat (Google Fonts) — weights 300, 400, 600, 700
-- **Display / Headings:** Instrument Serif (Google Fonts) — regular and italic
+- **All text:** Montserrat (Google Fonts) — weights 300, 400, 500, 600, 700, plus italic 300/400
 - **No other fonts.** Do not introduce Inter, Roboto, or system fonts.
 
 ### Logo
@@ -221,7 +220,7 @@ Post pages also need:
 
 ### Teacher view (3 panels):
 1. **Competency Assessment** — 140 scenario-based questions, 7 domains, 25 minutes
-2. **AI Tutor Chat** — Guide / Analyst / Examiner modes
+2. **GuruCool, your personal AI Tutor** — Guide / Analyst / Examiner modes
 3. **Personal Dashboard** — domain scores, earned badges, next milestone
 
 ### School view (3 panels):
@@ -247,4 +246,4 @@ Post pages also need:
 - The TEACH-AI framework domain names or academic citations
 - The waitlist form structure (fields: name, email, country, role)
 - The brand colour palette
-- The font stack (Montserrat + Instrument Serif only)
+- The font stack (Montserrat only)
