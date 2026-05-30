@@ -197,7 +197,7 @@ footer p{font-size:.78rem;color:rgba(240,237,232,.3);font-weight:300;}
 .post-cat{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--orange);background:rgba(244,123,90,.1);border:1px solid rgba(244,123,90,.2);padding:.25rem .7rem;border-radius:50px;margin-bottom:1rem;}
 .post-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:400;color:var(--chalk);line-height:1.2;margin-bottom:.8rem;}
 .post-meta{font-size:.8rem;color:rgba(240,237,232,.4);}
-.post-thumb{width:100%;max-height:480px;object-fit:cover;display:block;}
+.post-thumb{width:100%;max-height:720px;object-fit:cover;display:block;}
 .post-body-wrap{max-width:680px;margin:0 auto;padding:3rem 1.75rem 6rem;}
 .post-body-wrap h2{font-family:'Montserrat',sans-serif;font-size:1.85rem;font-weight:400;color:var(--black);margin:2.8rem 0 1rem;line-height:1.25;}
 .post-body-wrap h3{font-size:1.1rem;font-weight:700;color:var(--black);margin:2rem 0 .75rem;}
