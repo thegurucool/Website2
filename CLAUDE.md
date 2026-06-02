@@ -11,6 +11,8 @@ thegurucool.ai is an AI-powered teacher professional development platform for K-
 ```
 /
 ├── index.html          # Home page
+├── teachers.html       # /teachers — product page for K-12 teachers
+├── schools.html        # /schools — product page for school leaders
 ├── blog.html           # Blog index (all posts listed)
 ├── style.css           # Shared stylesheet — all pages link to this
 ├── CLAUDE.md           # This file
@@ -22,8 +24,12 @@ thegurucool.ai is an AI-powered teacher professional development platform for K-
     ├── vietnam-reform.html
     ├── singapore-teachers.html
     ├── india-burnout.html
-    └── did-anyone-learn.html
+    ├── did-anyone-learn.html
+    ├── homework-broken.html
+    └── mandatory-cpd-teacher-professional-development-industries.html
 ```
+
+All pages share the same nav: **Home · For Teachers · For Schools · Blog · Join waitlist (CTA)**. The CTA label varies — "Join waitlist" on most pages, "Request early access" on `schools.html`.
 
 ---
 
@@ -146,27 +152,50 @@ Valid `data-cat` values: `research`, `policy`, `wellbeing`, `opinion`
 
 | Section | ID / Class | Notes |
 |---|---|---|
-| Nav | `<nav>` | Fixed. Contains logo, Home, Blog, Join waitlist CTA |
-| Hero | `.hero.ruled-bg` | Dark bg. H1, sub, CTA button, browser mockup |
-| Platform toggle | `#panels-teacher` / `#panels-school` | JS `switchView()` shows/hides on click |
+| Nav | `<nav>` | Fixed. Contains logo, Home, For Teachers, For Schools, Blog, Join waitlist CTA |
+| Hero | `.hero.ruled-bg` | Dark bg. H1 (Montserrat 400, italic `<em>` accent in orange), sub, CTA button, browser mockup |
+| Marquee | `.marquee` | Horizontal scrolling tagline strip |
 | TEACH-AI Framework | `.framework-section` | Dark bg. Split layout: foundations left, domains right |
 | How it works | `.how-section` | 4 steps with animated circles on scroll |
-| Home CTA | `.home-cta` | Dark bg. Links to `#waitlist` anchor |
-| Waitlist form | `#waitlist` | Light bg. Submit calls `submitWL()`, shows success state |
+| Waitlist form | `#waitlist` | Light bg. Submit calls `submitWaitlist()`, posts to Brevo, shows success state |
 | Footer | `<footer>` | Dark bg |
+
+The "Built for teachers. Visible to schools." platform toggle section (formerly `#panels-teacher` / `#panels-school` with `switchToggle()`) was removed from `index.html`. The teacher and school panel HTML now lives on `teachers.html` and `schools.html` respectively, always visible (no toggle).
 
 ---
 
-## JavaScript Functions (index.html)
+## Key Sections on teachers.html and schools.html
+
+Both subpages share the same scaffold:
+
+| Section | Class | Notes |
+|---|---|---|
+| Nav | `<nav>` | Same nav as homepage. Mark the current page's link with `class="active"` |
+| Hero | `.sub-hero` | Dark bg. Breadcrumb · eyebrow pill · H1 (italic `<em>` accent) · sub copy · orange CTA · trust line · image on right |
+| Pain (teachers) / Problem (schools) | `.pain` / `.problem` | Light bg. Copy left + 2×2 `.stat-grid` of `.stat-card` on right |
+| Product blocks | `.product-blocks` | Three `.feat-panel` blocks, lifted verbatim from the old homepage toggle |
+| Use cases (schools only) | `.use-cases` | Three `.uc-card` grid (Principals / HODs / EdTech) |
+| Waitlist | `.wl-section` | Submits to same Brevo endpoint as homepage |
+| Footer | `<footer>` | Identical to homepage |
+
+The dashboard mockups inside the product blocks (`.screen-analytics`, `.san-*`, `.screen-coach`) are interactive HTML/CSS, not static images — keep the inline `<style>` block for these classes in each subpage.
+
+The schools hero right column references `/images/school-dashboard.png` with an `onerror` fallback to a placeholder div. Replace the placeholder when the real image is uploaded.
+
+---
+
+## JavaScript Functions (index.html, teachers.html, schools.html)
 
 ```js
-switchToggle('teacher' | 'school')
-// Toggles platform panels. Applies inline styles to buttons.
-// DO NOT use CSS classes for toggle state — inline styles only.
+submitWaitlist(event)
+// All three pages share this function. POSTs the form to the Brevo
+// (sibforms.com) endpoint via fetch with `mode: 'no-cors'`, hides
+// #wl-form-body and shows #wl-success on completion.
+// Note: no-cors means the JS can't actually verify Brevo accepted
+// the submission — the success state shows whenever the request is
+// dispatched. Verify in the Brevo dashboard.
 
-submitWaitlist()
-// Hides #wl-form-body, shows #wl-success.
-// Connect to actual email service (Brevo/Mailchimp) when ready.
+toggleChip2(el)  // index.html only — chip-style role picker on the homepage waitlist.
 ```
 
 ## JavaScript Functions (blog.html)
@@ -242,8 +271,15 @@ Post pages also need:
 
 ## Do Not Change Without Asking
 
-- The logo base64 string
 - The TEACH-AI framework domain names or academic citations
-- The waitlist form structure (fields: name, email, country, role)
-- The brand colour palette
-- The font stack (Montserrat only)
+- The Brevo (sibforms.com) endpoint URL inside `submitWaitlist()`
+- The brand colour palette (`--black`, `--orange`, `--paper`, `--chalk`, etc.)
+- The font stack (Montserrat only — no Fraunces, DM Sans, Inter, Roboto, or system fonts)
+- The nav structure across pages (must stay consistent)
+
+### Waitlist form fields by page
+- `index.html`: FIRSTNAME, LASTNAME, EMAIL, SCHOOL, ROLE (chips)
+- `teachers.html`: FIRSTNAME, EMAIL, SCHOOL, ROLE (select), COUNTRY
+- `schools.html`: FIRSTNAME, LASTNAME, EMAIL, SCHOOL, ROLE, COUNTRY, NUMTEACHERS
+
+Field names are uppercase to match Brevo's expected contact attribute keys. Unmapped fields (e.g. NUMTEACHERS) are silently dropped by Brevo until configured in the dashboard.

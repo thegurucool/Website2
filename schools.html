@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Schools | AI Readiness &amp; Teacher Development | theGurucool.ai</title>
+<meta name="description" content="GuruCool gives school leaders a live view of teacher AI readiness across every department — with tools to assign development, track progress, and close the gaps that matter."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://thegurucool.ai/schools"/>
+<meta property="og:title" content="For Schools | theGurucool.ai"/>
+<meta property="og:description" content="Know exactly where your teachers stand on AI — and what to do about it."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* === Page-specific === */
+.sub-hero{background:var(--black);padding:8rem 2.5rem 5rem;position:relative;}
+.sub-hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.sub-breadcrumb{font-size:.78rem;color:rgba(240,237,232,.4);margin-bottom:1.5rem;font-family:'Montserrat',sans-serif;}
+.sub-breadcrumb a{color:rgba(240,237,232,.4);text-decoration:none;transition:color .15s;}
+.sub-breadcrumb a:hover{color:var(--orange);}
+.sub-breadcrumb .sep{margin:0 .5rem;color:rgba(240,237,232,.25);}
+.sub-eyebrow-pill{display:inline-block;background:rgba(244,123,90,.12);border:1px solid rgba(244,123,90,.25);color:var(--orange);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.8px;padding:.35rem .85rem;border-radius:50px;margin-bottom:1.5rem;font-family:'Montserrat',sans-serif;}
+.sub-hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.15;color:var(--chalk);margin-bottom:1.5rem;letter-spacing:-.5px;}
+.sub-hero h1 em{font-style:italic;color:var(--orange);}
+.sub-hero-sub{font-size:1rem;color:var(--chalk-dim);line-height:1.7;font-weight:300;margin-bottom:2rem;max-width:520px;}
+.sub-hero-trust{margin-top:1.8rem;font-size:.78rem;color:rgba(240,237,232,.35);line-height:1.6;font-weight:300;}
+.sub-hero-img-wrap img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.06);}
+.sub-hero-img-placeholder{aspect-ratio:16/10;background:linear-gradient(135deg,#1a1a1a,#2a2a2a);border:1px dashed rgba(244,123,90,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;color:rgba(240,237,232,.4);font-size:.85rem;text-align:center;padding:2rem;}
+
+/* === Problem section === */
+.problem{padding:6rem 2.5rem;background:var(--paper);}
+.problem-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.sub-section-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--orange);margin-bottom:1rem;font-family:'Montserrat',sans-serif;display:block;}
+.problem h2{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;line-height:1.2;color:var(--black);margin-bottom:1.5rem;letter-spacing:-.3px;}
+.problem p{font-size:1rem;color:#1f1f1f;line-height:1.75;margin-bottom:1.1rem;font-weight:400;}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.stat-card{background:var(--black);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.6rem 1.4rem;box-shadow:0 6px 24px rgba(0,0,0,.12);}
+.stat-card-n{font-family:'Montserrat',sans-serif;font-size:2.2rem;font-weight:700;color:var(--orange);line-height:1;margin-bottom:.6rem;letter-spacing:-1px;}
+.stat-card .stat-card-n.txt{font-size:1.2rem;letter-spacing:0;}
+.stat-card-l{font-size:.85rem;color:var(--chalk-dim);line-height:1.55;font-weight:400;}
+
+/* === Product blocks === */
+.product-blocks{padding:6rem 2.5rem;background:var(--paper);}
+.product-blocks-inner{max-width:1160px;margin:0 auto;}
+.pb-header{text-align:center;margin-bottom:4rem;}
+.pb-header h2{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;color:var(--black);letter-spacing:-.3px;margin-bottom:.75rem;}
+.feat-panels{display:flex;flex-direction:column;gap:5rem;}
+
+/* === Screen mockups (lifted from index inline) === */
+.screen-analytics{background:#161616;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.25),0 0 0 1px rgba(255,255,255,.06);}
+.san-topbar{background:#0F0F0F;padding:.7rem 1rem;display:flex;align-items:center;gap:.5rem;border-bottom:1px solid rgba(255,255,255,.06);}
+.san-dots{display:flex;gap:4px;}
+.sa-dot{width:9px;height:9px;border-radius:50%;}
+.san-title{font-size:.72rem;color:var(--scr-muted);margin:0 auto;font-family:'Montserrat',sans-serif;}
+.san-body{padding:1.2rem;}
+.san-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1rem;min-width:0;}
+.san-stat-row-3{grid-template-columns:repeat(3,1fr);}
+.san-heading{font-size:.88rem;font-weight:600;color:var(--scr-text);margin-bottom:.3rem;font-family:'Montserrat',sans-serif;}
+.san-subhead{font-size:.68rem;color:var(--scr-muted);margin-bottom:1rem;font-family:'Montserrat',sans-serif;}
+.san-stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1.2rem;}
+.san-stat{background:var(--scr-card);border-radius:8px;padding:.7rem;text-align:center;border:1px solid rgba(255,255,255,.08);}
+.san-stat-n{font-size:1.1rem;font-weight:700;color:var(--orange);font-family:'Montserrat',sans-serif;}
+.san-stat-l{font-size:.6rem;color:var(--scr-muted);font-family:'Montserrat',sans-serif;}
+.san-table-head{display:grid;grid-template-columns:1fr 80px 80px 70px;gap:.5rem;padding:.3rem .5rem;font-size:.62rem;color:var(--scr-muted);text-transform:uppercase;letter-spacing:.4px;font-family:'Montserrat',sans-serif;}
+.san-table-row{display:grid;grid-template-columns:1fr 80px 80px 70px;gap:.5rem;padding:.5rem .5rem;border-radius:6px;font-family:'Montserrat',sans-serif;align-items:center;}
+.san-table-row:hover{background:rgba(255,255,255,.04);}
+.san-teacher-name{font-size:.72rem;color:var(--scr-text);display:flex;align-items:center;gap:.4rem;}
+.san-teacher-emo{font-size:.85rem;}
+.san-score{font-size:.72rem;font-weight:600;color:var(--orange);text-align:center;}
+.san-badge-count{font-size:.72rem;color:var(--scr-muted);text-align:center;}
+.san-status{font-size:.62rem;padding:.18rem .45rem;border-radius:50px;text-align:center;font-weight:600;}
+.san-status.on-track{background:rgba(74,222,128,.12);color:#4ADE80;}
+.san-status.needs-att{background:rgba(244,123,90,.12);color:var(--orange);}
+.screen-coach{background:#161616;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.25),0 0 0 1px rgba(255,255,255,.06);}
+.screen-coach .sc-topbar{background:#0F0F0F;padding:.7rem 1rem;display:flex;align-items:center;gap:.6rem;border-bottom:1px solid rgba(255,255,255,.06);}
+.screen-coach .sc-dots{display:flex;gap:4px;}
+.screen-coach .sc-name{font-size:.75rem;font-weight:600;color:var(--scr-text);font-family:'Montserrat',sans-serif;margin:0;background:none;border:none;padding:0;border-radius:0;}
+
+/* === Use cases === */
+.use-cases{padding:6rem 2.5rem;background:var(--paper);}
+.use-cases-inner{max-width:1160px;margin:0 auto;}
+.uc-header{text-align:center;margin-bottom:3.5rem;}
+.uc-header h2{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;color:var(--black);letter-spacing:-.3px;margin-bottom:.75rem;}
+.uc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.uc-card{background:var(--white);border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:2rem 1.75rem;box-shadow:0 2px 14px rgba(0,0,0,.03);display:flex;flex-direction:column;gap:.9rem;}
+.uc-role{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--orange);font-family:'Montserrat',sans-serif;}
+.uc-title{font-family:'Montserrat',sans-serif;font-size:1.15rem;font-weight:600;color:var(--black);line-height:1.3;letter-spacing:-.2px;}
+.uc-body{font-size:.92rem;color:#444;line-height:1.65;font-weight:400;}
+
+/* === Waitlist === */
+.wl-section{background:var(--black);padding:5rem 2.5rem 6rem;}
+.wl-wrap{max-width:540px;margin:0 auto;}
+.wl-header{text-align:center;margin-bottom:2.5rem;}
+.wl-header .sub-section-label{margin-bottom:.6rem;}
+.wl-header h2{font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:700;color:var(--chalk);margin-bottom:.5rem;letter-spacing:-.3px;}
+.wl-header p{font-size:.92rem;color:var(--chalk-dim);line-height:1.6;}
+.wl-reassure{max-width:520px;margin:0 auto 2rem;text-align:center;font-size:.88rem;color:var(--chalk-dim);line-height:1.7;font-style:italic;}
+.wl-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:2.5rem;box-shadow:0 8px 40px rgba(0,0,0,.3);}
+.wl-row{margin-bottom:1.2rem;}
+.wl-row.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.wl-label{display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;}
+.wl-input,.wl-select{width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;}
+.wl-select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23666' d='M6 8L0 0h12z'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right 1rem center;background-size:10px;padding-right:2.5rem;}
+.wl-submit{width:100%;padding:1rem;background:var(--orange);color:#fff;border:none;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:3px 3px 0 #111;display:block;}
+.wl-note{font-size:.72rem;color:#9A9A9A;text-align:center;margin-top:.9rem;line-height:1.6;}
+
+.nav-link.active{color:var(--chalk);}
+
+/* === Responsive === */
+@media(max-width:900px){
+  .sub-hero{padding:6rem 1.5rem 3.5rem;}
+  .sub-hero-inner,.problem-inner{grid-template-columns:1fr;gap:2.5rem;}
+  .stat-grid{grid-template-columns:1fr 1fr;}
+  .problem,.product-blocks,.use-cases,.wl-section{padding-left:1.5rem;padding-right:1.5rem;}
+  .feat-panels{gap:3.5rem;}
+  .feat-panel{grid-template-columns:1fr;gap:2rem;text-align:center;}
+  .feat-panel.reverse{direction:ltr;}
+  .feat-panel .fp-chips{justify-content:center;}
+  .screen-analytics,.screen-coach{width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;}
+  .san-stat-row{grid-template-columns:repeat(2,1fr);}
+  .san-table-head,.san-table-row{grid-template-columns:1fr 50px 50px 50px;gap:.35rem;font-size:.58rem;}
+  .uc-grid{grid-template-columns:1fr;}
+  .wl-section{padding:3rem 1.5rem 4rem;}
+  .wl-card{padding:1.8rem;}
+}
+@media(max-width:560px){
+  .stat-grid{grid-template-columns:1fr;}
+  .wl-row.grid-2{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><img src="/images/logo.png" alt="theGurucool.ai — Teacher Professional Development Platform"></a>
+  <div class="nav-links">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="teachers.html">For Teachers</a>
+    <a class="nav-link active" href="schools.html">For Schools</a>
+    <a class="nav-link" href="blog.html">Blog</a>
+    <a class="nav-link nav-cta" href="#waitlist">Request early access</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="sub-hero">
+  <div class="sub-hero-inner">
+    <div>
+      <div class="sub-breadcrumb"><a href="index.html">Home</a><span class="sep">/</span>For Schools</div>
+      <span class="sub-eyebrow-pill">For School Leaders</span>
+      <h1>See every teacher's growth. <em>Close every gap.</em></h1>
+      <p class="sub-hero-sub">Finally know where every teacher stands and give them a clear path to grow. GuruCool makes teacher professional development measurable, structured, and visible across your whole school.</p>
+      <a class="sub-hero-cta" href="#waitlist">Request early access for your school <span>→</span></a>
+    </div>
+    <div class="sub-hero-img-wrap">
+      <img src="/images/school-dashboard.webp" alt="School overview dashboard preview" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="sub-hero-img-placeholder" style="display:none;">School dashboard preview coming soon</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="problem-inner">
+    <div>
+      <span class="sub-section-label">The visibility gap</span>
+      <h2>Most schools are flying blind on teacher AI readiness</h2>
+      <p>AI is already in your classrooms, in the tools students use, the assessments teachers set, and the lessons being generated overnight. The question is no longer whether your teachers are using AI. It's whether they're using it well.</p>
+      <p>But when was the last time you had data on that?</p>
+      <p>Most PD programmes track attendance, not competency. They tell you who showed up, not who grew. GuruCool changes that, starting with a 140-question diagnostic that gives your school a live view of readiness, gaps, and progress you can act on.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-card-n">7</div><div class="stat-card-l">AI competency domains assessed across every teacher in your school</div></div>
+      <div class="stat-card"><div class="stat-card-n txt">Live</div><div class="stat-card-l">Dashboard updates as teachers complete their diagnostics and lessons</div></div>
+      <div class="stat-card"><div class="stat-card-n txt">Fully automated</div><div class="stat-card-l">No manual reports. PD hours, progress and competencies tracked automatically.</div></div>
+      <div class="stat-card"><div class="stat-card-n txt">No workshops</div><div class="stat-card-l">Every learning path is bite-sized and self-paced. No scheduling, no rooms, no lost teaching days.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT BLOCKS (lifted from panels-school) -->
+<section class="product-blocks">
+  <div class="product-blocks-inner">
+    <div class="pb-header">
+      <span class="sub-section-label">Inside the platform</span>
+      <h2>What schools get</h2>
+    </div>
+    <div class="feat-panels">
+      <!-- S1: Assigning PD -->
+      <div class="feat-panel r">
+        <div class="fp-text">
+          <div class="fp-num">01</div>
+          <div class="fp-title">Assign Professional Development</div>
+          <div class="fp-desc">HODs can assign specific learning paths to individual teachers or whole departments, set target completion dates, and track progress in real time. No more chasing people to attend workshops.</div>
+          <div class="fp-chips"><span class="fp-chip">For HODs</span><span class="fp-chip accent">Assign by domain</span><span class="fp-chip">Set deadlines</span></div>
+        </div>
+        <div class="screen-analytics">
+          <div class="san-topbar"><div class="san-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><div class="san-title">Assign PD · Science Department</div></div>
+          <div class="san-body">
+            <div class="san-heading">Assign Learning Path</div>
+            <div class="san-subhead">Select domain and assign to teachers</div>
+            <div style="background:rgba(244,123,90,.08);border:1px solid rgba(244,123,90,.2);border-radius:8px;padding:.7rem;margin-bottom:.8rem;display:flex;align-items:center;justify-content:space-between;">
+              <div style="font-size:.72rem;color:var(--scr-text);font-weight:600;">Ethics and Responsibility Path</div>
+              <div style="font-size:.62rem;color:var(--orange);background:rgba(244,123,90,.15);padding:.2rem .6rem;border-radius:50px;">8 lessons</div>
+            </div>
+            <div class="san-table-head"><span>Teacher</span><span style="text-align:center">Current</span><span style="text-align:center">Assign</span><span style="text-align:center">Due</span></div>
+            <div class="san-table-row"><div class="san-teacher-name"><span class="san-teacher-emo">👩‍🏫</span> Ms. Lim W.Y.</div><div style="font-size:.72rem;color:var(--scr-muted);text-align:center;">55%</div><div style="text-align:center;"><div style="width:16px;height:16px;border-radius:4px;background:var(--orange);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:white;">✓</div></div><div style="font-size:.62rem;color:var(--scr-muted);text-align:center;">Jun 30</div></div>
+            <div class="san-table-row"><div class="san-teacher-name"><span class="san-teacher-emo">👨‍🏫</span> Mr. Reyes J.M.</div><div style="font-size:.72rem;color:var(--scr-muted);text-align:center;">48%</div><div style="text-align:center;"><div style="width:16px;height:16px;border-radius:4px;background:var(--orange);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:white;">✓</div></div><div style="font-size:.62rem;color:var(--scr-muted);text-align:center;">Jun 30</div></div>
+            <div class="san-table-row"><div class="san-teacher-name"><span class="san-teacher-emo">👩‍🏫</span> Ms. Priya N.</div><div style="font-size:.72rem;color:var(--scr-muted);text-align:center;">41%</div><div style="text-align:center;"><div style="width:16px;height:16px;border-radius:4px;background:rgba(255,255,255,.1);margin:0 auto;"></div></div><div style="font-size:.62rem;color:var(--scr-muted);text-align:center;">–</div></div>
+            <div style="margin-top:.8rem;display:flex;justify-content:flex-end;"><button class="sa-next-btn">Assign to selected</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- S2: Individual Teacher Analytics -->
+      <div class="feat-panel reverse r">
+        <div class="fp-text">
+          <div class="fp-num">02</div>
+          <div class="fp-title">Individual Teacher Analytics</div>
+          <div class="fp-desc">Drill down into any teacher's competency profile. See their scores across all 7 domains, their learning history, badges earned, and where they need the most support. Data to have better conversations.</div>
+          <div class="fp-chips"><span class="fp-chip accent">Per teacher</span><span class="fp-chip">Domain breakdown</span><span class="fp-chip">Progress over time</span></div>
+        </div>
+        <div class="screen-coach">
+          <div class="sc-topbar"><div class="sc-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><span class="sc-name" style="font-size:.72rem;">Teacher Profile · Ms. Priya N.</span></div>
+          <div style="padding:1rem;">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1rem;">
+              <div class="san-stat"><div class="san-stat-n">52%</div><div class="san-stat-l">AI Score</div></div>
+              <div class="san-stat"><div class="san-stat-n">6</div><div class="san-stat-l">Lessons</div></div>
+              <div class="san-stat"><div class="san-stat-n">1</div><div class="san-stat-l">Badge</div></div>
+              <div class="san-stat"><div class="san-stat-n">3 wks</div><div class="san-stat-l">Active</div></div>
+            </div>
+            <div style="font-size:.68rem;font-weight:600;color:var(--scr-muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.6rem;">Domain Scores</div>
+            <div style="display:flex;flex-direction:column;gap:.45rem;">
+              <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Technology</span><span>68%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:68%;height:100%;background:var(--orange);border-radius:3px;"></div></div></div>
+              <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Ethics</span><span>41%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:41%;height:100%;background:var(--orange);opacity:.55;border-radius:3px;"></div></div></div>
+              <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Assessment Design</span><span>38%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:38%;height:100%;background:var(--orange);opacity:.4;border-radius:3px;"></div></div></div>
+              <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Inclusion</span><span>30%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:30%;height:100%;background:var(--orange);opacity:.3;border-radius:3px;"></div></div></div>
+            </div>
+            <div style="margin-top:.8rem;background:rgba(244,123,90,.08);border:1px solid rgba(244,123,90,.18);border-radius:8px;padding:.7rem;font-size:.68rem;color:rgba(240,237,232,.6);">
+              <span style="color:var(--orange);font-weight:700;">Recommended:</span> Assign Ethics and Inclusion paths before Q3 appraisal.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- S3: School-Level Dashboard -->
+      <div class="feat-panel r">
+        <div class="fp-text">
+          <div class="fp-num">03</div>
+          <div class="fp-title">School-Level Metrics</div>
+          <div class="fp-desc">A live view of your entire school's AI readiness. See overall scores, completion rates, top gaps by domain, and which departments are ahead or behind. Board-ready data at a glance.</div>
+          <div class="fp-chips"><span class="fp-chip">For principals</span><span class="fp-chip accent">Live data</span><span class="fp-chip">Board-ready</span></div>
+        </div>
+        <div class="screen-analytics">
+          <div class="san-topbar"><div class="san-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><div class="san-title">School Overview</div></div>
+          <div class="san-body">
+            <div class="san-heading">School AI Readiness · Q2 2026</div>
+            <div class="san-subhead">24 teachers across 6 departments</div>
+            <div class="san-stat-row">
+              <div class="san-stat"><div class="san-stat-n">68%</div><div class="san-stat-l">School avg</div></div>
+              <div class="san-stat"><div class="san-stat-n">47</div><div class="san-stat-l">Badges</div></div>
+              <div class="san-stat"><div class="san-stat-n">17/24</div><div class="san-stat-l">On track</div></div>
+              <div class="san-stat"><div class="san-stat-n">Ethics</div><div class="san-stat-l">Top gap</div></div>
+            </div>
+            <div style="font-size:.68rem;font-weight:600;color:var(--scr-muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.5rem;">By Department</div>
+            <div class="san-table-head"><span>Department</span><span style="text-align:center">Avg Score</span><span style="text-align:center">Badges</span><span style="text-align:center">Status</span></div>
+            <div class="san-table-row"><div class="san-teacher-name">📐 Mathematics</div><div class="san-score">78%</div><div class="san-badge-count">12</div><div class="san-status on-track">Leading</div></div>
+            <div class="san-table-row"><div class="san-teacher-name">🔬 Science</div><div class="san-score">68%</div><div class="san-badge-count">8</div><div class="san-status on-track">On track</div></div>
+            <div class="san-table-row"><div class="san-teacher-name">📚 English</div><div class="san-score">54%</div><div class="san-badge-count">4</div><div class="san-status needs-att">Needs support</div></div>
+            <div class="san-table-row"><div class="san-teacher-name">🌍 Humanities</div><div class="san-score">49%</div><div class="san-badge-count">3</div><div class="san-status needs-att">Needs support</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="use-cases">
+  <div class="use-cases-inner">
+    <div class="uc-header">
+      <span class="sub-section-label">Built for every school leader</span>
+      <h2>The decisions GuruCool helps you make</h2>
+    </div>
+    <div class="uc-grid">
+      <div class="uc-card">
+        <span class="uc-role">For Principals</span>
+        <div class="uc-title">School-wide AI readiness at a glance</div>
+        <p class="uc-body">Get a single view of where your school stands across all 7 competency domains, with the department-level breakdown you need to make resourcing decisions and report upward with confidence.</p>
+      </div>
+      <div class="uc-card">
+        <span class="uc-role">For Heads of Department</span>
+        <div class="uc-title">Close the gaps before appraisal season</div>
+        <p class="uc-body">See exactly where each teacher in your department stands. Assign targeted learning paths. Track progress in real time. Have development conversations grounded in data, not guesswork.</p>
+      </div>
+      <div class="uc-card">
+        <span class="uc-role">For EdTech Coordinators</span>
+        <div class="uc-title">One platform. Every teacher. Full visibility.</div>
+        <p class="uc-body">Replace scattered workshops and self-reported CPD logs with a structured, trackable programme, aligned to an internationally recognised framework and delivered through an AI tutor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST -->
+<section id="waitlist" class="wl-section">
+  <div class="wl-wrap">
+    <div class="wl-header">
+      <span class="sub-section-label">Early access</span>
+      <h2>Get your school on the list</h2>
+      <p>GuruCool is launching soon. Schools that join now get priority onboarding, pilot access, and direct input into what we build next.</p>
+    </div>
+    <p class="wl-reassure">Teachers are onboarded in under 30 minutes. No IT setup, no procurement process, no lost teaching time.</p>
+    <div class="wl-card" id="wl-card">
+      <div id="wl-form-body">
+        <form id="wl-form" onsubmit="submitWaitlist(event); return false;">
+          <div class="wl-row grid-2">
+            <div>
+              <label class="wl-label">First name</label>
+              <input class="wl-input" type="text" name="FIRSTNAME" placeholder="Siti" required/>
+            </div>
+            <div>
+              <label class="wl-label">Last name</label>
+              <input class="wl-input" type="text" name="LASTNAME" placeholder="Rahman" required/>
+            </div>
+          </div>
+          <div class="wl-row">
+            <label class="wl-label">Work email</label>
+            <input class="wl-input" type="email" name="EMAIL" placeholder="you@school.edu" required/>
+          </div>
+          <div class="wl-row">
+            <label class="wl-label">School name</label>
+            <input class="wl-input" type="text" name="SCHOOL" placeholder="Your school" required/>
+          </div>
+          <div class="wl-row">
+            <label class="wl-label">Role</label>
+            <select class="wl-select" name="ROLE" required>
+              <option value="">Select your role</option>
+              <option>Principal</option>
+              <option>Head of Department</option>
+              <option>EdTech Coordinator</option>
+              <option>PD Lead</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="wl-row grid-2">
+            <div>
+              <label class="wl-label">Country</label>
+              <select class="wl-select" name="COUNTRY" required>
+                <option value="">Select</option>
+                <option>Singapore</option>
+                <option>Malaysia</option>
+                <option>Philippines</option>
+                <option>Indonesia</option>
+                <option>Thailand</option>
+                <option>Vietnam</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="wl-label">Number of teachers</label>
+              <select class="wl-select" name="NUMTEACHERS" required>
+                <option value="">Select</option>
+                <option>Under 20</option>
+                <option>20–50</option>
+                <option>51–100</option>
+                <option>100+</option>
+              </select>
+            </div>
+          </div>
+          <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off"/>
+          <input type="hidden" name="locale" value="en"/>
+          <div style="height:1px;background:rgba(0,0,0,.06);margin:1.5rem 0;"></div>
+          <button class="wl-submit" type="submit">Request early access for my school →</button>
+          <p id="wl-error" style="display:none;font-size:.78rem;color:#c0392b;text-align:center;margin-top:.9rem;line-height:1.6;"></p>
+          <p class="wl-note">For principals, HODs, EdTech coordinators, and PD leads. We'll be in touch within 48 hours.</p>
+        </form>
+      </div>
+      <div id="wl-success" style="display:none;text-align:center;padding:2rem 1rem;">
+        <div style="font-size:3.5rem;margin-bottom:1.2rem;">🎉</div>
+        <div style="font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:700;color:#111;margin-bottom:.6rem;">You're on the list.</div>
+        <p style="font-size:.92rem;color:#555;line-height:1.75;max-width:340px;margin:0 auto;">We'll be in touch within 48 hours with next steps for your school.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo"><img src="/images/logo.png" alt="thegurucool.ai — Teacher Professional Development Platform" style="height:24px;width:auto;display:block;"></div>
+  <p>2026 · Built in Singapore for SEA classrooms</p>
+  <div class="footer-links"><a href="index.html">Home</a><a href="blog.html">Blog</a><a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener">LinkedIn</a><a href="#waitlist">Join waitlist</a></div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(()=>e.target.classList.add('in'),i*70); });
+},{threshold:0.08});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+
+async function submitWaitlist(e) {
+  if (e) e.preventDefault();
+  const form = document.getElementById('wl-form');
+  const errorEl = document.getElementById('wl-error');
+  errorEl.style.display = 'none';
+  const submitBtn = form.querySelector('button[type=submit]');
+  const originalLabel = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitting...';
+  try {
+    await fetch('https://9f12eeef.sibforms.com/serve/MUIFANVrOQmQpQTGcc-xuuOu6ylHLZBDyXuyrUjWbI0SYOM3aHU-2Vv8NBYNfU6nQ06nuHbbaZ3EN_Tf8sl0dPa5T3MqoofQ6VNToYcqJAaiaf9a1n84D_TF1b4MeEEYGWH15_CcORLq7OPDamIx-1sQk_0hnMNfsxBFdsCjoH1O5tVrr2JptrW5KdEtv5voYq3gIxy5kXnXmiaGCA==', {
+      method: 'POST',
+      mode: 'no-cors',
+      body: new URLSearchParams(new FormData(form))
+    });
+    document.getElementById('wl-form-body').style.display='none';
+    document.getElementById('wl-success').style.display='block';
+  } catch (err) {
+    errorEl.textContent = 'Something went wrong. Please try again.';
+    errorEl.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalLabel;
+  }
+}
+</script>
+</body>
+</html>

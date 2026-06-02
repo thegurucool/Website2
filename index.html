@@ -97,7 +97,7 @@ footer p{font-size:.78rem;color:rgba(240,237,232,.25);}
 .hero-inner>*{min-width:0;}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-family:'Montserrat',sans-serif;font-size:1.1rem;color:var(--orange);margin-bottom:1.5rem;}
 .hero-eyebrow::before{display:none;}
-h1{font-family:'Montserrat',sans-serif;font-size:clamp(2.8rem,5.5vw,4.8rem);line-height:1.06;color:var(--chalk);font-weight:700;margin-bottom:1.8rem;}
+h1{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,4vw,3.2rem);line-height:1.15;color:var(--chalk);font-weight:400;margin-bottom:1.8rem;}
 h1 em{font-style:italic;color:var(--orange);font-family:'Montserrat',sans-serif;}
 h1 .hl{position:relative;display:inline-block;}
 h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;height:12px;background:var(--orange);opacity:.22;z-index:-1;transform:rotate(-.5deg);}
@@ -636,40 +636,6 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   .fw-divider-badge{writing-mode:horizontal-tb;padding:.3rem .8rem;}
 }
 
-/* Platform toggle */
-.platform-toggle {
-  display:inline-flex;
-  background:#F47B5A;
-  border-radius:50px;
-  padding:.4rem;
-  gap:0;
-  box-shadow:0 4px 20px rgba(244,123,90,.4);
-}
-.ptoggle {
-  padding:.75rem 2.2rem;
-  border-radius:50px;
-  border:none;
-  font-family:'Montserrat',sans-serif;
-  font-size:.95rem;
-  font-weight:700;
-  color:rgba(255,255,255,.85);
-  background:transparent;
-  cursor:pointer;
-  transition:all .2s;
-  white-space:nowrap;
-  letter-spacing:.2px;
-}
-.ptoggle.active {
-  background:#ffffff;
-  color:#111111;
-  box-shadow:0 2px 12px rgba(0,0,0,.15);
-}
-.ptoggle:not(.active):hover {
-  color:#ffffff;
-  background:rgba(255,255,255,.15);
-}
-
-
 .wl-submit-btn {
   width:100%; padding:1rem;
   background:#111111; color:#FFFFFF;
@@ -707,6 +673,8 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   </a>
   <div class="nav-links">
     <a class="nav-link" id="nav-home" href="index.html">Home</a>
+    <a class="nav-link" id="nav-teachers" href="teachers.html">For Teachers</a>
+    <a class="nav-link" id="nav-schools" href="schools.html">For Schools</a>
     <a class="nav-link" id="nav-blog" href="blog.html">Blog</a>
     <a class="nav-link nav-cta" href="#waitlist">Join waitlist</a>
   </div>
@@ -720,7 +688,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
         <h1>Professional<br>development<br>that <em>actually</em> <span class="hl">works</span></h1>
         <p class="hero-sub">Teachers can now use AI to measure their skills across seven competencies, get personalised pathways to grow at their own pace, and earn credentials that actually mean something.</p>
         <div class="hero-btns">
-          <a class="btn-main" href="#waitlist">Join the waitlist</a>
+          <a class="sub-hero-cta" href="#waitlist">Join the waitlist <span>→</span></a>
         </div>
       </div>
       <div class="hero-screen-wrap r">
@@ -745,200 +713,6 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
     <span class="marquee-item">Bite-Sized Learning</span><span class="marquee-item marquee-sep">✦</span>
     <span class="marquee-item">Launching Q2 2026</span><span class="marquee-item marquee-sep">✦</span>
   </div></div>
-
-  <!-- FEATURE SCREENS -->
-  <div id="features-anchor"></div>
-  <section class="feat-screens">
-    <div class="feat-screens-inner">
-      <div class="fs-header r">
-        <span class="section-eyebrow">Inside the platform</span>
-        <h2>Built for teachers. <em>Visible</em> to schools.</h2>
-        <p class="body-copy" style="max-width:none">Two different views. One platform. Toggle between what teachers experience and what school leaders see.</p>
-      </div>
-
-      <!-- TOGGLE -->
-      <div style="display:flex;justify-content:center;margin:2.5rem 0 3.5rem;">
-        <div style="display:inline-flex;background:#F47B5A;border-radius:50px;padding:.28rem;gap:0;box-shadow:0 3px 16px rgba(244,123,90,.4);">
-          <button id="ptoggle-teacher" onclick="switchToggle('teacher')"
-            style="padding:.52rem 1.55rem;border-radius:50px;border:none;font-family:'Montserrat',sans-serif;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap;background:#ffffff;color:#111111;box-shadow:0 2px 8px rgba(0,0,0,.12);letter-spacing:.2px;">
-            For Teachers
-          </button>
-          <button id="ptoggle-school" onclick="switchToggle('school')"
-            style="padding:.52rem 1.55rem;border-radius:50px;border:none;font-family:'Montserrat',sans-serif;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s;white-space:nowrap;background:transparent;color:rgba(255,255,255,.92);letter-spacing:.2px;">
-            For Schools
-          </button>
-        </div>
-      </div>
-
-      <!-- TEACHER PANELS -->
-      <div class="feat-panels" id="panels-teacher">
-        <!-- T1: Competency Assessment -->
-        <div class="feat-panel r">
-          <div class="fp-text">
-            <div class="fp-num">01</div>
-            <div class="fp-title">Competency Assessment</div>
-            <div class="fp-desc">140 scenario-based questions across 7 TEACH-AI domains, grounded in Bloom's Taxonomy, TPACK, and UDL. Not a tick-box survey. A real diagnostic that reveals how you think about AI in your classroom.</div>
-            <div class="fp-chips"><span class="fp-chip">25 minutes</span><span class="fp-chip accent">140 questions</span><span class="fp-chip">7 domains</span></div>
-          </div>
-          <img src="/images/competency-assessment.png" alt="Competency Assessment screen" style="display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.25),0 0 0 1px rgba(255,255,255,.06);">
-        </div>
-
-        <!-- T2: GuruCool, your personal AI Tutor -->
-        <div class="feat-panel reverse r">
-          <div class="fp-text">
-            <div class="fp-num">02</div>
-            <div class="fp-title">GuruCool, your personal AI Tutor</div>
-            <div class="fp-desc">Your personal AI learning coach available any time. Three modes: Guide walks you through new concepts, Analyst breaks down your results, Examiner tests your understanding. Always contextualised to your classroom.</div>
-            <div class="fp-chips"><span class="fp-chip accent">Guide mode</span><span class="fp-chip accent">Analyst mode</span><span class="fp-chip accent">Examiner mode</span><span class="fp-chip">Always on</span></div>
-          </div>
-          <img src="/images/ai-tutor.png" alt="GuruCool AI Tutor chat screen" style="display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.25),0 0 0 1px rgba(255,255,255,.06);">
-        </div>
-
-        <!-- T3: Personal Dashboard -->
-        <div class="feat-panel r">
-          <div class="fp-text">
-            <div class="fp-num">03</div>
-            <div class="fp-title">Personal Dashboard</div>
-            <div class="fp-desc">See your progress across all 7 domains, your earned badges, and your next learning milestone. A growing portfolio of verified credentials that proves your professional development over time.</div>
-            <div class="fp-chips"><span class="fp-chip accent">Verified badges</span><span class="fp-chip">Domain progress</span><span class="fp-chip">Shareable</span></div>
-          </div>
-          <!-- Personal dashboard screen -->
-          <div class="screen-analytics">
-            <div class="san-topbar"><div class="san-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><div class="san-title">My Dashboard · Ms. Lim W.Y.</div></div>
-            <div class="san-body">
-              <div class="san-grid-2">
-                <div>
-                  <div class="san-heading">My TEACH-AI Score</div>
-                  <div class="san-subhead">Across 7 competency domains</div>
-                  <div class="san-stat-row san-stat-row-3">
-                    <div class="san-stat"><div class="san-stat-n">74%</div><div class="san-stat-l">Overall</div></div>
-                    <div class="san-stat"><div class="san-stat-n">12</div><div class="san-stat-l">Lessons</div></div>
-                    <div class="san-stat"><div class="san-stat-n">3</div><div class="san-stat-l">Badges</div></div>
-                  </div>
-                  <!-- progress bars -->
-                  <div style="display:flex;flex-direction:column;gap:.4rem;margin-top:.6rem;">
-                    <div><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Technology</span><span>78%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden;"><div style="width:78%;height:100%;background:var(--orange);border-radius:3px;"></div></div></div>
-                    <div><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Ethics</span><span>55%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden;"><div style="width:55%;height:100%;background:var(--orange);opacity:.6;border-radius:3px;"></div></div></div>
-                    <div><div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Assessment</span><span>41%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden;"><div style="width:41%;height:100%;background:var(--orange);opacity:.4;border-radius:3px;"></div></div></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="san-heading">My Badges</div>
-                  <div class="san-subhead">Verified credentials earned</div>
-                  <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.4rem;">
-                    <div style="background:rgba(244,123,90,.12);border:1px solid rgba(244,123,90,.25);border-radius:8px;padding:.5rem .7rem;display:flex;align-items:center;gap:.6rem;">
-                      <span style="font-size:1rem;">🏅</span>
-                      <div><div style="font-size:.68rem;font-weight:600;color:var(--orange);">AI Tech Integration</div><div style="font-size:.6rem;color:var(--scr-muted);">Level 2 · Verified</div></div>
-                    </div>
-                    <div style="background:rgba(244,123,90,.12);border:1px solid rgba(244,123,90,.25);border-radius:8px;padding:.5rem .7rem;display:flex;align-items:center;gap:.6rem;">
-                      <span style="font-size:1rem;">🏅</span>
-                      <div><div style="font-size:.68rem;font-weight:600;color:var(--orange);">Curriculum Design</div><div style="font-size:.6rem;color:var(--scr-muted);">Level 1 · Verified</div></div>
-                    </div>
-                    <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:.5rem .7rem;display:flex;align-items:center;gap:.6rem;">
-                      <span style="font-size:1rem;">🔒</span>
-                      <div><div style="font-size:.68rem;color:var(--scr-muted);">Ethics Badge</div><div style="font-size:.6rem;color:var(--scr-muted);">2 lessons away</div></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SCHOOL PANELS -->
-      <div class="feat-panels" id="panels-school" style="display:none;">
-
-        <!-- S1: Assigning PD -->
-        <div class="feat-panel r">
-          <div class="fp-text">
-            <div class="fp-num">01</div>
-            <div class="fp-title">Assign Professional Development</div>
-            <div class="fp-desc">HODs can assign specific learning paths to individual teachers or whole departments, set target completion dates, and track progress in real time. No more chasing people to attend workshops.</div>
-            <div class="fp-chips"><span class="fp-chip">For HODs</span><span class="fp-chip accent">Assign by domain</span><span class="fp-chip">Set deadlines</span></div>
-          </div>
-          <!-- PD Assignment screen -->
-          <div class="screen-analytics">
-            <div class="san-topbar"><div class="san-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><div class="san-title">Assign PD · Science Department</div></div>
-            <div class="san-body">
-              <div class="san-heading">Assign Learning Path</div>
-              <div class="san-subhead">Select domain and assign to teachers</div>
-              <div style="background:rgba(244,123,90,.08);border:1px solid rgba(244,123,90,.2);border-radius:8px;padding:.7rem;margin-bottom:.8rem;display:flex;align-items:center;justify-content:space-between;">
-                <div style="font-size:.72rem;color:var(--scr-text);font-weight:600;">Ethics and Responsibility Path</div>
-                <div style="font-size:.62rem;color:var(--orange);background:rgba(244,123,90,.15);padding:.2rem .6rem;border-radius:50px;">8 lessons</div>
-              </div>
-              <div class="san-table-head"><span>Teacher</span><span style="text-align:center">Current</span><span style="text-align:center">Assign</span><span style="text-align:center">Due</span></div>
-              <div class="san-table-row"><div class="san-teacher-name"><span class="san-teacher-emo">👩‍🏫</span> Ms. Lim W.Y.</div><div style="font-size:.72rem;color:var(--scr-muted);text-align:center;">55%</div><div style="text-align:center;"><div style="width:16px;height:16px;border-radius:4px;background:var(--orange);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:white;">✓</div></div><div style="font-size:.62rem;color:var(--scr-muted);text-align:center;">Jun 30</div></div>
-              <div class="san-table-row"><div class="san-teacher-name"><span class="san-teacher-emo">👨‍🏫</span> Mr. Reyes J.M.</div><div style="font-size:.72rem;color:var(--scr-muted);text-align:center;">48%</div><div style="text-align:center;"><div style="width:16px;height:16px;border-radius:4px;background:var(--orange);margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:white;">✓</div></div><div style="font-size:.62rem;color:var(--scr-muted);text-align:center;">Jun 30</div></div>
-              <div class="san-table-row"><div class="san-teacher-name"><span class="san-teacher-emo">👩‍🏫</span> Ms. Priya N.</div><div style="font-size:.72rem;color:var(--scr-muted);text-align:center;">41%</div><div style="text-align:center;"><div style="width:16px;height:16px;border-radius:4px;background:rgba(255,255,255,.1);margin:0 auto;"></div></div><div style="font-size:.62rem;color:var(--scr-muted);text-align:center;">–</div></div>
-              <div style="margin-top:.8rem;display:flex;justify-content:flex-end;"><button class="sa-next-btn">Assign to selected</button></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- S2: Individual Teacher Analytics -->
-        <div class="feat-panel reverse r">
-          <div class="fp-text">
-            <div class="fp-num">02</div>
-            <div class="fp-title">Individual Teacher Analytics</div>
-            <div class="fp-desc">Drill down into any teacher's competency profile. See their scores across all 7 domains, their learning history, badges earned, and where they need the most support. Data to have better conversations.</div>
-            <div class="fp-chips"><span class="fp-chip accent">Per teacher</span><span class="fp-chip">Domain breakdown</span><span class="fp-chip">Progress over time</span></div>
-          </div>
-          <div class="screen-coach">
-            <div class="sc-topbar"><div class="sc-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><span class="sc-name" style="font-size:.72rem;">Teacher Profile · Ms. Priya N.</span></div>
-            <div style="padding:1rem;">
-              <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1rem;">
-                <div class="san-stat"><div class="san-stat-n">52%</div><div class="san-stat-l">AI Score</div></div>
-                <div class="san-stat"><div class="san-stat-n">6</div><div class="san-stat-l">Lessons</div></div>
-                <div class="san-stat"><div class="san-stat-n">1</div><div class="san-stat-l">Badge</div></div>
-                <div class="san-stat"><div class="san-stat-n">3 wks</div><div class="san-stat-l">Active</div></div>
-              </div>
-              <div style="font-size:.68rem;font-weight:600;color:var(--scr-muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.6rem;">Domain Scores</div>
-              <div style="display:flex;flex-direction:column;gap:.45rem;">
-                <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Technology</span><span>68%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:68%;height:100%;background:var(--orange);border-radius:3px;"></div></div></div>
-                <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Ethics</span><span>41%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:41%;height:100%;background:var(--orange);opacity:.55;border-radius:3px;"></div></div></div>
-                <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Assessment Design</span><span>38%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:38%;height:100%;background:var(--orange);opacity:.4;border-radius:3px;"></div></div></div>
-                <div><div style="display:flex;justify-content:space-between;font-size:.66rem;color:var(--scr-muted);margin-bottom:.2rem;"><span>Inclusion</span><span>30%</span></div><div style="height:5px;background:rgba(255,255,255,.07);border-radius:3px;"><div style="width:30%;height:100%;background:var(--orange);opacity:.3;border-radius:3px;"></div></div></div>
-              </div>
-              <div style="margin-top:.8rem;background:rgba(244,123,90,.08);border:1px solid rgba(244,123,90,.18);border-radius:8px;padding:.7rem;font-size:.68rem;color:rgba(240,237,232,.6);">
-                <span style="color:var(--orange);font-weight:700;">Recommended:</span> Assign Ethics and Inclusion paths before Q3 appraisal.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- S3: School-Level Dashboard -->
-        <div class="feat-panel r">
-          <div class="fp-text">
-            <div class="fp-num">03</div>
-            <div class="fp-title">School-Level Metrics</div>
-            <div class="fp-desc">A live view of your entire school's AI readiness. See overall scores, completion rates, top gaps by domain, and which departments are ahead or behind. Board-ready data at a glance.</div>
-            <div class="fp-chips"><span class="fp-chip">For principals</span><span class="fp-chip accent">Live data</span><span class="fp-chip">Board-ready</span></div>
-          </div>
-          <div class="screen-analytics">
-            <div class="san-topbar"><div class="san-dots"><div class="sa-dot" style="background:#FF5F57"></div><div class="sa-dot" style="background:#FEBC2E"></div><div class="sa-dot" style="background:#28C840"></div></div><div class="san-title">School Overview</div></div>
-            <div class="san-body">
-              <div class="san-heading">School AI Readiness · Q2 2026</div>
-              <div class="san-subhead">24 teachers across 6 departments</div>
-              <div class="san-stat-row">
-                <div class="san-stat"><div class="san-stat-n">68%</div><div class="san-stat-l">School avg</div></div>
-                <div class="san-stat"><div class="san-stat-n">47</div><div class="san-stat-l">Badges</div></div>
-                <div class="san-stat"><div class="san-stat-n">17/24</div><div class="san-stat-l">On track</div></div>
-                <div class="san-stat"><div class="san-stat-n">Ethics</div><div class="san-stat-l">Top gap</div></div>
-              </div>
-              <div style="font-size:.68rem;font-weight:600;color:var(--scr-muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.5rem;">By Department</div>
-              <div class="san-table-head"><span>Department</span><span style="text-align:center">Avg Score</span><span style="text-align:center">Badges</span><span style="text-align:center">Status</span></div>
-              <div class="san-table-row"><div class="san-teacher-name">📐 Mathematics</div><div class="san-score">78%</div><div class="san-badge-count">12</div><div class="san-status on-track">Leading</div></div>
-              <div class="san-table-row"><div class="san-teacher-name">🔬 Science</div><div class="san-score">68%</div><div class="san-badge-count">8</div><div class="san-status on-track">On track</div></div>
-              <div class="san-table-row"><div class="san-teacher-name">📚 English</div><div class="san-score">54%</div><div class="san-badge-count">4</div><div class="san-status needs-att">Needs support</div></div>
-              <div class="san-table-row"><div class="san-teacher-name">🌍 Humanities</div><div class="san-score">49%</div><div class="san-badge-count">3</div><div class="san-status needs-att">Needs support</div></div>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- end panels-school -->
-    </div>
-  </section>
 
     <!-- FRAMEWORK -->
   <section class="framework">
@@ -1175,20 +949,6 @@ const obs = new IntersectionObserver(entries => {
   entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(()=>e.target.classList.add('in'),i*70); });
 },{threshold:0.08});
 document.querySelectorAll('.r').forEach(el=>obs.observe(el));
-
-function switchToggle(view) {
-  document.getElementById('panels-teacher').style.display = view === 'teacher' ? 'flex' : 'none';
-  document.getElementById('panels-school').style.display  = view === 'school'  ? 'flex' : 'none';
-  const tBtn = document.getElementById('ptoggle-teacher');
-  const sBtn = document.getElementById('ptoggle-school');
-  if (view === 'teacher') {
-    tBtn.style.background='#ffffff'; tBtn.style.color='#111111'; tBtn.style.boxShadow='0 2px 8px rgba(0,0,0,.12)';
-    sBtn.style.background='transparent'; sBtn.style.color='rgba(255,255,255,.92)'; sBtn.style.boxShadow='none';
-  } else {
-    sBtn.style.background='#ffffff'; sBtn.style.color='#111111'; sBtn.style.boxShadow='0 2px 8px rgba(0,0,0,.12)';
-    tBtn.style.background='transparent'; tBtn.style.color='rgba(255,255,255,.92)'; tBtn.style.boxShadow='none';
-  }
-}
 
 (function(){
   let animated=false;

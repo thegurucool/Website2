@@ -49,6 +49,8 @@ footer p{font-size:.78rem;color:rgba(240,237,232,.3);font-weight:300;}
 /* BUTTONS */
 .btn-main{background:var(--orange);color:#fff;border:none;border-radius:50px;padding:.75rem 2rem;font-family:'Montserrat',sans-serif;font-size:.9rem;font-weight:700;cursor:pointer;transition:opacity .15s;text-decoration:none;display:inline-block;}
 .btn-main:hover{opacity:.9;}
+.sub-hero-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--orange);color:#fff;border:none;border-radius:50px;padding:.85rem 1.8rem;font-family:'Montserrat',sans-serif;font-size:.92rem;font-weight:700;text-decoration:none;transition:opacity .15s;cursor:pointer;}
+.sub-hero-cta:hover{opacity:.9;}
 .btn-outline{background:transparent;color:var(--chalk);border:1.5px solid rgba(240,237,232,.3);border-radius:50px;padding:.7rem 1.8rem;font-family:'Montserrat',sans-serif;font-size:.88rem;font-weight:600;cursor:pointer;transition:all .15s;text-decoration:none;display:inline-block;}
 .btn-outline:hover{border-color:var(--orange);color:var(--orange);}
 
