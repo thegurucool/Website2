@@ -513,8 +513,12 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
    RESPONSIVE
    ============================================================ */
 @media(max-width:900px){
-  nav{padding:.9rem 1.4rem;}
-  .nav-link:not(.nav-cta){display:none;}
+  nav{padding:.9rem 1.4rem;flex-wrap:wrap;}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:#0A0A0A;border-bottom:1px solid rgba(240,237,232,.1);padding:.75rem 1.4rem 1rem;gap:0;}
+  .nav-links .nav-link{padding:.85rem 0;font-size:1rem;border-bottom:1px solid rgba(240,237,232,.06);}
+  .nav-links .nav-link:last-child{border-bottom:none;}
+  .nav-links .nav-cta{margin-top:.6rem;text-align:center;padding:.75rem 1.3rem;}
+  #nav-toggle:checked ~ .nav-links{display:flex;}
   .hero{padding:6rem 1.5rem 3rem;}
   .wl-top{padding:5rem 1.5rem 3rem;}
   .wl-perks-inner{grid-template-columns:1fr 1fr;}
@@ -672,7 +676,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
     <img alt="theGurucool.ai - AI-powered teacher professional development" src="/images/logo.png" alt="thegurucool.ai" style="height:32px;width:auto;display:block;">
   </a>
   <input type="checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">☰</label>
+  <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu"><span></span></label>
   <div class="nav-links">
     <a class="nav-link" id="nav-home" href="index.html">Home</a>
     <a class="nav-link" id="nav-teachers" href="teachers.html">For Teachers</a>
