@@ -1,0 +1,63 @@
+# theGurucool.ai
+
+> AI-powered teacher professional development platform for K-12 educators across Southeast Asia and India.
+
+thegurucool.ai helps teachers build verified AI competency through personalised learning, scenario-based assessment, and a structured framework (TEACH-AI). It is built for classroom practitioners, not administrators.
+
+## Product
+
+- Competency Assessment: 140 scenario-based questions across 7 domains, completed in ~25 minutes
+- AI Tutor (GuruCool): Three modes — Guide, Analyst, Examiner — for personalised learning
+- Personal Dashboard: Domain scores, earned badges, and next milestone tracking
+- School Dashboard: HOD-level assignment, per-teacher analytics, and school-wide metrics
+
+## The TEACH-AI Framework
+
+Seven competency domains grounded in four evidence-based pedagogical foundations (Bloom's Taxonomy, TPACK, UDL, Hattie's Visible Learning):
+
+- T — Technology Integration
+- E — Ethics and Responsibility
+- A — Assessment Design
+- C — Curriculum and Content
+- H — Human-AI Collaboration
+- A — Adaptive Teaching
+- I — Inclusion and Equity
+
+## Audience
+
+- K-12 classroom teachers seeking structured AI professional development
+- School leaders and HODs managing teacher growth at scale
+- EdTech coordinators and curriculum designers
+
+## Geography
+
+Southeast Asia (Singapore, Philippines, Indonesia, Malaysia, Vietnam, Thailand) and India.
+
+## Status
+
+Pilot stage, Q2 2026. Waitlist open at https://thegurucool.ai/
+
+## Pages
+
+- [Home](https://thegurucool.ai/)
+- [For Teachers](https://thegurucool.ai/teachers)
+- [For Schools](https://thegurucool.ai/schools)
+- [Blog](https://thegurucool.ai/blog)
+
+## Blog Posts
+
+- [What Singapore's $5.5 Billion AI Bet Means for Every Teacher in the Classroom](https://thegurucool.ai/blog/singapore-ai-ambition-teacher-professional-development)
+- [What Does Medicine Know About Professional Development That Teaching Still Hasn't Figured Out?](https://thegurucool.ai/blog/mandatory-cpd-teacher-professional-development-industries)
+- [The Homework Problem AI Just Broke](https://thegurucool.ai/blog/homework-broken)
+- [AI Can Give Teachers 6 Hours Back Every Week. So Why Are Most Still Not Using It?](https://thegurucool.ai/blog/ai-6-hours)
+- [AI Is Now in Asian Classrooms. Are Teachers Actually Ready for It?](https://thegurucool.ai/blog/ai-asian-classrooms)
+- [Philippines DepEd AI Guidelines 2026: What It Means for Teachers](https://thegurucool.ai/blog/philippines-deped)
+- [1 in 5 Teachers Is Struggling Financially.](https://thegurucool.ai/blog/teachers-financial)
+- [Vietnam's 2026 Teacher Reform: Salary, Hiring and PD](https://thegurucool.ai/blog/vietnam-reform)
+- [What Singapore's Startup Success Can Teach Us About Growing Better Teachers](https://thegurucool.ai/blog/singapore-teachers)
+- [If No One Changed Their Mind, Did Anyone Learn?](https://thegurucool.ai/blog/did-anyone-learn)
+- [Private School Teachers in India Are Burning Out. Here's Why.](https://thegurucool.ai/blog/india-burnout)
+
+## Contact
+
+admin@thegurucool.ai
