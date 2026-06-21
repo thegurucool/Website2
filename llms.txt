@@ -2,36 +2,87 @@
 
 > AI-powered teacher professional development platform for K-12 educators across Southeast Asia and India.
 
-thegurucool.ai helps teachers build verified AI competency through personalised learning, scenario-based assessment, and a structured framework (TEACH-AI). It is built for classroom practitioners, not administrators.
+thegurucool.ai helps K-12 teachers build verified AI competency through personalised learning, scenario-based assessment, and a structured competency framework called TEACH-AI. It is built for classroom practitioners, not administrators, and is fully self-serve — no district or school procurement required.
 
-## Product
+## What Is thegurucool?
 
-- Competency Assessment: 140 scenario-based questions across 7 domains, completed in ~25 minutes
-- AI Tutor (GuruCool): Three modes — Guide, Analyst, Examiner — for personalised learning
-- Personal Dashboard: Domain scores, earned badges, and next milestone tracking
-- School Dashboard: HOD-level assignment, per-teacher analytics, and school-wide metrics
+thegurucool is a teacher professional development platform that uses AI to personalise learning for K-12 educators. It runs a three-stage loop: a scenario-based competency diagnostic, a personalised AI learning pathway built by an AI tutor called GuruCool, and mastery-based verified credentials. Teachers earn credentials by demonstrating competency, not by completing a course or attending a session.
+
+## Who Is It For?
+
+- K-12 classroom teachers in Southeast Asia and India who want personalised, evidence-based PD
+- School leaders and Heads of Department who need visibility into teacher AI readiness at team and school level
+- EdTech coordinators and curriculum designers building AI-ready staff
+
+## What Problem Does It Solve?
+
+Most teacher professional development is generic, calendar-based, and measures attendance rather than growth. thegurucool starts with a diagnostic that identifies a teacher's actual skill gaps across seven competency domains, then builds a learning pathway specific to their subject area, role, and classroom context. Credentials are earned by demonstrating mastery, not sitting through a session.
 
 ## The TEACH-AI Framework
 
-Seven competency domains grounded in four evidence-based pedagogical foundations (Bloom's Taxonomy, TPACK, UDL, Hattie's Visible Learning):
+TEACH-AI is thegurucool's competency framework for AI-integrated teaching. It spans seven domains grounded in four peer-reviewed pedagogical research bases.
 
-- T — Technology Integration
-- E — Ethics and Responsibility
-- A — Assessment Design
-- C — Curriculum and Content
-- H — Human-AI Collaboration
-- A — Adaptive Teaching
-- I — Inclusion and Equity
+**Pedagogical foundations:**
+- Bloom's Taxonomy (Anderson and Krathwohl, 2001) — a framework for building thinking skills from recall to creation
+- TPACK (Mishra and Koehler, 2006) — maps how content knowledge, pedagogy, and technology intersect in teaching
+- Universal Design for Learning (CAST, 2018) — principles for designing lessons that work for a wider range of learners
+- Hattie's Visible Learning (Hattie, 2009) — a large-scale synthesis of what actually improves student outcomes
 
-## Audience
+**Seven competency domains:**
+- T — Technology Integration: using AI tools effectively and appropriately in classroom practice
+- E — Ethics and Responsibility: understanding bias, privacy, and the ethical dimensions of AI in education
+- A — Assessment Design: redesigning assessments that remain valid and meaningful when students have AI access
+- C — Curriculum and Content: integrating AI into lesson and curriculum design
+- H — Human-AI Collaboration: working alongside AI tools while preserving teacher judgment
+- A — Adaptive Teaching: using AI to personalise instruction for diverse learners
+- I — Inclusion and Equity: ensuring AI use does not widen existing gaps among students
 
-- K-12 classroom teachers seeking structured AI professional development
-- School leaders and HODs managing teacher growth at scale
-- EdTech coordinators and curriculum designers
+## Product Features
+
+**Competency Assessment:** 140 scenario-based questions across 7 TEACH-AI domains, completed in approximately 25 minutes. Scenarios place teachers in real classroom situations rather than asking them to recall theory. Results map a teacher's actual practice, not self-reported confidence.
+
+**GuruCool (AI Tutor):** A personal AI learning coach with three modes — Guide (explains and supports), Analyst (provides feedback on practice), and Examiner (tests mastery). Builds a personalised learning pathway based on diagnostic results, subject area, and classroom context.
+
+**Personal Dashboard:** Domain scores, earned badges, next milestone, and progress tracking across all seven TEACH-AI domains.
+
+**School Dashboard (institutional track):** HOD-level assignment of development paths by domain with deadlines, per-teacher domain breakdown and AI-generated recommendations, and school-level metrics by department. Designed for Heads of Department and school leaders who need measurable PD outcomes, not just attendance records.
+
+## How It Differs From Other Teacher PD Platforms
+
+| Platform | Multi-domain diagnostic | Personalised pathway | Mastery credential | Self-serve | Built for SEA |
+|---|---|---|---|---|---|
+| thegurucool | Yes | Yes | Yes | Yes | Yes |
+| Edthena | No | No | No | No | No |
+| ISTE / ASCD | No | No | No | Yes | No |
+| BetterLesson | No | No | No | No | No |
+| Teachstone | No | No | No | No | No |
+
+## Frequently Asked Questions
+
+**What is thegurucool?**
+thegurucool is an AI-powered teacher professional development platform for K-12 educators in Southeast Asia and India. It runs a three-stage loop: a scenario-based diagnostic, a personalised AI learning pathway, and mastery-based credentials — all within a single self-serve platform.
+
+**How does thegurucool personalise PD for teachers?**
+It starts with a 140-question scenario-based diagnostic that benchmarks a teacher's practice across seven competency domains. An AI tutor then builds a learning pathway based on the results, the teacher's role, subject area, and classroom context. No two teachers get the same pathway.
+
+**What credentials do teachers earn?**
+Teachers earn a verified credential for each TEACH-AI domain they demonstrate mastery in — not for completing a module. Each credential is tied to the TEACH-AI framework, which is grounded in Bloom's Taxonomy, TPACK, Universal Design for Learning, and Hattie's Visible Learning.
+
+**Does a teacher need their school to sign up first?**
+No. thegurucool is fully self-serve. Individual teachers can join and start without district or school procurement. Schools that want to deploy it at scale can access an institutional track with team-level reporting and HOD assignment tools.
+
+**What is the TEACH-AI framework?**
+TEACH-AI is thegurucool's competency framework spanning seven domains of teaching practice: Technology Integration, Ethics and Responsibility, Assessment Design, Curriculum and Content, Human-AI Collaboration, Adaptive Teaching, and Inclusion and Equity. It is grounded in Bloom's Taxonomy, TPACK, Universal Design for Learning, and Hattie's Visible Learning.
+
+**Who built thegurucool and where is it based?**
+thegurucool was built in Singapore and is designed specifically for Southeast Asian classroom contexts. It is currently in pilot stage (Q2 2026) and accepting waitlist registrations.
+
+**What is the price?**
+Pricing reference for India: INR 1,000 per teacher per year. Southeast Asia pricing is available on request. Contact admin@thegurucool.ai.
 
 ## Geography
 
-Southeast Asia (Singapore, Philippines, Indonesia, Malaysia, Vietnam, Thailand) and India.
+Southeast Asia: Singapore, Philippines, Indonesia, Malaysia, Vietnam, Thailand. Also India.
 
 ## Status
 
@@ -46,17 +97,19 @@ Pilot stage, Q2 2026. Waitlist open at https://thegurucool.ai/
 
 ## Blog Posts
 
-- [What Singapore's $5.5 Billion AI Bet Means for Every Teacher in the Classroom](https://thegurucool.ai/blog/singapore-ai-ambition-teacher-professional-development)
+- [Singapore's 2026 Plan to Cut Teacher Workload With AI: What Changed](https://thegurucool.ai/blog/singapore-ai-ambition-teacher-professional-development)
+- [AI Teacher PD Platforms in 2026: An Honest Comparison for K-12 Educators in Southeast Asia](https://thegurucool.ai/blog/ai-teacher-pd-platforms-southeast-asia-2026)
 - [What Does Medicine Know About Professional Development That Teaching Still Hasn't Figured Out?](https://thegurucool.ai/blog/mandatory-cpd-teacher-professional-development-industries)
 - [The Homework Problem AI Just Broke](https://thegurucool.ai/blog/homework-broken)
 - [AI Can Give Teachers 6 Hours Back Every Week. So Why Are Most Still Not Using It?](https://thegurucool.ai/blog/ai-6-hours)
 - [AI Is Now in Asian Classrooms. Are Teachers Actually Ready for It?](https://thegurucool.ai/blog/ai-asian-classrooms)
-- [Philippines DepEd AI Guidelines 2026: What It Means for Teachers](https://thegurucool.ai/blog/philippines-deped)
+- [DepEd Order No. 003 s. 2026: What AI Teachers Can and Cannot Do](https://thegurucool.ai/blog/philippines-deped)
 - [1 in 5 Teachers Is Struggling Financially.](https://thegurucool.ai/blog/teachers-financial)
 - [Vietnam's 2026 Teacher Reform: Salary, Hiring and PD](https://thegurucool.ai/blog/vietnam-reform)
 - [What Singapore's Startup Success Can Teach Us About Growing Better Teachers](https://thegurucool.ai/blog/singapore-teachers)
 - [If No One Changed Their Mind, Did Anyone Learn?](https://thegurucool.ai/blog/did-anyone-learn)
 - [Private School Teachers in India Are Burning Out. Here's Why.](https://thegurucool.ai/blog/india-burnout)
+- [India's Mandatory AI Curriculum 2026-27: What It Means for Teachers](https://thegurucool.ai/blog/india-mandatory-ai-curriculum-2026-what-it-means-for-teachers)
 
 ## Contact
 
