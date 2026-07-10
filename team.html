@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Team | theGurucool.ai</title>
+<meta name="description" content="Meet the founders of thegurucool.ai: a serial edtech founder with three exits and an operator who has built technology organisations at global scale."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://thegurucool.ai/team"/>
+<meta property="og:title" content="The Team | theGurucool.ai"/>
+<meta property="og:description" content="Enterprise delivery and education ecosystem experience. Two founders who have spent decades building systems that actually scale in Asia."/>
+<meta property="og:url" content="https://thegurucool.ai/team"/>
+<meta property="og:image" content="https://thegurucool.ai/images/OGimage.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://thegurucool.ai/images/OGimage.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* === Team hero === */
+.team-hero{background:var(--black);padding:8rem 2.5rem 5rem;}
+.team-hero-inner{max-width:1160px;margin:0 auto;}
+.team-eyebrow{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--orange);margin-bottom:1rem;font-family:'Montserrat',sans-serif;display:block;}
+.team-hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:400;color:var(--chalk);line-height:1.15;letter-spacing:-.5px;margin-bottom:1rem;}
+.team-hero-sub{font-size:1rem;color:var(--chalk-dim);line-height:1.75;font-weight:300;max-width:680px;}
+
+/* === Founder cards === */
+.team-section{background:var(--black);padding:0 2.5rem 7rem;}
+.team-grid{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;}
+
+.founder-card{background:#1c1c1c;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:2.5rem 2.25rem;display:flex;flex-direction:column;}
+
+.founder-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--orange);margin-bottom:1.5rem;display:block;}
+.founder-initials{width:120px;height:120px;border-radius:50%;background:#2a2a2a;border:3px solid var(--orange);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:1.5rem;font-weight:700;color:var(--orange);letter-spacing:.5px;flex-shrink:0;}
+
+.founder-name{font-family:'Montserrat',sans-serif;font-size:1.6rem;font-weight:700;color:var(--chalk);letter-spacing:-.3px;margin-bottom:.3rem;}
+.founder-role{font-style:italic;color:var(--orange);font-size:.95rem;font-weight:400;margin-bottom:1.25rem;font-family:'Montserrat',sans-serif;}
+.founder-bio{font-size:.95rem;color:rgba(240,237,232,.75);line-height:1.75;margin-bottom:1.4rem;font-weight:300;}
+
+.founder-highlights{list-style:none;margin-bottom:1.5rem;display:flex;flex-direction:column;gap:.7rem;}
+.founder-highlights li{font-size:.88rem;color:var(--chalk-dim);line-height:1.6;padding-left:1.25rem;position:relative;}
+.founder-highlights li::before{content:"›";position:absolute;left:0;color:var(--orange);font-weight:700;font-size:1rem;}
+
+/* === Expandable === */
+details.founder-more{margin-bottom:1.5rem;}
+details.founder-more summary{cursor:pointer;color:var(--orange);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.6px;list-style:none;font-family:'Montserrat',sans-serif;user-select:none;}
+details.founder-more summary::-webkit-details-marker{display:none;}
+details.founder-more summary::after{content:" +";font-size:.85rem;}
+details.founder-more[open] summary::after{content:" −";}
+details.founder-more p{color:var(--chalk-dim);font-size:.88rem;line-height:1.75;margin-top:.85rem;font-weight:300;}
+
+/* === LinkedIn button === */
+.founder-linkedin{margin-top:auto;display:inline-block;color:var(--chalk);text-decoration:none;font-size:.8rem;font-weight:600;font-family:'Montserrat',sans-serif;letter-spacing:.3px;border:1px solid rgba(255,255,255,.15);padding:.65rem 1.25rem;border-radius:6px;width:fit-content;transition:border-color .15s,color .15s;}
+.founder-linkedin:hover{border-color:var(--orange);color:var(--orange);}
+
+/* === Banner === */
+.team-banner{max-width:1160px;margin:2.5rem auto 0;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.5rem 2rem;text-align:center;color:var(--chalk-dim);font-size:.95rem;line-height:1.7;font-weight:300;}
+.team-banner strong{color:var(--chalk);font-weight:600;}
+
+/* === Active nav === */
+.nav-link.active{color:var(--chalk);}
+
+/* === Responsive === */
+@media(max-width:900px){
+  .team-hero{padding:6rem 1.5rem 3.5rem;}
+  .team-section{padding:0 1.5rem 5rem;}
+  .team-grid{grid-template-columns:1fr;gap:1.5rem;}
+  .team-banner{margin-top:1.5rem;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><picture><source srcset="/images/logo.webp" type="image/webp"><img src="/images/logo.png" alt="theGurucool.ai — Teacher Professional Development Platform"></picture></a>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+  <div class="nav-links">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="teachers.html">For Teachers</a>
+    <a class="nav-link" href="schools.html">For Schools</a>
+    <a class="nav-link" href="blog.html">Blog</a>
+    <a class="nav-link active" href="team.html">Team</a>
+    <a class="nav-login" href="login.html">Log in</a>
+    <a class="nav-link nav-cta" href="index.html#waitlist">Join waitlist</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="team-hero">
+  <div class="team-hero-inner">
+    <span class="team-eyebrow">The Team</span>
+    <h1>Built by people who have done this before.</h1>
+    <p class="team-hero-sub">A serial edtech founder with three exits, and an operator who has built and run technology organizations at global scale. thegurucool pairs deep education-ecosystem roots in Asia with enterprise-grade execution.</p>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="team-section">
+  <div class="team-grid">
+
+    <!-- Neelesh Bhatia -->
+    <div class="founder-card">
+      <div class="founder-initials" aria-label="Neelesh Bhatia">NB</div>
+      <h2 class="founder-name">Neelesh Bhatia</h2>
+      <p class="founder-role">Founder &amp; CEO</p>
+      <p class="founder-bio">Serial founder with three exits and 20+ years building ventures and innovation ecosystems across Asia. Neelesh founded AKADASIA, Southeast Asia's largest educator community. thegurucool is his second venture built for teachers, in a market he knows first-hand.</p>
+      <ul class="founder-highlights">
+        <li>Founded AKADASIA, Southeast Asia's largest educator community</li>
+        <li>Architected UniVentures, Vietnam's largest virtual incubator, with 1,000+ startups supported concurrently</li>
+        <li>Former Director of Strategy, NUS Enterprise BLOCK71, scaling startup ecosystems across Southeast Asia</li>
+        <li>5 startups founded, 3 successful exits</li>
+      </ul>
+      <details class="founder-more">
+        <summary>More about Neelesh</summary>
+        <p>Neelesh has spent two decades at the intersection of education and entrepreneurship in Asia: teaching at Singapore Polytechnic, designing national-scale incubation programmes, and building products that put educators first. A regular speaker at EDUtech Asia and across the regional edtech circuit, he brings an unmatched network of schools, universities and education ministries to thegurucool's mission of preparing every teacher for the AI era.</p>
+      </details>
+      <a class="founder-linkedin" href="https://www.linkedin.com/in/neeleshbhatia/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+    </div>
+
+    <!-- May Yang -->
+    <div class="founder-card">
+      <div class="founder-initials" aria-label="May Yang">MY</div>
+      <h2 class="founder-name">May Yang</h2>
+      <p class="founder-role">Co-Founder &amp; COO</p>
+      <p class="founder-bio">15 years building and running technology businesses across Asia, Europe and the US, from standing up a 5-person startup office to leading global operations for 13,000 people. At thegurucool, May leads product delivery and operations, working hands-on with the engineering team to build the platform.</p>
+      <ul class="founder-highlights">
+        <li>Led global operations at Synechron: delivery, workforce and platform automation across 13,000 employees</li>
+        <li>C-suite leadership in digital transformation and enterprise AI adoption, most recently as President, North America (Synechron)</li>
+        <li>Led M&amp;A due diligence and integration across UK and Europe, delivering $30M in synergies</li>
+        <li>Advisory Board member, Brighter Children, supporting schools in developing countries</li>
+      </ul>
+      <details class="founder-more">
+        <summary>More about May</summary>
+        <p>May's career spans every stage of scale: launching Synechron's Singapore and Hong Kong offices, building its UK hub from 5 to 300 people, running global operations for 13,000 employees, and leading its largest region as President, North America. An engineer by training (BA Chemical and Biomolecular Engineering, NTU) with an MBA from Columbia Business School and London Business School, she drove Synechron's automation, AI adoption and process-optimization agenda, experience she now applies directly to building thegurucool's platform and operations.</p>
+      </details>
+      <a class="founder-linkedin" href="https://www.linkedin.com/in/may-yang-sg/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+    </div>
+
+  </div>
+
+  <div class="team-banner">
+    <strong>Enterprise delivery + education ecosystem experience.</strong> Two founders who have spent decades building systems that actually scale in Asia.
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo"><img src="/images/logo.png" alt="thegurucool.ai — Teacher Professional Development Platform" style="height:24px;width:auto;display:block;"></div>
+  <p>2026 · Built in Singapore for SEA classrooms</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="team.html">Team</a>
+    <a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="security.html">Security Policy</a>
+    <a href="index.html#waitlist">Join waitlist</a>
+  </div>
+</footer>
+</body>
+</html>
