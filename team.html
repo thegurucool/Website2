@@ -21,8 +21,9 @@
 .team-hero{background:var(--black);padding:8rem 2.5rem 5rem;}
 .team-hero-inner{max-width:1160px;margin:0 auto;}
 .team-eyebrow{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--orange);margin-bottom:1rem;font-family:'Montserrat',sans-serif;display:block;}
+.team-hero-text{display:table;}
 .team-hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:400;color:var(--chalk);line-height:1.15;letter-spacing:-.5px;margin-bottom:1rem;}
-.team-hero-sub{font-size:1rem;color:var(--chalk-dim);line-height:1.75;font-weight:300;max-width:680px;}
+.team-hero-sub{font-size:1rem;color:var(--chalk-dim);line-height:1.75;font-weight:300;}
 
 /* === Founder cards === */
 .team-section{background:var(--black);padding:0 2.5rem 7rem;}
@@ -89,8 +90,10 @@ details.founder-more p{color:var(--chalk-dim);font-size:.88rem;line-height:1.75;
 <section class="team-hero">
   <div class="team-hero-inner">
     <span class="team-eyebrow">The Team</span>
-    <h1>Built by people who have done this before.</h1>
-    <p class="team-hero-sub">A serial edtech founder with three exits, and an operator who has built and run technology organizations at global scale. thegurucool pairs deep education-ecosystem roots in Asia with enterprise-grade execution.</p>
+    <div class="team-hero-text">
+      <h1>Built by people who have done this before.</h1>
+      <p class="team-hero-sub">A serial edtech founder with three exits, and an operator who has built and run technology organizations at global scale. thegurucool pairs deep education-ecosystem roots in Asia with enterprise-grade execution.</p>
+    </div>
   </div>
 </section>
 
