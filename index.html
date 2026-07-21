@@ -116,7 +116,7 @@ html{scroll-behavior:smooth;}
   --black:#111111;
   --board:#111111;
   --board-dark:#0A0A0A;
-  --orange:#F47B5A;
+  --orange:#FF7F50;
   --white:#FFFFFF;
   --grey:#EFEFEF;
   --mid-grey:#9A9A9A;
@@ -242,7 +242,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .phone-question{font-size:.64rem;color:var(--scr-text);line-height:1.5;margin-bottom:.6rem;font-family:'Montserrat',sans-serif;}
 .phone-opts{display:flex;flex-direction:column;gap:.3rem;}
 .phone-opt{font-size:.6rem;padding:.35rem .5rem;border-radius:6px;color:var(--scr-muted);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);font-family:'Montserrat',sans-serif;}
-.phone-opt.chosen{background:rgba(244,123,90,.18);border-color:rgba(244,123,90,.4);color:var(--orange);}
+.phone-opt.chosen{background:rgba(244,123,90,.18);border-color:rgba(255,127,80,.4);color:var(--orange);}
 .coach-float{position:absolute;top:30px;right:-40px;width:190px;background:#1A1A1A;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:.9rem;box-shadow:0 12px 40px rgba(0,0,0,.4);z-index:3;animation:phoneFloat 5s ease-in-out infinite .5s;}
 .cf-header{display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem;}
 .cf-avatar{width:22px;height:22px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;}
@@ -365,7 +365,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .step-circle.active{background:var(--orange);border-color:var(--orange);color:#fff;transform:scale(1.1);}
 .how-step:hover .step-circle{background:var(--orange);border-color:var(--orange);}
 .how-step h4{font-family:'Montserrat',sans-serif;font-size:1.15rem;font-weight:400;font-style:italic;color:var(--chalk);margin-bottom:.5rem;}
-.how-step p{font-size:.83rem;color:var(--chalk-dim);line-height:1.65;font-weight:300;}
+.how-step p{font-size:.9rem;color:var(--chalk-dim);line-height:1.65;font-weight:300;}
 
 /* voices */
 .voices{padding:6rem 2.5rem;background:var(--paper);}
@@ -664,7 +664,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 }
 .fw-divider-line{
   width:1px;flex:1;
-  background:linear-gradient(180deg,transparent,rgba(244,123,90,.4),transparent);
+  background:linear-gradient(180deg,transparent,rgba(255,127,80,.4),transparent);
   min-height:60px;
 }
 .fw-divider-badge{
@@ -703,7 +703,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 @media(max-width:900px){
   .fw-split{grid-template-columns:1fr;gap:3rem;}
   .fw-divider-col{flex-direction:row;padding:0;}
-  .fw-divider-line{flex:1;height:1px;min-height:0;width:auto;background:linear-gradient(90deg,transparent,rgba(244,123,90,.4),transparent);}
+  .fw-divider-line{flex:1;height:1px;min-height:0;width:auto;background:linear-gradient(90deg,transparent,rgba(255,127,80,.4),transparent);}
   .fw-divider-badge{writing-mode:horizontal-tb;padding:.3rem .8rem;}
 }
 
@@ -712,11 +712,11 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   background:#111111; color:#FFFFFF;
   border:none; border-radius:8px;
   font-family:'Montserrat',sans-serif; font-size:.95rem; font-weight:600; letter-spacing:.2px;
-  cursor:pointer; box-shadow:3px 3px 0 #F47B5A;
+  cursor:pointer; box-shadow:3px 3px 0 #FF7F50;
   transition:transform .15s, box-shadow .15s;
   display:block;
 }
-.wl-submit-btn:hover { transform:translate(-2px,-2px); box-shadow:5px 5px 0 #F47B5A; }
+.wl-submit-btn:hover { transform:translate(-2px,-2px); box-shadow:5px 5px 0 #FF7F50; }
 
 /* ====== POST READER ====== */
 .post-back{display:inline-flex;align-items:center;gap:.5rem;color:rgba(240,237,232,.45);font-size:.8rem;cursor:pointer;border:none;background:none;font-family:'Montserrat',sans-serif;margin-bottom:2rem;padding:0;transition:color .2s;}
@@ -796,7 +796,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 
 <span class="eyebrow">The TEACH-AI Framework</span>
 <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:400;color:var(--chalk);text-align:center;margin:0 auto 1.2rem;max-width:600px;line-height:1.3;">Grounded in pedagogy. <em style="font-style:italic;color:#FF7F50;">Built for real classrooms.</em></h2>
-<p style="color:var(--chalk-dim);text-align:center;max-width:560px;margin:0 auto 3rem;line-height:1.7;font-size:.95rem;">TEACH-AI&#8482; doesn't just reference educational frameworks, it turns them into measurable competencies, personalised learning pathways, and verified outcomes. This is not a theory. This is applied, trackable progress.</p>
+<p style="color:var(--chalk-dim);text-align:center;max-width:640px;margin:0 auto 3rem;line-height:1.7;font-size:.9rem;">TEACH-AI&#8482; doesn't just reference educational frameworks, it turns them into measurable competencies, personalised learning pathways, and verified outcomes. This is not a theory. This is applied, trackable progress.</p>
 
 <div style="max-width:700px;margin:0 auto 2.5rem;">
   <p style="font-size:.72rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#8A8880;text-align:center;margin-bottom:.6rem;">Built on the world's most trusted frameworks</p>
@@ -844,7 +844,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 
         <!-- Animated progress line -->
         <div style="position:absolute;top:28px;left:calc(12.5% - 0px);right:calc(12.5% - 0px);height:2px;background:rgba(240,237,232,.1);z-index:0;border-radius:2px;">
-          <div id="how-progress-line" style="height:100%;width:0%;background:linear-gradient(90deg,#F47B5A,rgba(244,123,90,.4));border-radius:2px;transition:width 1.8s cubic-bezier(.4,0,.2,1);"></div>
+          <div id="how-progress-line" style="height:100%;width:0%;background:linear-gradient(90deg,#FF7F50,rgba(255,127,80,.4));border-radius:2px;transition:width 1.8s cubic-bezier(.4,0,.2,1);"></div>
         </div>
 
         <div class="how-step r" data-step="1">
@@ -918,7 +918,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
           <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off"/>
           <input type="hidden" name="locale" value="en"/>
           <div style="height:1px;background:rgba(0,0,0,.06);margin-bottom:1.5rem;"></div>
-          <button type="submit" class="wl-submit-btn" style="width:100%;padding:1rem;background:#111111;color:#FFFFFF;border:none;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:3px 3px 0 #F47B5A;display:block;">Reserve my spot on the waitlist</button>
+          <button type="submit" class="wl-submit-btn" style="width:100%;padding:1rem;background:#111111;color:#FFFFFF;border:none;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:3px 3px 0 #FF7F50;display:block;">Reserve my spot on the waitlist</button>
           <p id="wl-error" style="display:none;font-size:.78rem;color:#c0392b;text-align:center;margin-top:.9rem;line-height:1.6;"></p>
           <p style="font-size:.72rem;color:#9A9A9A;text-align:center;margin-top:.9rem;line-height:1.6;">By joining, you agree to receive product updates from theGurucool.ai. Unsubscribe any time.</p>
           </form>
@@ -927,8 +927,8 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
         <div id="wl-success" style="display:none;text-align:center;padding:2.5rem 1rem;">
           <div style="font-size:3.5rem;margin-bottom:1.2rem;">🎉</div>
           <div style="font-family:'Montserrat',sans-serif;font-size:2.2rem;font-weight:700;color:#111;margin-bottom:.6rem;">You're on the list.</div>
-          <p style="font-size:.92rem;color:#555;line-height:1.75;max-width:340px;margin:0 auto;">We'll be in touch before launch with your early access link. Keep an eye on your inbox.<br><br>Follow our build-in-public journey on <a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener" style="color:#F47B5A;text-decoration:none;font-weight:600;">LinkedIn</a>.</p>
-          <a href="blog.html" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:1.8rem;background:#F47B5A;color:white;padding:.75rem 1.6rem;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;">Read the blog →</a>
+          <p style="font-size:.92rem;color:#555;line-height:1.75;max-width:340px;margin:0 auto;">We'll be in touch before launch with your early access link. Keep an eye on your inbox.<br><br>Follow our build-in-public journey on <a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener" style="color:#FF7F50;text-decoration:none;font-weight:600;">LinkedIn</a>.</p>
+          <a href="blog.html" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:1.8rem;background:#FF7F50;color:white;padding:.75rem 1.6rem;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;">Read the blog →</a>
         </div>
       </div>
     </div>
@@ -997,8 +997,8 @@ function toggleChip2(el) {
   });
   if (!wasActive) {
     el.setAttribute('data-chosen','1');
-    el.style.background='rgba(244,123,90,0.08)'; el.style.borderColor='#F47B5A';
-    el.style.color='#F47B5A'; el.style.fontWeight='500';
+    el.style.background='rgba(255,127,80,0.08)'; el.style.borderColor='#FF7F50';
+    el.style.color='#FF7F50'; el.style.fontWeight='500';
     document.getElementById('wl-role').value = el.textContent.trim();
   } else {
     document.getElementById('wl-role').value = '';
