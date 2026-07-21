@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The TEACH-AI Framework | thegurucool.ai</title>
+<meta name="description" content="TEACH-AI is thegurucool's proprietary competency framework for K-12 teacher AI readiness, built around seven domains and a multi-level proficiency scale. Built on Bloom's Taxonomy, TPACK, Universal Design for Learning, and Hattie's Visible Learning."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://thegurucool.ai/teach-ai-framework"/>
+<meta property="og:title" content="The TEACH-AI Framework | thegurucool.ai"/>
+<meta property="og:description" content="TEACH-AI is thegurucool's proprietary competency framework for K-12 teacher AI readiness, built around seven domains and a multi-level proficiency scale."/>
+<meta property="og:image" content="https://thegurucool.ai/images/OGimage.png"/>
+<meta property="og:url" content="https://thegurucool.ai/teach-ai-framework"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="The TEACH-AI Framework | thegurucool.ai"/>
+<meta name="twitter:image" content="https://thegurucool.ai/images/OGimage.png"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "TEACH-AI framework",
+  "description": "TEACH-AI is thegurucool's proprietary competency framework for K-12 teacher AI readiness, built around seven domains and a multi-level proficiency scale. It was developed to give teachers a way to measure, and build, their ability to teach well in an AI-integrated classroom, not just their ability to use AI tools.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "thegurucool.ai competency frameworks",
+    "url": "https://thegurucool.ai/teach-ai-framework"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the TEACH-AI framework?",
+      "acceptedAnswer": {"@type": "Answer", "text": "TEACH-AI is thegurucool's proprietary framework for K-12 teacher AI readiness. It covers seven domains, each scored against a proficiency scale, and is used to diagnose a teacher's starting point and build a personalised path from there."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is TEACH-AI the same as TeachAI.org?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. TeachAI.org is a separate initiative. TEACH-AI is thegurucool's own framework, built specifically for K-12 classrooms in Southeast and South Asia."}
+    },
+    {
+      "@type": "Question",
+      "name": "What research is TEACH-AI built on?",
+      "acceptedAnswer": {"@type": "Answer", "text": "TEACH-AI draws on four established bases: Bloom's Taxonomy, TPACK, Universal Design for Learning, and Hattie's Visible Learning. These are applied specifically to AI-integrated K-12 teaching, not repackaged as something new."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do teachers start at the same level?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. The diagnostic places each teacher at the proficiency level that matches their actual practice, then builds their pathway from there."}
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* Framework page specific */
+.fw-page {
+  background: #0d0d0d;
+  min-height: 100vh;
+  padding-top: 70px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* HERO */
+.fwp-hero {
+  padding: 80px 24px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.fwp-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FF7F50;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: #EDECE7;
+  margin: 0 0 24px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.15;
+}
+.fwp-intro {
+  color: #B4B2A9;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.75;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-disambig {
+  color: #6E6C64;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  line-height: 1.65;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* WHAT IT MEASURES */
+.fwp-measures {
+  padding: 60px 24px;
+  background: #0d0d0d;
+}
+.fwp-measures-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.fwp-eyebrow-muted {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8A8880;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-body {
+  color: #B4B2A9;
+  line-height: 1.75;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* SEVEN DOMAINS */
+.fwp-domains {
+  background: #141412;
+  padding: 60px 24px;
+}
+.fwp-domains-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.fwp-domain-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.fwp-domain-card {
+  background: #1c1c1a;
+  border: 1px solid #2c2c28;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-domain-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 127, 80, 0.13);
+  color: #FF7F50;
+  font-weight: 700;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-domain-name {
+  color: #EDECE7;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-domain-line {
+  color: #8A8880;
+  font-size: 10.5px;
+  margin-top: 6px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* PEDAGOGY */
+.fwp-pedagogy {
+  padding: 60px 24px;
+  background: #0d0d0d;
+}
+.fwp-pedagogy-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fwp-ped-h2 {
+  color: #EDECE7;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 12px 0 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-ped-intro {
+  color: #B4B2A9;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-ped-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-top: 1px solid #262622;
+  border-bottom: 1px solid #262622;
+}
+.fwp-ped-item {
+  flex: 1;
+  min-width: 180px;
+  padding: 20px 16px;
+  border-right: 1px solid #262622;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-ped-item:last-child {
+  border-right: none;
+}
+.fwp-ped-name {
+  color: #EDECE7;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-ped-map {
+  color: #8A8880;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-ped-note {
+  color: #B4B2A9;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 2rem auto 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* PROFICIENCY SCALE */
+.fwp-scale {
+  background: #141412;
+  padding: 60px 24px;
+  text-align: center;
+}
+.fwp-scale-label {
+  color: #8A8880;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.fwp-scale-bar {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.fwp-scale-seg1 { flex: 1; background: #FF7F50; border-radius: 4px 0 0 4px; }
+.fwp-scale-seg2 { flex: 1; background: #C45A2A; }
+.fwp-scale-seg3 { flex: 1; background: #7A3318; }
+.fwp-scale-seg4 { flex: 1; background: #3A1A0A; border-radius: 0 4px 4px 0; }
+.fwp-scale-labels {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 10px auto 0;
+}
+.fwp-scale-emerging {
+  color: #B4B2A9;
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-scale-expert {
+  color: #FF7F50;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-scale-note {
+  color: #6E6C64;
+  font-size: 0.75rem;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* FAQ */
+.fwp-faq {
+  padding: 60px 24px;
+  background: #0d0d0d;
+}
+.fwp-faq-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.fwp-faq-row {
+  border-top: 1px solid #262622;
+  cursor: pointer;
+}
+.fwp-faq-row:last-child {
+  border-bottom: 1px solid #262622;
+}
+.fwp-faq-q {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  gap: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-faq-qtext {
+  flex: 1;
+  color: #EDECE7;
+  font-weight: 500;
+  font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-faq-toggle {
+  color: #FF7F50;
+  font-size: 1.2rem;
+  font-weight: 400;
+  flex-shrink: 0;
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+.fwp-faq-a {
+  display: none;
+  color: #B4B2A9;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 0 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-faq-row.open .fwp-faq-a {
+  display: block;
+}
+.fwp-faq-row.open .fwp-faq-toggle {
+  content: '-';
+}
+
+/* CLOSING CTA */
+.fwp-cta {
+  padding: 80px 24px;
+  text-align: center;
+  background: #141412;
+}
+.fwp-cta h2 {
+  color: #EDECE7;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin: 0 0 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fwp-cta p {
+  color: #B4B2A9;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 700px) {
+  .fwp-domain-card { width: calc(50% - 6px); min-width: 140px; }
+  .fwp-ped-row { flex-direction: column; }
+  .fwp-ped-item { border-right: none; border-bottom: 1px solid #262622; }
+  .fwp-ped-item:last-child { border-bottom: none; }
+}
+@media (max-width: 480px) {
+  .fwp-domain-card { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="fw-page">
+
+<!-- NAV -->
+<nav>
+  <a class="logo-wrap" href="index.html">
+    <img alt="theGurucool.ai — Teacher Professional Development Platform" src="/images/logo.png" style="height:32px;width:auto;display:block;">
+  </a>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+  <div class="nav-links">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="teachers.html">For Teachers</a>
+    <a class="nav-link" href="schools.html">For Schools</a>
+    <a class="nav-link active" href="teach-ai-framework.html">Framework</a>
+    <a class="nav-link" href="blog.html">Blog</a>
+    <a class="nav-link" href="team.html">Team</a>
+    <a class="nav-login" href="login.html">Log in</a>
+    <a class="nav-link nav-cta" href="index.html#waitlist">Join waitlist</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="background:#0d0d0d;">
+  <div class="fwp-hero">
+    <span class="fwp-eyebrow">The Framework</span>
+    <h1 class="fwp-h1">The TEACH-AI framework</h1>
+    <p class="fwp-intro">TEACH-AI is thegurucool's proprietary competency framework for K-12 teacher AI readiness, built around seven domains and a multi-level proficiency scale. It was developed to give teachers a way to measure, and build, their ability to teach well in an AI-integrated classroom, not just their ability to use AI tools.</p>
+    <p class="fwp-disambig">TEACH-AI is not affiliated with TeachAI.org, the CoSN-backed initiative, or any AI competency framework published in academic literature. thegurucool's TEACH-AI is our own framework, built specifically for K-12 classrooms in Southeast and South Asia.</p>
+  </div>
+</section>
+
+<!-- WHAT IT MEASURES -->
+<section class="fwp-measures">
+  <div class="fwp-measures-inner">
+    <span class="fwp-eyebrow-muted">What it measures</span>
+    <p class="fwp-body">Most AI training for teachers stops at tool literacy. It shows you how to prompt a chatbot or generate a worksheet, then calls that professional development. TEACH-AI starts from a different premise: knowing how to use an AI tool and knowing how to teach well with one are not the same skill.</p>
+    <p class="fwp-body">The framework breaks that second skill into seven domains, each measured against a proficiency scale. A teacher does not start at zero. The diagnostic places you at the level that reflects where your practice actually is, then builds a pathway from there.</p>
+  </div>
+</section>
+
+<!-- SEVEN DOMAINS -->
+<section class="fwp-domains">
+  <div class="fwp-domains-inner">
+    <span class="fwp-eyebrow" style="color:#FF7F50;">Seven domains</span>
+    <div class="fwp-domain-grid">
+
+      <div class="fwp-domain-card">
+        <div class="fwp-domain-badge">T</div>
+        <div class="fwp-domain-name">Technology Integration</div>
+        <div class="fwp-domain-line">Knowing which AI tools belong in your classroom, and the judgment to tell the difference.</div>
+      </div>
+
+      <div class="fwp-domain-card">
+        <div class="fwp-domain-badge">E</div>
+        <div class="fwp-domain-name">Ethics and Responsibility</div>
+        <div class="fwp-domain-line">Bias, data privacy, and what responsible AI use looks like when the people affected are children.</div>
+      </div>
+
+      <div class="fwp-domain-card">
+        <div class="fwp-domain-badge">A</div>
+        <div class="fwp-domain-name">Assessment Design</div>
+        <div class="fwp-domain-line">Building assessments that hold up when students have access to tools that used to be called cheating.</div>
+      </div>
+
+      <div class="fwp-domain-card">
+        <div class="fwp-domain-badge">C</div>
+        <div class="fwp-domain-name">Curriculum and Content</div>
+        <div class="fwp-domain-line">Using AI to plan and build lessons faster, without losing the judgment that makes the lesson good.</div>
+      </div>
+
+      <div class="fwp-domain-card">
+        <div class="fwp-domain-badge">H</div>
+        <div class="fwp-domain-name">Human-AI Collaboration</div>
+        <div class="fwp-domain-line">Working alongside AI without becoming dependent on it, and without being afraid of it either.</div>
+      </div>
+
+      <div class="fwp-domain-card">
+        <div class="fwp-domain-badge">A</div>
+        <div class="fwp-domain-name">Adaptive Teaching</div>
+        <div class="fwp-domain-line">Personalising learning at a scale that reaches the students who used to fall through the gaps.</div>
+      </div>
+
+      <div class="fwp-domain-card">
+        <div class="fwp-domain-badge">I</div>
+        <div class="fwp-domain-name">Inclusion and Equity</div>
+        <div class="fwp-domain-line">Making sure AI use in the classroom makes things more equitable for every student.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PEDAGOGY GROUNDING -->
+<section class="fwp-pedagogy">
+  <div class="fwp-pedagogy-inner">
+    <span class="fwp-eyebrow-muted">Grounded in pedagogy</span>
+    <h2 class="fwp-ped-h2">Four decades of research, applied.</h2>
+    <p class="fwp-ped-intro">TEACH-AI is not a new theory of teaching. It applies four established, well-researched pedagogical bases to the specific problem of AI-integrated K-12 classrooms.</p>
+    <div class="fwp-ped-row">
+      <div class="fwp-ped-item">
+        <div class="fwp-ped-name">TPACK</div>
+        <div class="fwp-ped-map">Technology Integration &middot; Curriculum and Content</div>
+      </div>
+      <div class="fwp-ped-item">
+        <div class="fwp-ped-name">Universal Design for Learning</div>
+        <div class="fwp-ped-map">Inclusion and Equity</div>
+      </div>
+      <div class="fwp-ped-item">
+        <div class="fwp-ped-name">Hattie's Visible Learning</div>
+        <div class="fwp-ped-map">Adaptive Teaching</div>
+      </div>
+      <div class="fwp-ped-item">
+        <div class="fwp-ped-name">Bloom's Taxonomy</div>
+        <div class="fwp-ped-map">Assessment Design</div>
+      </div>
+    </div>
+    <p class="fwp-ped-note">Ethics and Responsibility and Human-AI Collaboration draw on all four bases together. Both are less about a single instructional technique and more about the judgment that sits above every technique a teacher uses.</p>
+  </div>
+</section>
+
+<!-- PROFICIENCY SCALE -->
+<section class="fwp-scale">
+  <span class="fwp-scale-label">A proficiency scale, not a starting line</span>
+  <div class="fwp-scale-bar">
+    <div class="fwp-scale-seg1"></div>
+    <div class="fwp-scale-seg2"></div>
+    <div class="fwp-scale-seg3"></div>
+    <div class="fwp-scale-seg4"></div>
+  </div>
+  <div class="fwp-scale-labels">
+    <span class="fwp-scale-emerging">Emerging</span>
+    <span class="fwp-scale-expert">Expert</span>
+  </div>
+  <p class="fwp-scale-note">Full level definitions are part of the diagnostic, not published here.</p>
+</section>
+
+<!-- FAQ -->
+<section class="fwp-faq">
+  <div class="fwp-faq-inner">
+    <span class="fwp-eyebrow-muted">Common questions</span>
+
+    <div class="fwp-faq-row" onclick="toggleFaq(this)">
+      <div class="fwp-faq-q">
+        <span class="fwp-faq-qtext">What is the TEACH-AI framework?</span>
+        <span class="fwp-faq-toggle">+</span>
+      </div>
+      <div class="fwp-faq-a">TEACH-AI is thegurucool's proprietary framework for K-12 teacher AI readiness. It covers seven domains, each scored against a proficiency scale, and is used to diagnose a teacher's starting point and build a personalised path from there.</div>
+    </div>
+
+    <div class="fwp-faq-row" onclick="toggleFaq(this)">
+      <div class="fwp-faq-q">
+        <span class="fwp-faq-qtext">Is TEACH-AI the same as TeachAI.org?</span>
+        <span class="fwp-faq-toggle">+</span>
+      </div>
+      <div class="fwp-faq-a">No. TeachAI.org is a separate initiative. TEACH-AI is thegurucool's own framework, built specifically for K-12 classrooms in Southeast and South Asia.</div>
+    </div>
+
+    <div class="fwp-faq-row" onclick="toggleFaq(this)">
+      <div class="fwp-faq-q">
+        <span class="fwp-faq-qtext">What research is TEACH-AI built on?</span>
+        <span class="fwp-faq-toggle">+</span>
+      </div>
+      <div class="fwp-faq-a">TEACH-AI draws on four established bases: Bloom's Taxonomy, TPACK, Universal Design for Learning, and Hattie's Visible Learning. These are applied specifically to AI-integrated K-12 teaching, not repackaged as something new.</div>
+    </div>
+
+    <div class="fwp-faq-row" onclick="toggleFaq(this)">
+      <div class="fwp-faq-q">
+        <span class="fwp-faq-qtext">Do teachers start at the same level?</span>
+        <span class="fwp-faq-toggle">+</span>
+      </div>
+      <div class="fwp-faq-a">No. The diagnostic places each teacher at the proficiency level that matches their actual practice, then builds their pathway from there.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="fwp-cta">
+  <h2>See where your practice sits today</h2>
+  <p>Join teachers across Southeast Asia who are building measurable AI readiness, one domain at a time.</p>
+  <a href="index.html#waitlist" class="btn-main" style="margin-top:1.5rem;display:inline-block;">Join waitlist</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><img src="/images/logo.png" alt="thegurucool.ai — Teacher Professional Development Platform" style="height:24px;width:auto;display:block;"></div>
+  <div class="footer-links"><a href="index.html">Home</a><a href="blog.html">Blog</a><a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener">LinkedIn</a><a href="privacy.html">Privacy Policy</a><a href="security.html">Security Policy</a><a href="index.html#waitlist">Join waitlist</a></div>
+</footer>
+
+</div>
+
+<script>
+function toggleFaq(row) {
+  var isOpen = row.classList.contains('open');
+  // Close all rows
+  var rows = document.querySelectorAll('.fwp-faq-row');
+  rows.forEach(function(r) {
+    r.classList.remove('open');
+    r.querySelector('.fwp-faq-toggle').textContent = '+';
+  });
+  // Open this one if it was closed
+  if (!isOpen) {
+    row.classList.add('open');
+    row.querySelector('.fwp-faq-toggle').textContent = '\u2212';
+  }
+}
+</script>
+
+</body>
+</html>
