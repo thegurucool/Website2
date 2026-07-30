@@ -235,13 +235,13 @@ Post pages also need:
 4. Hattie's Visible Learning (Hattie, 2009)
 
 **Domains (spell exactly as shown):**
-- T — Technology Integration
-- E — Ethics and Responsibility
-- A — Assessment Design
-- C — Curriculum and Content
-- H — Human-AI Collaboration
-- A — Adaptive Teaching
-- I — Inclusion and Equity
+- T — Technology Fluency
+- E — Ethical Intelligence
+- A — Assessment Mastery
+- C — Community Engagement
+- H — Hybrid Pedagogy
+- A — Agile Learning
+- I — Impact Amplification
 
 ---
 
