@@ -376,25 +376,25 @@
         <form id="wl-form" onsubmit="submitWaitlist(event); return false;">
           <div class="wl-row grid-2">
             <div>
-              <label class="wl-label">First name</label>
-              <input class="wl-input" type="text" name="FIRSTNAME" placeholder="Siti" required/>
+              <label class="wl-label" for="sc-firstname">First name</label>
+              <input class="wl-input" type="text" name="FIRSTNAME" id="sc-firstname" placeholder="Siti" required/>
             </div>
             <div>
-              <label class="wl-label">Last name</label>
-              <input class="wl-input" type="text" name="LASTNAME" placeholder="Rahman" required/>
+              <label class="wl-label" for="sc-lastname">Last name</label>
+              <input class="wl-input" type="text" name="LASTNAME" id="sc-lastname" placeholder="Rahman" required/>
             </div>
           </div>
           <div class="wl-row">
-            <label class="wl-label">Work email</label>
-            <input class="wl-input" type="email" name="EMAIL" placeholder="you@school.edu" required/>
+            <label class="wl-label" for="sc-email">Work email</label>
+            <input class="wl-input" type="email" name="EMAIL" id="sc-email" placeholder="you@school.edu" required/>
           </div>
           <div class="wl-row">
-            <label class="wl-label">School name</label>
-            <input class="wl-input" type="text" name="SCHOOL" placeholder="Your school" required/>
+            <label class="wl-label" for="sc-school">School name</label>
+            <input class="wl-input" type="text" name="SCHOOL" id="sc-school" placeholder="Your school" required/>
           </div>
           <div class="wl-row">
-            <label class="wl-label">Role</label>
-            <select class="wl-select" name="ROLE" required>
+            <label class="wl-label" for="sc-role">Role</label>
+            <select class="wl-select" name="ROLE" id="sc-role" required>
               <option value="">Select your role</option>
               <option>Principal</option>
               <option>Head of Department</option>
@@ -405,8 +405,8 @@
           </div>
           <div class="wl-row grid-2">
             <div>
-              <label class="wl-label">Country</label>
-              <select class="wl-select" name="COUNTRY" required>
+              <label class="wl-label" for="sc-country">Country</label>
+              <select class="wl-select" name="COUNTRY" id="sc-country" required>
                 <option value="">Select</option>
                 <option>Brazil</option>
                 <option>Ghana</option>
@@ -425,8 +425,8 @@
               </select>
             </div>
             <div>
-              <label class="wl-label">Number of teachers</label>
-              <select class="wl-select" name="NUMTEACHERS" required>
+              <label class="wl-label" for="sc-numteachers">Number of teachers</label>
+              <select class="wl-select" name="NUMTEACHERS" id="sc-numteachers" required>
                 <option value="">Select</option>
                 <option>Under 20</option>
                 <option>20–50</option>
@@ -435,7 +435,7 @@
               </select>
             </div>
           </div>
-          <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off"/>
+          <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true" role="presentation"/>
           <input type="hidden" name="locale" value="en"/>
           <div style="height:1px;background:rgba(0,0,0,.06);margin:1.5rem 0;"></div>
           <button class="wl-submit" type="submit">Request early access for my school →</button>
