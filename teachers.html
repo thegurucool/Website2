@@ -64,8 +64,8 @@
 /* === Page-specific === */
 .sub-hero{background:var(--black);padding:8rem 2.5rem 5rem;position:relative;}
 .sub-hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
-.sub-breadcrumb{font-size:.78rem;color:rgba(240,237,232,.4);margin-bottom:1.5rem;font-family:'Montserrat',sans-serif;}
-.sub-breadcrumb a{color:rgba(240,237,232,.4);text-decoration:none;transition:color .15s;}
+.sub-breadcrumb{font-size:.78rem;color:rgba(240,237,232,.65);margin-bottom:1.5rem;font-family:'Montserrat',sans-serif;}
+.sub-breadcrumb a{color:rgba(240,237,232,.65);text-decoration:none;transition:color .15s;}
 .sub-breadcrumb a:hover{color:var(--orange);}
 .sub-breadcrumb .sep{margin:0 .5rem;color:rgba(240,237,232,.25);}
 .sub-eyebrow-pill{display:inline-block;background:rgba(244,123,90,.12);border:1px solid rgba(244,123,90,.25);color:var(--orange);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.8px;padding:.35rem .85rem;border-radius:50px;margin-bottom:1.5rem;font-family:'Montserrat',sans-serif;}
@@ -312,8 +312,8 @@
             <input class="wl-input" type="text" name="SCHOOL" placeholder="Your school" required/>
           </div>
           <div class="wl-row">
-            <label class="wl-label">I am a...</label>
-            <select class="wl-select" name="ROLE" required>
+            <label class="wl-label" for="wl-role">I am a...</label>
+            <select class="wl-select" name="ROLE" id="wl-role" required>
               <option value="">Select your role</option>
               <option>Classroom Teacher</option>
               <option>Head of Department</option>
@@ -322,8 +322,8 @@
             </select>
           </div>
           <div class="wl-row">
-            <label class="wl-label">Country</label>
-            <select class="wl-select" name="COUNTRY" required>
+            <label class="wl-label" for="wl-country">Country</label>
+            <select class="wl-select" name="COUNTRY" id="wl-country" required>
               <option value="">Select your country</option>
               <option>Brazil</option>
               <option>Ghana</option>
