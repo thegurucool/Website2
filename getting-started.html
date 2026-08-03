@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Getting Started | theGurucool.ai</title>
+<meta name="description" content="Step-by-step interactive guides to help you register, set up your profile, and get the most out of theGurucool teacher professional development platform."/>
+<meta name="robots" content="noindex, follow"/>
+<link rel="canonical" href="https://www.thegurucool.ai/getting-started"/>
+<meta property="og:title" content="Getting Started | theGurucool.ai"/>
+<meta property="og:description" content="Step-by-step interactive guides to help you register, set up your profile, and get the most out of theGurucool."/>
+<meta property="og:image" content="https://thegurucool.ai/images/OGimage.png"/>
+<meta property="og:url" content="https://www.thegurucool.ai/getting-started"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Getting Started | theGurucool.ai"/>
+<meta name="twitter:image" content="https://thegurucool.ai/images/OGimage.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* === Getting Started page === */
+.gs-hero{background:var(--black);padding:8rem 2.5rem 4rem;}
+.gs-hero-inner{max-width:760px;margin:0 auto;}
+.gs-breadcrumb{font-size:.78rem;color:rgba(240,237,232,.55);margin-bottom:1.5rem;font-family:'Montserrat',sans-serif;}
+.gs-breadcrumb a{color:rgba(240,237,232,.55);text-decoration:none;transition:color .15s;}
+.gs-breadcrumb a:hover{color:var(--orange);}
+.gs-breadcrumb .sep{margin:0 .5rem;color:rgba(240,237,232,.2);}
+.gs-eyebrow{display:inline-block;background:rgba(244,123,90,.12);border:1px solid rgba(244,123,90,.25);color:var(--orange);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.8px;padding:.35rem .85rem;border-radius:50px;margin-bottom:1.5rem;font-family:'Montserrat',sans-serif;}
+.gs-hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;line-height:1.2;color:var(--chalk);margin-bottom:1rem;letter-spacing:-.4px;}
+.gs-hero h1 em{font-style:italic;color:var(--orange);}
+.gs-hero-sub{font-size:1rem;color:var(--chalk-dim);line-height:1.7;font-weight:300;max-width:520px;}
+
+/* === Guide selector section === */
+.gs-section{padding:5rem 2.5rem 6rem;background:var(--paper);}
+.gs-inner{max-width:900px;margin:0 auto;}
+
+.gs-step-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:#C0461A;margin-bottom:1.5rem;display:block;font-family:'Montserrat',sans-serif;}
+
+/* Guide trigger list */
+.gs-list{list-style:none;margin:0 0 2rem;padding:0;display:flex;flex-direction:column;gap:.75rem;}
+.gs-list li{margin:0;padding:0;}
+.gs-btn{
+  width:100%;
+  display:flex;
+  align-items:center;
+  gap:1.2rem;
+  padding:1.25rem 1.5rem;
+  background:#fff;
+  border:1.5px solid rgba(0,0,0,.1);
+  border-radius:10px;
+  font-family:'Montserrat',sans-serif;
+  font-size:.95rem;
+  font-weight:500;
+  color:#333;
+  cursor:pointer;
+  text-align:left;
+  transition:border-color .15s, box-shadow .15s, color .15s;
+  box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+.gs-btn:hover{border-color:rgba(255,127,80,.5);box-shadow:0 4px 16px rgba(255,127,80,.12);}
+.gs-btn[aria-selected="true"]{
+  border-color:#FF7F50;
+  color:#FF7F50;
+  box-shadow:0 4px 20px rgba(255,127,80,.18);
+}
+.gs-btn-num{
+  flex-shrink:0;
+  width:2rem;
+  height:2rem;
+  border-radius:50%;
+  background:rgba(0,0,0,.06);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:.78rem;
+  font-weight:700;
+  color:#888;
+  transition:background .15s, color .15s;
+}
+.gs-btn[aria-selected="true"] .gs-btn-num{
+  background:#FF7F50;
+  color:#fff;
+}
+.gs-btn-text{flex:1;}
+.gs-btn-arrow{flex-shrink:0;font-size:.85rem;color:#bbb;transition:color .15s, transform .15s;}
+.gs-btn[aria-selected="true"] .gs-btn-arrow{color:#FF7F50;transform:rotate(90deg);}
+
+/* Accordion embed panel */
+.gs-item{display:flex;flex-direction:column;}
+.gs-embed-wrap{
+  display:none;
+  margin-top:.5rem;
+  border-radius:0 0 10px 10px;
+  overflow:hidden;
+  border:1.5px solid rgba(255,127,80,.3);
+  border-top:none;
+}
+.gs-embed-wrap.visible{display:block;}
+.gs-btn[aria-expanded="true"]{border-radius:10px 10px 0 0;border-bottom-color:transparent;}
+.gs-btn[aria-selected="true"]{border-color:#FF7F50;color:#FF7F50;box-shadow:0 4px 20px rgba(255,127,80,.18);}
+.gs-btn[aria-expanded="true"].gs-btn[aria-selected="true"]{border-bottom-color:transparent;}
+.scribe-embed-wrapper{
+  position:relative;
+  width:100%;
+  min-height:500px;
+}
+.scribe-embed-wrapper iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+
+/* Active nav */
+.nav-link.active{color:var(--chalk);}
+
+/* Responsive */
+@media(max-width:700px){
+  .gs-hero{padding:6rem 1.5rem 3rem;}
+  .gs-section{padding:3.5rem 1.5rem 4rem;}
+  .gs-btn{padding:1rem 1.2rem;font-size:.88rem;gap:.9rem;}
+  .scribe-embed-wrapper{min-height:420px;}
+}
+</style>
+</head>
+<body>
+<section class="gs-hero" style="padding-top:4rem;">
+  <div class="gs-hero-inner">
+    <div style="margin-bottom:2rem;"><img src="/images/logo.png" alt="theGurucool.ai" style="height:28px;width:auto;display:block;"></div>
+    <div class="gs-breadcrumb">Getting Started</div>
+    <span class="gs-eyebrow">Guides</span>
+    <h1>Get up and running <em>in minutes</em></h1>
+    <p class="gs-hero-sub">Interactive walkthroughs for every step of the setup process.</p>
+  </div>
+</section>
+
+<section class="gs-section">
+  <div class="gs-inner">
+    <span class="gs-step-label">Step-by-step guides</span>
+
+    <ul class="gs-list" aria-label="Getting started guides">
+      <li class="gs-item">
+        <button
+          class="gs-btn"
+          aria-expanded="false"
+          aria-controls="gs-embed-1"
+          id="gs-tab-1"
+          data-url="https://scribehow.com/embed/How_To_Register_And_Verify_A_Gurucool_Teacher_Account__RSNMZChRTi-2lk5t1TbpdQ?as=scrollable"
+          onclick="selectGuide(this)"
+        >
+          <span class="gs-btn-num">1</span>
+          <span class="gs-btn-text">How to Register and Verify a Gurucool Teacher Account</span>
+          <span class="gs-btn-arrow" aria-hidden="true">▶</span>
+        </button>
+        <div class="gs-embed-wrap" id="gs-embed-1" role="region" aria-labelledby="gs-tab-1">
+          <div class="scribe-embed-wrapper">
+            <iframe src="" allow="fullscreen" loading="lazy" title="How to Register and Verify a Gurucool Teacher Account"></iframe>
+          </div>
+        </div>
+      </li>
+      <li class="gs-item">
+        <button
+          class="gs-btn"
+          aria-expanded="false"
+          aria-controls="gs-embed-2"
+          id="gs-tab-2"
+          data-url="https://scribehow.com/embed/How_to_Complete_Your_GuruCool_Profile__VAsc5bhuSWq8oJBxm8A_EQ?as=scrollable"
+          onclick="selectGuide(this)"
+        >
+          <span class="gs-btn-num">2</span>
+          <span class="gs-btn-text">How to Complete Your GuruCool Profile</span>
+          <span class="gs-btn-arrow" aria-hidden="true">▶</span>
+        </button>
+        <div class="gs-embed-wrap" id="gs-embed-2" role="region" aria-labelledby="gs-tab-2">
+          <div class="scribe-embed-wrapper">
+            <iframe src="" allow="fullscreen" loading="lazy" title="How to Complete Your GuruCool Profile"></iframe>
+          </div>
+        </div>
+      </li>
+      <li class="gs-item">
+        <button
+          class="gs-btn"
+          aria-expanded="false"
+          aria-controls="gs-embed-3"
+          id="gs-tab-3"
+          data-url="https://scribehow.com/embed/How_to_Navigate_Through_School_Assigned_PDs__WX9S_oxcSnWsymq7VtFv4A?as=scrollable"
+          onclick="selectGuide(this)"
+        >
+          <span class="gs-btn-num">3</span>
+          <span class="gs-btn-text">How to Navigate Through School Assigned PDs</span>
+          <span class="gs-btn-arrow" aria-hidden="true">▶</span>
+        </button>
+        <div class="gs-embed-wrap" id="gs-embed-3" role="region" aria-labelledby="gs-tab-3">
+          <div class="scribe-embed-wrapper">
+            <iframe src="" allow="fullscreen" loading="lazy" title="How to Navigate Through School Assigned PDs"></iframe>
+          </div>
+        </div>
+      </li>
+      <li class="gs-item">
+        <button
+          class="gs-btn"
+          aria-expanded="false"
+          aria-controls="gs-embed-4"
+          id="gs-tab-4"
+          data-url="https://scribehow.com/embed/How_to_Complete_Competency_Test_and_Check_Results_and_Certificates__usNQVIIXTuq7D_5QaL6yYA?as=scrollable"
+          onclick="selectGuide(this)"
+        >
+          <span class="gs-btn-num">4</span>
+          <span class="gs-btn-text">How to Complete Competency Test and Check Results and Certificates</span>
+          <span class="gs-btn-arrow" aria-hidden="true">▶</span>
+        </button>
+        <div class="gs-embed-wrap" id="gs-embed-4" role="region" aria-labelledby="gs-tab-4">
+          <div class="scribe-embed-wrapper">
+            <iframe src="" allow="fullscreen" loading="lazy" title="How to Complete Competency Test and Check Results and Certificates"></iframe>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<script>
+function selectGuide(btn) {
+  var isOpen = btn.getAttribute('aria-expanded') === 'true';
+  var panelId = btn.getAttribute('aria-controls');
+  var panel = document.getElementById(panelId);
+  var iframe = panel.querySelector('iframe');
+
+  // Close all panels first
+  document.querySelectorAll('.gs-btn').forEach(function(b) {
+    b.setAttribute('aria-expanded', 'false');
+    b.setAttribute('aria-selected', 'false');
+  });
+  document.querySelectorAll('.gs-embed-wrap').forEach(function(p) {
+    p.classList.remove('visible');
+    p.querySelector('iframe').src = '';
+  });
+
+  // Toggle open if it wasn't already open
+  if (!isOpen) {
+    btn.setAttribute('aria-expanded', 'true');
+    btn.setAttribute('aria-selected', 'true');
+    iframe.src = btn.dataset.url;
+    panel.classList.add('visible');
+    panel.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+  }
+}
+</script>
+</body>
+</html>
