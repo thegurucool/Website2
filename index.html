@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>theGurucool.ai | AI-Powered Teacher Professional Development for K-12 Educators Everywhere</title>
-<meta name="description" content="thegurucool.ai gives K-12 teachers a personal AI learning coach, competency assessment, and verified credentials. Built on Bloom Taxonomy, TPACK and UDL."/>
+<meta name="description" content="thegurucool.ai gives K-12 teachers a personal AI learning coach, competency assessment, and verified credentials. Built on Bloom's Taxonomy, TPACK, Universal Design for Learning, and Hattie's Visible Learning."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://thegurucool.ai/"/>
 <meta property="og:title" content="theGurucool.ai | AI-Powered Teacher Professional Development for K-12 Educators Everywhere"/>
@@ -71,7 +71,7 @@
   "logo": "https://thegurucool.ai/images/logo.png",
   "description": "AI-powered teacher professional development platform for K-12 educators globally. Personalised learning pathways, scenario-based competency assessment across the TEACH-AI framework, and mastery-based verified credentials.",
   "foundingLocation": "Singapore",
-  "areaServed": "Worldwide",
+  "areaServed": ["Malaysia", "Philippines", "Singapore", "Indonesia", "Vietnam", "Thailand", "India"],
   "audience": {"@type": "Audience", "audienceType": "K-12 teachers and school leaders"},
   "contactPoint": {"@type": "ContactPoint", "email": "admin@thegurucool.ai", "contactType": "customer support"},
   "sameAs": ["https://www.linkedin.com/company/thegurucool/"],
@@ -79,11 +79,13 @@
     {
       "@type": "Person",
       "name": "Neelesh Bhatia",
+      "jobTitle": "Founder & CEO",
       "sameAs": "https://www.linkedin.com/in/neeleshbhatia/"
     },
     {
       "@type": "Person",
       "name": "May Yang",
+      "jobTitle": "Co-Founder & COO",
       "sameAs": "https://www.linkedin.com/in/may-yang-sg/"
     }
   ]
@@ -114,7 +116,7 @@ html{scroll-behavior:smooth;}
   --black:#111111;
   --board:#111111;
   --board-dark:#0A0A0A;
-  --orange:#F47B5A;
+  --orange:#FF7F50;
   --white:#FFFFFF;
   --grey:#EFEFEF;
   --mid-grey:#9A9A9A;
@@ -164,7 +166,7 @@ nav{
 h2{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,3.2vw,2.8rem);line-height:1.1;letter-spacing:-.5px;color:var(--black);margin-bottom:1rem;}
 h2 em{font-style:italic;}
 .section-eyebrow{font-family:'Montserrat',sans-serif;font-size:1.05rem;color:var(--orange);display:block;margin-bottom:.8rem;}
-.body-copy{font-size:.95rem;line-height:1.78;color:#555;font-weight:300;}
+.body-copy{font-size:.9rem;line-height:1.78;color:#555;font-weight:300;}
 .btn-main{background:var(--orange);color:var(--white);padding:.85rem 1.8rem;border-radius:3px;text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;display:inline-flex;align-items:center;gap:.4rem;box-shadow:3px 3px 0 rgba(240,237,232,.2);transition:all .15s;cursor:pointer;border:none;}
 .btn-main:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 rgba(240,237,232,.3);}
 .r{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease;}
@@ -192,7 +194,7 @@ h1{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,4vw,3.2rem);line-hei
 h1 em{font-style:italic;color:var(--orange);font-family:'Montserrat',sans-serif;}
 h1 .hl{position:relative;display:inline-block;}
 h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;height:12px;background:var(--orange);opacity:.22;z-index:-1;transform:rotate(-.5deg);}
-.hero-sub{font-size:1rem;line-height:1.8;color:var(--chalk-dim);max-width:420px;font-weight:300;margin-bottom:2.5rem;}
+.hero-sub{font-size:.9rem;line-height:1.8;color:var(--chalk-dim);max-width:420px;font-weight:300;margin-bottom:2.5rem;}
 .hero-btns{display:flex;gap:1rem;align-items:center;}
 .btn-ghost{text-decoration:none;color:var(--chalk-dim);font-size:.9rem;border-bottom:1px solid rgba(240,237,232,.2);padding-bottom:1px;transition:color .15s,border-color .15s;cursor:pointer;background:none;border-bottom:1px solid rgba(240,237,232,.2);}
 .btn-ghost:hover{color:var(--chalk);}
@@ -240,7 +242,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .phone-question{font-size:.64rem;color:var(--scr-text);line-height:1.5;margin-bottom:.6rem;font-family:'Montserrat',sans-serif;}
 .phone-opts{display:flex;flex-direction:column;gap:.3rem;}
 .phone-opt{font-size:.6rem;padding:.35rem .5rem;border-radius:6px;color:var(--scr-muted);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);font-family:'Montserrat',sans-serif;}
-.phone-opt.chosen{background:rgba(244,123,90,.18);border-color:rgba(244,123,90,.4);color:var(--orange);}
+.phone-opt.chosen{background:rgba(244,123,90,.18);border-color:rgba(255,127,80,.4);color:var(--orange);}
 .coach-float{position:absolute;top:30px;right:-40px;width:190px;background:#1A1A1A;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:.9rem;box-shadow:0 12px 40px rgba(0,0,0,.4);z-index:3;animation:phoneFloat 5s ease-in-out infinite .5s;}
 .cf-header{display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem;}
 .cf-avatar{width:22px;height:22px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;}
@@ -269,7 +271,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .feat-panel.reverse>*{direction:ltr;}
 .fp-num{font-family:'Montserrat',sans-serif;font-size:4rem;font-style:italic;color:rgba(0,0,0,.07);line-height:1;margin-bottom:.5rem;}
 .fp-title{font-family:'Montserrat',sans-serif;font-size:1.6rem;color:var(--black);margin-bottom:.8rem;letter-spacing:-.3px;}
-.fp-desc{font-size:1rem;color:#1f1f1f;line-height:1.7;font-weight:400;margin-bottom:1.2rem;}
+.fp-desc{font-size:.9rem;color:#1f1f1f;line-height:1.7;font-weight:400;margin-bottom:1.2rem;}
 .fp-chips{display:flex;gap:.5rem;flex-wrap:wrap;}
 .fp-chip{background:var(--grey);color:#666;font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:500;padding:.2rem .7rem;border-radius:2px;}
 .fp-chip.accent{background:rgba(244,123,90,.12);color:var(--orange);}
@@ -363,7 +365,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 .step-circle.active{background:var(--orange);border-color:var(--orange);color:#fff;transform:scale(1.1);}
 .how-step:hover .step-circle{background:var(--orange);border-color:var(--orange);}
 .how-step h4{font-family:'Montserrat',sans-serif;font-size:1.15rem;font-weight:400;font-style:italic;color:var(--chalk);margin-bottom:.5rem;}
-.how-step p{font-size:.83rem;color:var(--chalk-dim);line-height:1.65;font-weight:300;}
+.how-step p{font-size:.9rem;color:var(--chalk-dim);line-height:1.65;font-weight:300;}
 
 /* voices */
 .voices{padding:6rem 2.5rem;background:var(--paper);}
@@ -662,7 +664,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 }
 .fw-divider-line{
   width:1px;flex:1;
-  background:linear-gradient(180deg,transparent,rgba(244,123,90,.4),transparent);
+  background:linear-gradient(180deg,transparent,rgba(255,127,80,.4),transparent);
   min-height:60px;
 }
 .fw-divider-badge{
@@ -701,7 +703,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 @media(max-width:900px){
   .fw-split{grid-template-columns:1fr;gap:3rem;}
   .fw-divider-col{flex-direction:row;padding:0;}
-  .fw-divider-line{flex:1;height:1px;min-height:0;width:auto;background:linear-gradient(90deg,transparent,rgba(244,123,90,.4),transparent);}
+  .fw-divider-line{flex:1;height:1px;min-height:0;width:auto;background:linear-gradient(90deg,transparent,rgba(255,127,80,.4),transparent);}
   .fw-divider-badge{writing-mode:horizontal-tb;padding:.3rem .8rem;}
 }
 
@@ -710,11 +712,11 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
   background:#111111; color:#FFFFFF;
   border:none; border-radius:8px;
   font-family:'Montserrat',sans-serif; font-size:.95rem; font-weight:600; letter-spacing:.2px;
-  cursor:pointer; box-shadow:3px 3px 0 #F47B5A;
+  cursor:pointer; box-shadow:3px 3px 0 #FF7F50;
   transition:transform .15s, box-shadow .15s;
   display:block;
 }
-.wl-submit-btn:hover { transform:translate(-2px,-2px); box-shadow:5px 5px 0 #F47B5A; }
+.wl-submit-btn:hover { transform:translate(-2px,-2px); box-shadow:5px 5px 0 #FF7F50; }
 
 /* ====== POST READER ====== */
 .post-back{display:inline-flex;align-items:center;gap:.5rem;color:rgba(240,237,232,.65);font-size:.8rem;cursor:pointer;border:none;background:none;font-family:'Montserrat',sans-serif;margin-bottom:2rem;padding:0;transition:color .2s;}
@@ -746,6 +748,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
     <a class="nav-link" id="nav-home" href="index.html">Home</a>
     <a class="nav-link" id="nav-teachers" href="teachers.html">For Teachers</a>
     <a class="nav-link" id="nav-schools" href="schools.html">For Schools</a>
+    <a class="nav-link" href="teach-ai-framework.html">Framework</a>
     <a class="nav-link" id="nav-blog" href="blog.html">Blog</a>
     <a class="nav-link" href="team.html">Team</a>
     <a class="nav-login" href="https://app.thegurucool.ai/login" target="_blank" rel="noopener">Log in</a>
@@ -776,103 +779,41 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 
     <!-- FRAMEWORK -->
   <section class="framework">
-    <div class="fw-inner">
+    <div class="fw-inner" style="text-align:center;">
 
-      <!-- Header -->
-      <div class="fw-header-row">
-        <div>
-          <span class="section-eyebrow" style="color:var(--orange)">The TEACH-AI Framework</span>
-          <h2 style="color:var(--chalk);font-family:'Montserrat',sans-serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;letter-spacing:-.5px;line-height:1.1;margin-bottom:.8rem;">
-            Grounded in pedagogy.<br><em style="color:var(--orange)">Built for real classrooms.</em>
-          </h2>
-          <p style="color:rgba(240,237,232,.55);font-size:.95rem;line-height:1.7;font-weight:300;max-width:none;">
-            TEACH-AI&trade; doesn't just reference educational frameworks, it turns them into measurable competencies, personalised learning pathways, and verified outcomes. The TEACH-AI&trade; framework brings together the world's most trusted educational research and transforms it into a system that actively develops, measures, and validates teacher growth.<br><span style="display:inline-block;margin-top:.6rem;color:rgba(240,237,232,.85);font-weight:500;">This is not a theory. This is applied, trackable progress.</span>
-          </p>
-        </div>
-      </div>
+<span class="eyebrow">The TEACH-AI Framework</span>
+<h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:400;color:var(--chalk);text-align:center;margin:0 auto 1.2rem;max-width:600px;line-height:1.3;">Grounded in pedagogy. <em style="font-style:italic;color:#FF7F50;">Built for real classrooms.</em></h2>
+<p style="color:var(--chalk-dim);text-align:center;max-width:640px;margin:0 auto 3rem;line-height:1.7;font-size:.9rem;">TEACH-AI&#8482; doesn't just reference educational frameworks, it turns them into measurable competencies, personalised learning pathways, and verified outcomes. This is not a theory. This is applied, trackable progress.</p>
 
-      <!-- Split layout -->
-      <div class="fw-split" style="display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:start;opacity:1;visibility:visible;">
+<div style="max-width:700px;margin:0 auto 2.5rem;">
+  <p style="font-size:.72rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#8A8880;text-align:center;margin-bottom:.6rem;">Built on the world's most trusted frameworks</p>
+  <p style="color:var(--chalk-dim);text-align:center;font-size:.9rem;margin-bottom:1.2rem;">TEACH-AI isn't a new theory of teaching. It's built on four decades of research educators already trust, applied specifically to AI-integrated classrooms.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+    <span style="border:1px solid #3a3a34;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;font-family:'Montserrat',sans-serif;">Bloom's Taxonomy</span>
+    <span style="border:1px solid #3a3a34;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;font-family:'Montserrat',sans-serif;">TPACK</span>
+    <span style="border:1px solid #3a3a34;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;font-family:'Montserrat',sans-serif;">Universal Design for Learning</span>
+    <span style="border:1px solid #3a3a34;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;font-family:'Montserrat',sans-serif;">Hattie's Visible Learning</span>
+  </div>
+</div>
 
-        <!-- LEFT: Pedagogical foundations -->
-        <div class="fw-foundations" style="opacity:1;visibility:visible;">
-          <div class="fw-found-label" style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(240,237,232,.65);margin-bottom:1.5rem;">Built on the world's most trusted frameworks</div>
-          <div class="fw-found-list" style="display:flex;flex-direction:column;">
+<hr style="border:none;border-top:1px solid #262622;max-width:400px;margin:0 auto 2.5rem;">
 
-            <div style="padding:1.2rem 0;border-bottom:1px solid rgba(240,237,232,.08);border-top:1px solid rgba(240,237,232,.08);">
-              <div style="font-size:.95rem;font-weight:600;color:#F0EDE8;margin-bottom:.35rem;">Bloom's Taxonomy</div>
-              <div style="font-size:.78rem;color:var(--orange);font-style:italic;font-weight:400;margin-bottom:.3rem;">From recall to creation.</div>
-              <div style="font-size:.82rem;color:rgba(240,237,232,.55);line-height:1.65;font-weight:300;margin-bottom:.6rem;">We don't just assess knowledge, we help teachers progress through higher-order thinking and instructional design.</div>
-              <div style="display:inline-block;font-size:.68rem;font-style:italic;color:rgba(240,237,232,.65);border:1px solid rgba(240,237,232,.25);padding:.1rem .55rem;border-radius:2px;">Anderson and Krathwohl, 2001</div>
-            </div>
+<div style="max-width:700px;margin:0 auto 2.5rem;">
+  <p style="font-size:.72rem;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#8A8880;text-align:center;margin-bottom:1.2rem;">7 competency domains</p>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+    <span style="border:1px solid #262622;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;background:#141412;font-family:'Montserrat',sans-serif;display:inline-flex;align-items:center;gap:8px;"><span style="width:22px;height:22px;border-radius:50%;background:rgba(255,127,80,0.13);color:#FF7F50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">T</span>Technology Fluency</span>
+    <span style="border:1px solid #262622;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;background:#141412;font-family:'Montserrat',sans-serif;display:inline-flex;align-items:center;gap:8px;"><span style="width:22px;height:22px;border-radius:50%;background:rgba(255,127,80,0.13);color:#FF7F50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">E</span>Ethical Intelligence</span>
+    <span style="border:1px solid #262622;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;background:#141412;font-family:'Montserrat',sans-serif;display:inline-flex;align-items:center;gap:8px;"><span style="width:22px;height:22px;border-radius:50%;background:rgba(255,127,80,0.13);color:#FF7F50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">A</span>Assessment Mastery</span>
+    <span style="border:1px solid #262622;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;background:#141412;font-family:'Montserrat',sans-serif;display:inline-flex;align-items:center;gap:8px;"><span style="width:22px;height:22px;border-radius:50%;background:rgba(255,127,80,0.13);color:#FF7F50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">C</span>Community Engagement</span>
+    <span style="border:1px solid #262622;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;background:#141412;font-family:'Montserrat',sans-serif;display:inline-flex;align-items:center;gap:8px;"><span style="width:22px;height:22px;border-radius:50%;background:rgba(255,127,80,0.13);color:#FF7F50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">H</span>Hybrid Pedagogy</span>
+    <span style="border:1px solid #262622;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;background:#141412;font-family:'Montserrat',sans-serif;display:inline-flex;align-items:center;gap:8px;"><span style="width:22px;height:22px;border-radius:50%;background:rgba(255,127,80,0.13);color:#FF7F50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">A</span>Agile Learning</span>
+    <span style="border:1px solid #262622;border-radius:20px;padding:7px 16px;font-size:12px;color:#B4B2A9;background:#141412;font-family:'Montserrat',sans-serif;display:inline-flex;align-items:center;gap:8px;"><span style="width:22px;height:22px;border-radius:50%;background:rgba(255,127,80,0.13);color:#FF7F50;font-weight:700;font-size:11px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;">I</span>Impact Amplification</span>
+  </div>
+</div>
 
-            <div style="padding:1.2rem 0;border-bottom:1px solid rgba(240,237,232,.08);">
-              <div style="font-size:.95rem;font-weight:600;color:#F0EDE8;margin-bottom:.35rem;">TPACK</div>
-              <div style="font-size:.78rem;color:var(--orange);font-style:italic;font-weight:400;margin-bottom:.3rem;">Technology meets pedagogy and content.</div>
-              <div style="font-size:.82rem;color:rgba(240,237,232,.55);line-height:1.65;font-weight:300;margin-bottom:.6rem;">We evaluate how teachers integrate AI and digital tools meaningfully, not just use them.</div>
-              <div style="display:inline-block;font-size:.68rem;font-style:italic;color:rgba(240,237,232,.65);border:1px solid rgba(240,237,232,.25);padding:.1rem .55rem;border-radius:2px;">Mishra and Koehler, 2006</div>
-            </div>
-
-            <div style="padding:1.2rem 0;border-bottom:1px solid rgba(240,237,232,.08);">
-              <div style="font-size:.95rem;font-weight:600;color:#F0EDE8;margin-bottom:.35rem;">Universal Design for Learning</div>
-              <div style="font-size:.78rem;color:var(--orange);font-style:italic;font-weight:400;margin-bottom:.3rem;">Designed for every learner.</div>
-              <div style="font-size:.82rem;color:rgba(240,237,232,.55);line-height:1.65;font-weight:300;margin-bottom:.6rem;">Our competencies embed inclusive and adaptive teaching practices across all domains.</div>
-              <div style="display:inline-block;font-size:.68rem;font-style:italic;color:rgba(240,237,232,.65);border:1px solid rgba(240,237,232,.25);padding:.1rem .55rem;border-radius:2px;">CAST, 2018</div>
-            </div>
-
-            <div style="padding:1.2rem 0;border-bottom:1px solid rgba(240,237,232,.08);">
-              <div style="font-size:.95rem;font-weight:600;color:#F0EDE8;margin-bottom:.35rem;">Hattie's Visible Learning</div>
-              <div style="font-size:.78rem;color:var(--orange);font-style:italic;font-weight:400;margin-bottom:.3rem;">Focused on what actually works.</div>
-              <div style="font-size:.82rem;color:rgba(240,237,232,.55);line-height:1.65;font-weight:300;margin-bottom:.6rem;">We prioritise high-impact teaching practices backed by evidence, not trends.</div>
-              <div style="display:inline-block;font-size:.68rem;font-style:italic;color:rgba(240,237,232,.65);border:1px solid rgba(240,237,232,.25);padding:.1rem .55rem;border-radius:2px;">Hattie, 2009</div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Divider -->
-        <div style="display:flex;flex-direction:column;align-items:center;padding-top:1rem;gap:.8rem;height:100%;">
-          <div style="width:1px;flex:1;background:linear-gradient(180deg,transparent,rgba(244,123,90,.45),transparent);min-height:60px;"></div>
-          <div style="writing-mode:vertical-rl;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#F47B5A;background:rgba(244,123,90,.1);border:1px solid rgba(244,123,90,.2);border-radius:50px;padding:.6rem .3rem;white-space:nowrap;">Mapped to</div>
-          <div style="width:1px;flex:1;background:linear-gradient(180deg,transparent,rgba(244,123,90,.45),transparent);min-height:60px;"></div>
-        </div>
-
-        <!-- RIGHT: 7 Domains -->
-        <div class="fw-domains" style="opacity:1;visibility:visible;">
-          <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(240,237,232,.65);margin-bottom:1.5rem;">7 competency domains</div>
-          <div style="display:flex;flex-direction:column;">
-
-            <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem 0 1rem 1.5rem;border-top:1px solid rgba(240,237,232,.08);border-bottom:1px solid rgba(240,237,232,.08);">
-              <span style="font-family:'Montserrat',sans-serif;font-style:italic;font-size:1.6rem;color:#F47B5A;line-height:1;flex-shrink:0;width:22px;text-align:center;">T</span>
-              <div><div style="font-size:.92rem;font-weight:600;color:#F0EDE8;margin-bottom:.25rem;">Technology Fluency</div><div style="font-size:.78rem;color:rgba(240,237,232,.65);line-height:1.55;font-weight:300;">Knowing which AI tools belong in your classroom and using them with confidence.</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem 0 1rem 1.5rem;border-bottom:1px solid rgba(240,237,232,.08);">
-              <span style="font-family:'Montserrat',sans-serif;font-style:italic;font-size:1.6rem;color:#F47B5A;line-height:1;flex-shrink:0;width:22px;text-align:center;">E</span>
-              <div><div style="font-size:.92rem;font-weight:600;color:#F0EDE8;margin-bottom:.25rem;">Ethical Intelligence</div><div style="font-size:.78rem;color:rgba(240,237,232,.65);line-height:1.55;font-weight:300;">Data privacy, bias awareness, and responsible AI use with students and families.</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem 0 1rem 1.5rem;border-bottom:1px solid rgba(240,237,232,.08);">
-              <span style="font-family:'Montserrat',sans-serif;font-style:italic;font-size:1.6rem;color:#F47B5A;line-height:1;flex-shrink:0;width:22px;text-align:center;">A</span>
-              <div><div style="font-size:.92rem;font-weight:600;color:#F0EDE8;margin-bottom:.25rem;">Assessment Mastery</div><div style="font-size:.78rem;color:rgba(240,237,232,.65);line-height:1.55;font-weight:300;">Building meaningful assessments in an AI-native world.</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem 0 1rem 1.5rem;border-bottom:1px solid rgba(240,237,232,.08);">
-              <span style="font-family:'Montserrat',sans-serif;font-style:italic;font-size:1.6rem;color:#F47B5A;line-height:1;flex-shrink:0;width:22px;text-align:center;">C</span>
-              <div><div style="font-size:.92rem;font-weight:600;color:#F0EDE8;margin-bottom:.25rem;">Community Engagement</div><div style="font-size:.78rem;color:rgba(240,237,232,.65);line-height:1.55;font-weight:300;">Using AI to design better lessons without losing human judgment.</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem 0 1rem 1.5rem;border-bottom:1px solid rgba(240,237,232,.08);">
-              <span style="font-family:'Montserrat',sans-serif;font-style:italic;font-size:1.6rem;color:#F47B5A;line-height:1;flex-shrink:0;width:22px;text-align:center;">H</span>
-              <div><div style="font-size:.92rem;font-weight:600;color:#F0EDE8;margin-bottom:.25rem;">Hybrid Pedagogy</div><div style="font-size:.78rem;color:rgba(240,237,232,.65);line-height:1.55;font-weight:300;">Working alongside AI without becoming dependent on it.</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem 0 1rem 1.5rem;border-bottom:1px solid rgba(240,237,232,.08);">
-              <span style="font-family:'Montserrat',sans-serif;font-style:italic;font-size:1.6rem;color:#F47B5A;line-height:1;flex-shrink:0;width:22px;text-align:center;">A</span>
-              <div><div style="font-size:.92rem;font-weight:600;color:#F0EDE8;margin-bottom:.25rem;">Agile Learning</div><div style="font-size:.78rem;color:rgba(240,237,232,.65);line-height:1.55;font-weight:300;">Personalising learning at scale for every student.</div></div>
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:1rem;padding:1rem 0 1rem 1.5rem;border-bottom:1px solid rgba(240,237,232,.08);">
-              <span style="font-family:'Montserrat',sans-serif;font-style:italic;font-size:1.6rem;color:#F47B5A;line-height:1;flex-shrink:0;width:22px;text-align:center;">I</span>
-              <div><div style="font-size:.92rem;font-weight:600;color:#F0EDE8;margin-bottom:.25rem;">Impact Amplification</div><div style="font-size:.78rem;color:rgba(240,237,232,.65);line-height:1.55;font-weight:300;">Ensuring AI makes your classroom more equitable for all students.</div></div>
-            </div>
-
-          </div>
-        </div>
+<div style="text-align:center;margin-top:1rem;">
+  <a href="teach-ai-framework.html" style="font-size:13.5px;font-weight:600;color:#FF7F50;text-decoration:none;">Read the full framework &#8594;</a>
+</div>
     </div>
   </section>
 
@@ -889,7 +830,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
 
         <!-- Animated progress line -->
         <div style="position:absolute;top:28px;left:calc(12.5% - 0px);right:calc(12.5% - 0px);height:2px;background:rgba(240,237,232,.1);z-index:0;border-radius:2px;">
-          <div id="how-progress-line" style="height:100%;width:0%;background:linear-gradient(90deg,#F47B5A,rgba(244,123,90,.4));border-radius:2px;transition:width 1.8s cubic-bezier(.4,0,.2,1);"></div>
+          <div id="how-progress-line" style="height:100%;width:0%;background:linear-gradient(90deg,#FF7F50,rgba(255,127,80,.4));border-radius:2px;transition:width 1.8s cubic-bezier(.4,0,.2,1);"></div>
         </div>
 
         <div class="how-step r" data-step="1">
@@ -963,7 +904,7 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
           <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true" role="presentation"/>
           <input type="hidden" name="locale" value="en"/>
           <div style="height:1px;background:rgba(0,0,0,.06);margin-bottom:1.5rem;"></div>
-          <button type="submit" class="wl-submit-btn" style="width:100%;padding:1rem;background:#111111;color:#FFFFFF;border:none;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:3px 3px 0 #F47B5A;display:block;">Reserve my spot on the waitlist</button>
+          <button type="submit" class="wl-submit-btn" style="width:100%;padding:1rem;background:#111111;color:#FFFFFF;border:none;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:3px 3px 0 #FF7F50;display:block;">Reserve my spot on the waitlist</button>
           <p id="wl-error" style="display:none;font-size:.78rem;color:#c0392b;text-align:center;margin-top:.9rem;line-height:1.6;"></p>
           <p style="font-size:.72rem;color:#767676;text-align:center;margin-top:.9rem;line-height:1.6;">By joining, you agree to receive product updates from theGurucool.ai. Unsubscribe any time.</p>
           </form>
@@ -972,8 +913,8 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
         <div id="wl-success" style="display:none;text-align:center;padding:2.5rem 1rem;">
           <div style="font-size:3.5rem;margin-bottom:1.2rem;">🎉</div>
           <div style="font-family:'Montserrat',sans-serif;font-size:2.2rem;font-weight:700;color:#111;margin-bottom:.6rem;">You're on the list.</div>
-          <p style="font-size:.92rem;color:#555;line-height:1.75;max-width:340px;margin:0 auto;">We'll be in touch before launch with your early access link. Keep an eye on your inbox.<br><br>Follow our build-in-public journey on <a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener" style="color:#F47B5A;text-decoration:none;font-weight:600;">LinkedIn</a>.</p>
-          <a href="blog.html" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:1.8rem;background:#F47B5A;color:white;padding:.75rem 1.6rem;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;">Read the blog →</a>
+          <p style="font-size:.92rem;color:#555;line-height:1.75;max-width:340px;margin:0 auto;">We'll be in touch before launch with your early access link. Keep an eye on your inbox.<br><br>Follow our build-in-public journey on <a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener" style="color:#FF7F50;text-decoration:none;font-weight:600;">LinkedIn</a>.</p>
+          <a href="blog.html" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:1.8rem;background:#FF7F50;color:white;padding:.75rem 1.6rem;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;">Read the blog →</a>
         </div>
       </div>
     </div>
@@ -1043,8 +984,8 @@ function toggleChip2(el) {
   });
   if (!wasActive) {
     el.setAttribute('data-chosen','1');
-    el.style.background='rgba(244,123,90,0.08)'; el.style.borderColor='#F47B5A';
-    el.style.color='#F47B5A'; el.style.fontWeight='500';
+    el.style.background='rgba(255,127,80,0.08)'; el.style.borderColor='#FF7F50';
+    el.style.color='#FF7F50'; el.style.fontWeight='500';
     document.getElementById('wl-role').value = el.textContent.trim();
   } else {
     document.getElementById('wl-role').value = '';
