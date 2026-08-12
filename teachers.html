@@ -125,6 +125,8 @@
 .wl-input,.wl-select{width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;}
 .wl-select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23666' d='M6 8L0 0h12z'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right 1rem center;background-size:10px;padding-right:2.5rem;}
 .wl-submit{width:100%;padding:1rem;background:#111;color:#fff;border:none;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:3px 3px 0 var(--orange);display:block;}
+.btn-main{background:var(--orange);color:#fff;padding:.85rem 1.8rem;border-radius:3px;text-decoration:none;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;display:inline-flex;align-items:center;gap:.4rem;box-shadow:3px 3px 0 rgba(240,237,232,.2);transition:all .15s;}
+.btn-main:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 rgba(240,237,232,.3);}
 .wl-note{font-size:.72rem;color:#767676;text-align:center;margin-top:.9rem;line-height:1.6;}
 
 /* === Active nav state === */
@@ -289,18 +291,10 @@
 </section>
 
 <!-- WAITLIST -->
-<section id="waitlist" class="wl-section">
-  <div style="max-width:700px;margin:0 auto;">
-    <div style="background:#111111;border-radius:20px;padding:4rem 3rem;display:flex;flex-direction:column;gap:1.8rem;text-align:center;align-items:center;">
-      <div>
-        <div style="font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#FF7F50;margin-bottom:1rem;">For Teachers</div>
-        <h2 style="font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:700;color:#FFFFFF;line-height:1.2;margin:0 0 1.2rem;">Create your free account and start building AI skills in minutes.</h2>
-        <p style="font-size:1rem;color:rgba(240,237,232,.55);line-height:1.75;margin:0;">No waiting, no approval needed.</p>
-      </div>
-      <a href="https://app.thegurucool.ai/signup" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.6rem;background:#FF7F50;color:#FFFFFF;padding:1.1rem 2.5rem;border-radius:10px;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:600;text-decoration:none;">Start Free <span>→</span></a>
-      <p style="font-size:.85rem;color:rgba(240,237,232,.35);line-height:1.6;margin:0;">More than hundreds of educators using thegurucool to save time and teach smarter.</p>
-    </div>
-  </div>
+<section id="waitlist" style="padding:80px 24px;text-align:center;background:#141412;">
+  <h2 style="color:#EDECE7;font-weight:400;font-size:clamp(1.4rem,3vw,2rem);margin:0 0 16px;font-family:'Montserrat',sans-serif;">Get a clear picture of your AI readiness</h2>
+  <p style="color:#B4B2A9;max-width:480px;margin:0 auto;line-height:1.7;font-family:'Montserrat',sans-serif;">Join hundreds of teachers who are already building measurable AI readiness, one domain at a time.</p>
+  <a href="https://app.thegurucool.ai/signup" target="_blank" rel="noopener" class="btn-main" style="margin-top:1.5rem;display:inline-block;">Sign Up Now</a>
 </section>
 
 <footer>
