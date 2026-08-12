@@ -290,70 +290,15 @@
 
 <!-- WAITLIST -->
 <section id="waitlist" class="wl-section">
-  <div class="wl-wrap">
-    <div class="wl-header">
-      <span class="sub-section-label">Reserve your spot</span>
-      <h2>Be first in the classroom</h2>
-      <p>Early access is now open. Join the waitlist and get a behind-the-scenes look at how we built it.</p>
-    </div>
-    <div class="wl-card" id="wl-card">
-      <div id="wl-form-body">
-        <form id="wl-form" onsubmit="submitWaitlist(event); return false;">
-          <div class="wl-row">
-            <label class="wl-label" for="tc-firstname">First name</label>
-            <input class="wl-input" type="text" name="FIRSTNAME" id="tc-firstname" placeholder="Maya" required/>
-          </div>
-          <div class="wl-row">
-            <label class="wl-label" for="tc-email">Work email</label>
-            <input class="wl-input" type="email" name="EMAIL" id="tc-email" placeholder="you@school.edu" required/>
-          </div>
-          <div class="wl-row">
-            <label class="wl-label" for="tc-school">School name</label>
-            <input class="wl-input" type="text" name="SCHOOL" id="tc-school" placeholder="Your school" required/>
-          </div>
-          <div class="wl-row">
-            <label class="wl-label" for="wl-role">I am a...</label>
-            <select class="wl-select" name="ROLE" id="wl-role" required>
-              <option value="">Select your role</option>
-              <option>Classroom Teacher</option>
-              <option>Head of Department</option>
-              <option>Teacher Educator</option>
-              <option>EdTech Coordinator</option>
-            </select>
-          </div>
-          <div class="wl-row">
-            <label class="wl-label" for="wl-country">Country</label>
-            <select class="wl-select" name="COUNTRY" id="wl-country" required>
-              <option value="">Select your country</option>
-              <option>Brazil</option>
-              <option>Ghana</option>
-              <option>India</option>
-              <option>Indonesia</option>
-              <option>Kenya</option>
-              <option>Malaysia</option>
-              <option>Mexico</option>
-              <option>Philippines</option>
-              <option>Rwanda</option>
-              <option>Saudi Arabia</option>
-              <option>Singapore</option>
-              <option>Thailand</option>
-              <option>Vietnam</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true" role="presentation"/>
-          <input type="hidden" name="locale" value="en"/>
-          <div style="height:1px;background:rgba(0,0,0,.06);margin:1.5rem 0;"></div>
-          <button class="wl-submit" type="submit">Reserve my spot →</button>
-          <p id="wl-error" style="display:none;font-size:.78rem;color:#c0392b;text-align:center;margin-top:.9rem;line-height:1.6;"></p>
-          <p class="wl-note">For classroom teachers, HODs, and teacher educators across K-12 and higher education. No spam, just product updates and early access when we launch.</p>
-        </form>
+  <div style="max-width:700px;margin:0 auto;">
+    <div style="background:#111111;border-radius:20px;padding:4rem 3rem;display:flex;flex-direction:column;gap:1.8rem;text-align:center;align-items:center;">
+      <div>
+        <div style="font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#FF7F50;margin-bottom:1rem;">For Teachers</div>
+        <h2 style="font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:700;color:#FFFFFF;line-height:1.2;margin:0 0 1.2rem;">Create your free account and start building AI skills in minutes.</h2>
+        <p style="font-size:1rem;color:rgba(240,237,232,.55);line-height:1.75;margin:0;">No waiting, no approval needed.</p>
       </div>
-      <div id="wl-success" style="display:none;text-align:center;padding:2rem 1rem;">
-        <div style="font-size:3.5rem;margin-bottom:1.2rem;">🎉</div>
-        <div style="font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:700;color:#111;margin-bottom:.6rem;">You're on the list.</div>
-        <p style="font-size:.92rem;color:#555;line-height:1.75;max-width:340px;margin:0 auto;">We'll be in touch before launch with your early access link.</p>
-      </div>
+      <a href="https://app.thegurucool.ai/signup" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.6rem;background:#FF7F50;color:#FFFFFF;padding:1.1rem 2.5rem;border-radius:10px;font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:600;text-decoration:none;">Start Free <span>→</span></a>
+      <p style="font-size:.85rem;color:rgba(240,237,232,.35);line-height:1.6;margin:0;">More than hundreds of educators using thegurucool to save time and teach smarter.</p>
     </div>
   </div>
 </section>
