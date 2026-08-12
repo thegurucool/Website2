@@ -763,11 +763,11 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
     <div class="hero-inner">
       <div class="hero-left r">
         <div class="hero-eyebrow">AI-powered, competency-based professional development</div>
-        <h1>We're live. Join <em>thegurucool</em> today.</h1>
-        <p class="hero-sub">AI-powered professional development built for K-12 teachers. Start free, right now.</p>
+        <h1>Professional<br>development<br>that <em>actually</em> <span class="hl">works</span></h1>
+        <p class="hero-sub">Teachers can now use AI to measure their skills across seven competencies, get personalised pathways to grow at their own pace, and earn credentials that actually mean something.</p>
         <div class="hero-btns">
           <a class="sub-hero-cta" href="https://app.thegurucool.ai/signup" target="_blank" rel="noopener">Sign Up Free <span>→</span></a>
-          <a class="sub-hero-cta" href="#waitlist" style="background:transparent;color:var(--chalk);border:1.5px solid rgba(240,237,232,.3);box-shadow:none;">Book a School Demo</a>
+          <a class="sub-hero-cta" href="schools.html" style="background:transparent;color:var(--chalk);border:1.5px solid rgba(240,237,232,.3);box-shadow:none;">Book a School Demo</a>
         </div>
       </div>
       <div class="hero-screen-wrap r">
@@ -863,79 +863,18 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
     </div>
   </section>
 
-  <!-- TWO-PATH SECTION -->
+  <!-- FOR TEACHERS CTA -->
   <section id="waitlist" style="background:#FAFAFA;padding:5rem 2.5rem 6rem;">
-    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;">
-
-      <!-- Path 1: For Teachers -->
-      <div style="background:#111111;border-radius:16px;padding:3rem 2.5rem;display:flex;flex-direction:column;gap:1.5rem;">
+    <div style="max-width:600px;margin:0 auto;">
+      <div style="background:#111111;border-radius:16px;padding:3rem 2.5rem;display:flex;flex-direction:column;gap:1.5rem;text-align:center;align-items:center;">
         <div>
           <div style="font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#FF7F50;margin-bottom:.8rem;">For Teachers</div>
           <h2 style="font-family:'Montserrat',sans-serif;font-size:1.9rem;font-weight:700;color:#FFFFFF;line-height:1.2;margin:0 0 1rem;">Create your free account and start building AI skills in minutes.</h2>
           <p style="font-size:.92rem;color:rgba(240,237,232,.65);line-height:1.75;margin:0;">No waiting, no approval needed.</p>
         </div>
-        <a href="https://app.thegurucool.ai/signup" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;background:#FF7F50;color:#FFFFFF;padding:1rem 2rem;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;text-decoration:none;align-self:flex-start;">Start Free <span>→</span></a>
+        <a href="https://app.thegurucool.ai/signup" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;background:#FF7F50;color:#FFFFFF;padding:1rem 2rem;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;text-decoration:none;">Start Free <span>→</span></a>
         <p style="font-size:.8rem;color:rgba(240,237,232,.45);line-height:1.6;margin:0;">Already thousands of educators using thegurucool to save time and teach smarter.</p>
       </div>
-
-      <!-- Path 2: For Schools -->
-      <div>
-        <div style="margin-bottom:2rem;">
-          <div style="font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#FF7F50;margin-bottom:.8rem;">For Schools &amp; Districts</div>
-          <h2 style="font-family:'Montserrat',sans-serif;font-size:1.9rem;font-weight:700;color:#111111;line-height:1.2;margin:0 0 .8rem;">Bring thegurucool to your whole staff.</h2>
-          <p style="font-size:.92rem;color:#666;line-height:1.75;margin:0;">Fill out the form below and our team will reach out to set up a personalized demo.</p>
-        </div>
-
-        <div id="wl-form-card" style="background:#FFFFFF;border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:2.5rem;box-shadow:0 8px 40px rgba(0,0,0,.06);">
-          <div id="wl-form-body">
-            <form id="wl-form" onsubmit="submitWaitlist(event); return false;">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem;">
-              <div>
-                <label for="idx-firstname" style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">First name</label>
-                <input type="text" name="FIRSTNAME" id="idx-firstname" placeholder="Sarah" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
-              </div>
-              <div>
-                <label for="idx-lastname" style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">Last name</label>
-                <input type="text" name="LASTNAME" id="idx-lastname" placeholder="Mitchell" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
-              </div>
-            </div>
-            <div style="margin-bottom:1.2rem;">
-              <label for="idx-email" style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">Work email</label>
-              <input type="email" name="EMAIL" id="idx-email" placeholder="sarah@school.edu" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
-            </div>
-            <div style="margin-bottom:1.2rem;">
-              <label for="idx-school" style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.45rem;letter-spacing:.2px;">School name</label>
-              <input type="text" name="SCHOOL" id="idx-school" placeholder="Your school" required style="width:100%;padding:.85rem 1rem;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);border-radius:8px;color:#111;font-family:'Montserrat',sans-serif;font-size:.92rem;outline:none;"/>
-            </div>
-            <div style="margin-bottom:1.8rem;">
-              <label style="display:block;font-size:.78rem;font-weight:600;color:#444;margin-bottom:.6rem;letter-spacing:.2px;">I am a...</label>
-              <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
-                <button type="button" onclick="toggleChip2(this)" style="padding:.45rem 1rem;border-radius:50px;font-size:.82rem;font-family:'Montserrat',sans-serif;color:#666;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);cursor:pointer;transition:all .15s;">Classroom Teacher</button>
-                <button type="button" onclick="toggleChip2(this)" style="padding:.45rem 1rem;border-radius:50px;font-size:.82rem;font-family:'Montserrat',sans-serif;color:#666;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);cursor:pointer;transition:all .15s;">Head of Department</button>
-                <button type="button" onclick="toggleChip2(this)" style="padding:.45rem 1rem;border-radius:50px;font-size:.82rem;font-family:'Montserrat',sans-serif;color:#666;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);cursor:pointer;transition:all .15s;">Principal</button>
-                <button type="button" onclick="toggleChip2(this)" style="padding:.45rem 1rem;border-radius:50px;font-size:.82rem;font-family:'Montserrat',sans-serif;color:#666;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);cursor:pointer;transition:all .15s;">EdTech Coordinator</button>
-                <button type="button" onclick="toggleChip2(this)" style="padding:.45rem 1rem;border-radius:50px;font-size:.82rem;font-family:'Montserrat',sans-serif;color:#666;background:#FAFAFA;border:1.5px solid rgba(0,0,0,.12);cursor:pointer;transition:all .15s;">Teacher Educator</button>
-              </div>
-              <input type="hidden" name="ROLE" id="wl-role" value=""/>
-            </div>
-            <input type="text" name="email_address_check" value="" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true" role="presentation"/>
-            <input type="hidden" name="locale" value="en"/>
-            <div style="height:1px;background:rgba(0,0,0,.06);margin-bottom:1.5rem;"></div>
-            <button type="submit" class="wl-submit-btn" style="width:100%;padding:1rem;background:#111111;color:#FFFFFF;border:none;border-radius:8px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;letter-spacing:.2px;cursor:pointer;box-shadow:3px 3px 0 #FF7F50;display:block;">Request Demo</button>
-            <p id="wl-error" style="display:none;font-size:.78rem;color:#c0392b;text-align:center;margin-top:.9rem;line-height:1.6;"></p>
-            <p style="font-size:.72rem;color:#767676;text-align:center;margin-top:.9rem;line-height:1.6;">By submitting, you agree to receive product updates from theGurucool.ai. Unsubscribe any time.</p>
-            </form>
-          </div>
-
-          <div id="wl-success" style="display:none;text-align:center;padding:2.5rem 1rem;">
-            <div style="font-size:3.5rem;margin-bottom:1.2rem;">🎉</div>
-            <div style="font-family:'Montserrat',sans-serif;font-size:1.8rem;font-weight:700;color:#111;margin-bottom:.6rem;">Request received.</div>
-            <p style="font-size:.92rem;color:#555;line-height:1.75;max-width:340px;margin:0 auto;">Our team will be in touch shortly to set up your personalized demo. Keep an eye on your inbox.<br><br>Follow our journey on <a href="https://www.linkedin.com/company/thegurucool/" target="_blank" rel="noopener" style="color:#FF7F50;text-decoration:none;font-weight:600;">LinkedIn</a>.</p>
-            <a href="blog.html" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:1.8rem;background:#FF7F50;color:white;padding:.75rem 1.6rem;border-radius:6px;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;border:none;text-decoration:none;">Read the blog →</a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 </main>
