@@ -71,7 +71,7 @@
   "logo": "https://thegurucool.ai/images/logo.png",
   "description": "AI-powered teacher professional development platform for K-12 educators globally. Personalised learning pathways, scenario-based competency assessment across the TEACH-AI framework, and mastery-based verified credentials.",
   "foundingLocation": "Singapore",
-  "areaServed": ["Malaysia", "Philippines", "Singapore", "Indonesia", "Vietnam", "Thailand", "India"],
+  "areaServed": "Worldwide",
   "audience": {"@type": "Audience", "audienceType": "K-12 teachers and school leaders"},
   "contactPoint": {"@type": "ContactPoint", "email": "admin@thegurucool.ai", "contactType": "customer support"},
   "sameAs": ["https://www.linkedin.com/company/thegurucool/"],
@@ -769,8 +769,8 @@ h1 .hl::after{content:'';position:absolute;left:-3px;bottom:2px;right:-3px;heigh
           <a class="sub-hero-cta" href="schools.html#waitlist" style="background:transparent;color:var(--chalk);border:1.5px solid rgba(240,237,232,.3);box-shadow:none;">Book a School Demo</a>
         </div>
         <div style="margin-top:2.5rem;">
-          <p style="font-size:11px;letter-spacing:1px;color:rgba(240,237,232,.4);text-transform:uppercase;margin:0 0 1rem;font-family:'Montserrat',sans-serif;text-align:center;">Featured in</p>
-          <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;justify-content:center;">
+          <p class="featured-label" style="font-size:11px;letter-spacing:1px;color:rgba(240,237,232,.4);text-transform:uppercase;margin:0 0 1rem;font-family:'Montserrat',sans-serif;text-align:left;">Featured in</p>
+          <div class="featured-badges" style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;justify-content:flex-start;">
             <img src="/images/Unlock.jpeg" alt="The Bicester Collection — Unlock Her Future Prize" style="height:72px;width:auto;display:block;"/>
             <a href="https://edtechindex.org" target="_blank" rel="noopener"><img src="/images/EdTech_Badge_FindUs_150w.png" alt="Find us on the EdTech Index" style="height:72px;width:auto;display:block;"/></a>
           </div>
@@ -998,6 +998,8 @@ async function submitWaitlist(e) {
   section.hero .hero-eyebrow,
   section.hero .hero-btns { justify-content: center !important; }
   section.hero .hero-sub { margin-left: auto !important; margin-right: auto !important; }
+  .featured-label { text-align: center !important; }
+  .featured-badges { justify-content: center !important; }
   .feat-panels .feat-panel {
     display: block !important;
     text-align: center !important;
