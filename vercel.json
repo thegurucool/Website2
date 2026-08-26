@@ -3,5 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/blog/:slug", "destination": "/posts/:slug" }
-  ]
+  ],
+  "functions": {
+    "api/chat.js": {
+      "runtime": "edge"
+    }
+  }
 }
