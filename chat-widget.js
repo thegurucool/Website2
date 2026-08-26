@@ -230,6 +230,7 @@
     input.style.height = 'auto';
     messages.push({ role: 'user', content: text });
     renderMessage('user', text);
+    if (typeof gtag !== 'undefined') gtag('event', 'guru_message_sent');
     setLoading(true);
 
     const typing = showTyping();
@@ -289,6 +290,7 @@
     btn.classList.add('open');
     btn.setAttribute('aria-expanded', 'true');
     if (!greeted) { renderMessage('bot', GREETING); greeted = true; }
+    if (typeof gtag !== 'undefined') gtag('event', 'guru_opened');
     setTimeout(() => input.focus(), 250);
   }
 
