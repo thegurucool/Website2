@@ -133,7 +133,7 @@
   root.innerHTML = `
     <div id="guru-panel" role="dialog" aria-label="Chat with Guru">
       <div id="guru-header">
-        <img src="/images/logo.png" alt="Guru">
+        <img src="/images/logo_dark.png" alt="Guru">
         <div id="guru-header-text">
           <div id="guru-header-name">Guru</div>
           <div id="guru-header-status">thegurucool.ai assistant</div>
@@ -152,7 +152,7 @@
     </div>
 
     <button id="guru-btn" aria-label="Chat with Guru">
-      <img src="/images/logo.png" alt="Guru">
+      <img src="/images/logo_dark.png" alt="Guru">
       <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
       </svg>
@@ -181,7 +181,7 @@
     const wrap = document.createElement('div');
     wrap.className = `guru-msg ${role}`;
     if (role === 'bot') {
-      wrap.innerHTML = `<img class="guru-msg-avatar" src="/images/logo.png" alt="Guru"><div class="guru-msg-bubble"></div>`;
+      wrap.innerHTML = `<img class="guru-msg-avatar" src="/images/logo_dark.png" alt="Guru"><div class="guru-msg-bubble"></div>`;
     } else {
       wrap.innerHTML = `<div class="guru-msg-bubble"></div>`;
     }
@@ -196,7 +196,7 @@
     const wrap = document.createElement('div');
     wrap.className = 'guru-msg bot';
     wrap.id = 'guru-typing';
-    wrap.innerHTML = `<img class="guru-msg-avatar" src="/images/logo.png" alt="Guru"><div class="guru-msg-bubble guru-typing"><span></span><span></span><span></span></div>`;
+    wrap.innerHTML = `<img class="guru-msg-avatar" src="/images/logo_dark.png" alt="Guru"><div class="guru-msg-bubble guru-typing"><span></span><span></span><span></span></div>`;
     messagesEl.appendChild(wrap);
     scrollBottom();
     return wrap;
