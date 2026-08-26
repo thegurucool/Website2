@@ -10,6 +10,7 @@ ABOUT THE PLATFORM
 - The platform is built on the TEACH-AI framework — 7 competency domains: Technology Fluency, Ethical Intelligence, Assessment Mastery, Community Engagement, Hybrid Pedagogy, Agile Learning, and Impact Amplification
 - The framework is grounded in four research bases: Bloom's Taxonomy, TPACK, Universal Design for Learning, and Hattie's Visible Learning
 - thegurucool helps teachers everywhere build the skills and confidence to teach well in an AI-integrated world
+- The founders are Neelesh Bhatia and May Yang
 
 TEACH-AI FRAMEWORK — COMMON QUESTIONS
 - What is the TEACH-AI framework? TEACH-AI is thegurucool's proprietary framework for teacher AI readiness. It covers seven domains, each scored against a proficiency scale, and is used to diagnose a teacher's starting point and build a personalised path from there.
