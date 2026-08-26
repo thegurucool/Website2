@@ -164,6 +164,7 @@
   const GREETING = "Hi, I'm Guru. I can tell you about thegurucool, how it works, who it's for, and how to get started. What would you like to know?";
   let messages = [];
   let streaming = false;
+  let greeted = false;
 
   const panel = document.getElementById('guru-panel');
   const btn = document.getElementById('guru-btn');
@@ -287,7 +288,7 @@
     panel.classList.add('open');
     btn.classList.add('open');
     btn.setAttribute('aria-expanded', 'true');
-    if (messages.length === 0) renderMessage('bot', GREETING);
+    if (!greeted) { renderMessage('bot', GREETING); greeted = true; }
     setTimeout(() => input.focus(), 250);
   }
 
@@ -303,8 +304,10 @@
 
   clearBtn.addEventListener('click', () => {
     messages = [];
+    greeted = false;
     messagesEl.innerHTML = '';
     renderMessage('bot', GREETING);
+    greeted = true;
   });
 
   /* ── Input events ────────────────────────────────────── */
