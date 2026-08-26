@@ -1,16 +1,16 @@
 # theGurucool.ai
 
-> AI-powered teacher professional development platform for K-12 educators across Southeast Asia and India.
+> AI-powered teacher professional development platform for educators across Southeast Asia and India.
 
-thegurucool.ai helps K-12 teachers build verified AI competency through personalised learning, scenario-based assessment, and a structured competency framework called TEACH-AI. It is built for classroom practitioners, not administrators, and is fully self-serve — no district or school procurement required.
+thegurucool.ai helps teachers build verified AI competency through personalised learning, scenario-based assessment, and a structured competency framework called TEACH-AI. It is built for classroom practitioners, not administrators, and is fully self-serve — no district or school procurement required.
 
 ## What Is thegurucool?
 
-thegurucool is a teacher professional development platform that uses AI to personalise learning for K-12 educators. It runs a three-stage loop: a scenario-based competency diagnostic, a personalised AI learning pathway built by an AI tutor called GuruCool, and mastery-based verified credentials. Teachers earn credentials by demonstrating competency, not by completing a course or attending a session.
+thegurucool is a teacher professional development platform that uses AI to personalise learning for educators. It runs a three-stage loop: a scenario-based competency diagnostic, a personalised AI learning pathway built by an AI tutor called GuruCool, and mastery-based verified credentials. Teachers earn credentials by demonstrating competency, not by completing a course or attending a session.
 
 ## Who Is It For?
 
-- K-12 classroom teachers in Southeast Asia and India who want personalised, evidence-based PD
+- classroom teachers in Southeast Asia and India who want personalised, evidence-based PD
 - School leaders and Heads of Department who need visibility into teacher AI readiness at team and school level
 - EdTech coordinators and curriculum designers building AI-ready staff
 
@@ -60,7 +60,7 @@ TEACH-AI is thegurucool's competency framework for AI-integrated teaching. It sp
 ## Frequently Asked Questions
 
 **What is thegurucool?**
-thegurucool is an AI-powered teacher professional development platform for K-12 educators in Southeast Asia and India. It runs a three-stage loop: a scenario-based diagnostic, a personalised AI learning pathway, and mastery-based credentials — all within a single self-serve platform.
+thegurucool is an AI-powered teacher professional development platform for educators in Southeast Asia and India. It runs a three-stage loop: a scenario-based diagnostic, a personalised AI learning pathway, and mastery-based credentials — all within a single self-serve platform.
 
 **How does thegurucool personalise PD for teachers?**
 It starts with a 140-question scenario-based diagnostic that benchmarks a teacher's practice across seven competency domains. An AI tutor then builds a learning pathway based on the results, the teacher's role, subject area, and classroom context. No two teachers get the same pathway.
@@ -98,7 +98,7 @@ Pilot stage, Q2 2026. Waitlist open at https://thegurucool.ai/
 ## Blog Posts
 
 - [Singapore's 2026 Plan to Cut Teacher Workload With AI: What Changed](https://thegurucool.ai/blog/singapore-ai-ambition-teacher-professional-development)
-- [AI Teacher PD Platforms in 2026: An Honest Comparison for K-12 Educators in Southeast Asia](https://thegurucool.ai/blog/ai-teacher-pd-platforms-southeast-asia-2026)
+- [AI Teacher PD Platforms in 2026: An Honest Comparison for Educators in Southeast Asia](https://thegurucool.ai/blog/ai-teacher-pd-platforms-southeast-asia-2026)
 - [What Does Medicine Know About Professional Development That Teaching Still Hasn't Figured Out?](https://thegurucool.ai/blog/mandatory-cpd-teacher-professional-development-industries)
 - [The Homework Problem AI Just Broke](https://thegurucool.ai/blog/homework-broken)
 - [AI Can Give Teachers 6 Hours Back Every Week. So Why Are Most Still Not Using It?](https://thegurucool.ai/blog/ai-6-hours)
