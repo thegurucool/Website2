@@ -1,6 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/posts/:slug", "destination": "/blog/:slug", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/blog/:slug", "destination": "/posts/:slug" }
   ]

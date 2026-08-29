@@ -133,7 +133,7 @@ Find the `blog-featured` div (for the top 3 posts) or the `blog-sub-grid` div (f
 
 Card template:
 ```html
-<a class="bc" href="posts/[slug].html" data-cat="[category]">
+<a class="bc" href="/blog/[slug]" data-cat="[category]">
   <div class="bc-img"><img src="[image URL]" alt="[Post Title]" loading="lazy"><div class="bc-tag">[Category Label]</div></div>
   <div class="bc-body">
     <div class="bc-meta"><span class="bc-cat-lbl">[Category Label]</span><span class="bc-sep"></span><span class="bc-date">[Month Year]</span></div>
