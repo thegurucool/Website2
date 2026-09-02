@@ -264,7 +264,7 @@ Post pages also need:
 - Status: **Pilot stage, Q2 2026**
 - Geography: Southeast Asia (SG, PH, ID, MY, VN, TH) + India
 - Contact: `admin@thegurucool.ai`
-- Pricing reference (India): INR 1,000 per teacher per year
+- Pricing: free for individual teachers (app.thegurucool.ai/signup). Schools contact admin@thegurucool.ai for pricing details.
 - Do not claim GA launch or live product unless instructed
 
 ---
