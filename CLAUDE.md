@@ -2,7 +2,7 @@
 
 ## What This Is
 
-thegurucool.ai is an AI-powered teacher professional development platform for K-12 educators across Southeast Asia. The website is a static multi-file HTML site with no build tools, no frameworks, and no dependencies beyond Google Fonts.
+thegurucool.ai is an AI-powered, competency-based professional development platform for teachers and educators in schools, colleges and institutions. The website is a static multi-file HTML site with no build tools, no frameworks, and no dependencies beyond Google Fonts.
 
 ---
 
@@ -11,7 +11,7 @@ thegurucool.ai is an AI-powered teacher professional development platform for K-
 ```
 /
 ├── index.html          # Home page
-├── teachers.html       # /teachers — product page for K-12 teachers
+├── teachers.html       # /teachers — product page for teachers
 ├── schools.html        # /schools — product page for school leaders
 ├── blog.html           # Blog index (all posts listed)
 ├── style.css           # Shared stylesheet — all pages link to this
@@ -35,16 +35,23 @@ All pages share the same nav: **Home · For Teachers · For Schools · Blog · J
 
 ## Brand
 
+The source of truth for positioning and copy rules is `thegurucool-brand-positioning - Nov.md` in the Business OS folder (`/Users/mayyang/Desktop/thegurucool/Business OS/`). Read it before editing user-facing copy. Key rules: say "AI competency" not "AI skills" or "AI readiness"; no verified/QR/blockchain credential claims; no hiring language; never use the "K-12" label (describe the audience as teachers and educators in schools, colleges and institutions); no UNESCO alignment claims; no session length; never publish the 14 competency titles or proficiency level names.
+
 ### Colours
 ```css
 --black:     #111111   /* primary background, nav, footer */
---orange:    #F47B5A   /* brand accent — buttons, links, highlights */
+--orange:    #FF7F50   /* brand coral — buttons, links, highlights */
+--orange-rgb: 255,127,80  /* for rgba(var(--orange-rgb), alpha) */
 --white:     #FFFFFF
 --paper:     #FAFAFA   /* light section backgrounds */
 --chalk:     #F0EDE8   /* text on dark backgrounds */
 --chalk-dim: rgba(240,237,232,0.55)  /* subdued text on dark */
 --mid:       #888888   /* body text on light backgrounds */
 ```
+
+Coral is defined once in `style.css` as `--orange` / `--orange-rgb`. Never hard-code the hex or rgb values in pages; use `var(--orange)` or `rgba(var(--orange-rgb), alpha)`. (`getting-started-standalone.html` doesn't load style.css, so it keeps its own copy of the token.)
+
+**Contrast:** use black text (`var(--black)`) on coral buttons, badges and small labels. White on coral is only allowed for large, bold text (24px+ regular or 18.66px+ bold), because smaller white text on coral fails WCAG AA.
 
 ### Typography
 - **All text:** Montserrat (Google Fonts) — weights 300, 400, 500, 600, 700, plus italic 300/400
@@ -53,7 +60,7 @@ All pages share the same nav: **Home · For Teachers · For Schools · Blog · J
 ### Logo
 - The logo is embedded as a base64 PNG in every HTML file (transparent background).
 - Source file: `logo_transparent.png` (379×96px, cropped from brand PNG with black background removed).
-- Always use `alt="theGurucool.ai — Teacher Professional Development Platform"`.
+- Always use `alt="thegurucool.ai, Teacher Professional Development Platform"`.
 
 ### Voice
 - Lowercase brand name: **thegurucool** or **thegurucool.ai** — never "TheGurucool" or "TheGurucool.AI"

@@ -1,6 +1,6 @@
 # thegurucool.ai
 
-Static website for thegurucool.ai — an AI-powered teacher professional development platform for K-12 educators across Southeast Asia and India.
+Static website for thegurucool.ai — an AI-powered teacher professional development platform for teachers and educators in schools, colleges and institutions across Southeast Asia and India.
 
 ## Local development
 
