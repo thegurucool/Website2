@@ -104,12 +104,12 @@ Update these fields in the new file:
 <meta name="description" content="[150-char description]"/>
 
 <!-- Canonical -->
-<link rel="canonical" href="https://www.thegurucool.ai/blog/[slug]"/>
+<link rel="canonical" href="https://thegurucool.ai/blog/[slug]"/>
 
 <!-- OG tags -->
 <meta property="og:title" content="[Post Title]"/>
 <meta property="og:image" content="[image URL]"/>
-<meta property="og:url" content="https://www.thegurucool.ai/blog/[slug]"/>
+<meta property="og:url" content="https://thegurucool.ai/blog/[slug]"/>
 
 <!-- Twitter -->
 <meta name="twitter:title" content="[Post Title]"/>
@@ -220,7 +220,7 @@ filterCat(btn, cat)
 Every page must have:
 - Unique `<title>` — format: `[Page/Post Title] | theGurucool.ai`
 - Unique `<meta name="description">` — 150–160 chars
-- `<link rel="canonical" href="https://www.thegurucool.ai/[path]"/>`
+- `<link rel="canonical" href="https://thegurucool.ai/[path]"/>`
 - Open Graph: `og:title`, `og:description`, `og:image`, `og:url`
 - Twitter Card: `twitter:card`, `twitter:title`, `twitter:image`
 

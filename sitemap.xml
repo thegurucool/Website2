@@ -148,4 +148,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://thegurucool.ai/blog/deped-ai-guidelines-update</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thegurucool.ai/blog/mandatory-ai-literacy-teacher-readiness-gap</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
